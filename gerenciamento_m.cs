@@ -1,4 +1,5 @@
-﻿using System;
+﻿using projeto_integrado.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -101,6 +102,7 @@ namespace projeto_integrado
         private void principal_m_Click(object sender, EventArgs e)
         {
             AbrirFormFilho(new Forms.Membros(), sender);
+            conexao_api.AddRow("ListaPagamento", new List<object>() {"eu", "goosto", "muito", "dee", "vc" });
         }
 
         private void dependente_m_Click(object sender, EventArgs e)
