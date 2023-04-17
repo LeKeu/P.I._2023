@@ -1,4 +1,5 @@
-﻿using System;
+﻿using projeto_integrado.Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -14,6 +15,7 @@ namespace projeto_integrado
         [STAThread]
         static void Main()
         {
+            conexao_api.Init();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new gerenciamento_m());
