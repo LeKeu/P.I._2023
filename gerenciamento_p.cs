@@ -1,5 +1,4 @@
-﻿using projeto_integrado.Classes;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,20 +11,20 @@ using System.Windows.Forms;
 
 namespace projeto_integrado
 {
-    public partial class gerenciamento_m : Form
+    public partial class gerenciamento_p : Form
     {
+
         //Fields
         private Button currentButton;
         private Random random;
         private int tempIndex;
         private Form activeForm;
 
-        //Constructor
-        public gerenciamento_m()
+        public gerenciamento_p()
         {
             InitializeComponent();
             random = new Random();
-            btn_fechar_forms_filho_m.Visible = false;
+            btn_fechar_forms_filho_p.Visible = false;
             this.Text = string.Empty;
             this.ControlBox = false;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
@@ -61,18 +60,18 @@ namespace projeto_integrado
                     currentButton.BackColor = color;
                     currentButton.ForeColor = Color.White;
                     currentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-                    painel_titulo.BackColor = color;
-                    painel_logo.BackColor = CorTema.MudarLuminosidadeCores(color, -0.3);
+                    painel_titulo_p.BackColor = color;
+                    painel_logo_p.BackColor = CorTema.MudarLuminosidadeCores(color, -0.3);
                     CorTema.PrimaryColor = color;
                     CorTema.SecondaryColor = CorTema.MudarLuminosidadeCores(color, -0.3);
-                    btn_fechar_forms_filho_m.Visible = true;
+                    btn_fechar_forms_filho_p.Visible = true;
                 }
             }
         }
 
         private void DesabilitarBotao()
         {
-            foreach (Control previousBtn in menu_lateral.Controls)
+            foreach (Control previousBtn in painel_menu_lateral_p.Controls)
             {
                 if (previousBtn.GetType() == typeof(Button))
                 {
@@ -92,30 +91,45 @@ namespace projeto_integrado
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.Fill;
-            this.painel_principal_m.Controls.Add(childForm);
-            this.painel_principal_m.Tag = childForm;
+            this.painel_principal_p.Controls.Add(childForm);
+            this.painel_principal_p.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
-            label_titulo_m.Text = childForm.Text;
+            label_titulo_p.Text = childForm.Text;
         }
 
-        private void principal_m_Click(object sender, EventArgs e)
+        private void btn_principal_p_Click(object sender, EventArgs e)
         {
-            AbrirFormFilho(new Forms.Membros(), sender);
+            AbrirFormFilho(new Forms_p.Patrimônio(), sender);
             // conexao_api.AddRow("ListaPagamento", new List<object>() {"eu", "goosto", "muito", "dee", "vc" });
         }
 
-        private void dependente_m_Click(object sender, EventArgs e)
+        private void btn_produto_p_Click(object sender, EventArgs e)
         {
-           AbrirFormFilho(new Forms.Dependentes(), sender);
+            AbrirFormFilho(new Forms_p.Produto(), sender);
         }
 
-        private void pagamento_m_Click(object sender, EventArgs e)
+        private void btn_fabricantes_p_Click(object sender, EventArgs e)
         {
-            AbrirFormFilho(new Forms.Pagamentos(), sender);
+            AbrirFormFilho(new Forms_p.Fabricantes(), sender);
         }
 
-        private void btn_fechar_forms_filho_m_Click(object sender, EventArgs e)
+        private void btn_fornecedor_p_Click(object sender, EventArgs e)
+        {
+            AbrirFormFilho(new Forms_p.Fornecedor(), sender);
+        }
+
+        private void btn_setor_p_Click(object sender, EventArgs e)
+        {
+            AbrirFormFilho(new Forms_p.Setor(), sender);
+        }
+
+        private void btn_grupo_de_bens_p_Click(object sender, EventArgs e)
+        {
+            AbrirFormFilho(new Forms_p.Grupo_de_bens(), sender);
+        }
+
+        private void btn_fechar_forms_filho_p_Click(object sender, EventArgs e)
         {
             if (activeForm != null)
                 activeForm.Close();
@@ -125,25 +139,25 @@ namespace projeto_integrado
         private void Reset()
         {
             DesabilitarBotao();
-            label_titulo_m.Text = "HOME";
-            painel_titulo.BackColor = Color.FromArgb(0, 150, 136);
-            painel_logo.BackColor = Color.FromArgb(39, 39, 58);
+            label_titulo_p.Text = "HOME";
+            painel_titulo_p.BackColor = Color.FromArgb(0, 150, 136);
+            painel_logo_p.BackColor = Color.FromArgb(39, 39, 58);
             currentButton = null;
-            btn_fechar_forms_filho_m.Visible = false;
+            btn_fechar_forms_filho_p.Visible = false;
         }
 
-        private void painel_titulo_MouseDown(object sender, MouseEventArgs e)
+        private void painel_titulo_p_MouseDown(object sender, MouseEventArgs e)
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-        private void btn_fechar_m_Click(object sender, EventArgs e)
+        private void btn_fechar_p_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void btn_maximizar_m_Click(object sender, EventArgs e)
+        private void btn_maximizar_p_Click(object sender, EventArgs e)
         {
             if (WindowState == FormWindowState.Normal)
                 this.WindowState = FormWindowState.Maximized;
@@ -151,7 +165,7 @@ namespace projeto_integrado
                 this.WindowState = FormWindowState.Normal;
         }
 
-        private void btn_minimizar_m_Click(object sender, EventArgs e)
+        private void btn_minimizar_p_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
         }

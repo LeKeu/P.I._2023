@@ -18,7 +18,7 @@ namespace projeto_integrado
             conexao_api.Init();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new gerenciamento_m());
+            Application.Run(new gerenciamento_p());
         }
     }
 }
