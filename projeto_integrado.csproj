@@ -70,23 +70,59 @@
     <Compile Include="Classes\conexao_api.cs" />
     <Compile Include="Classes\conexao_internet.cs" />
     <Compile Include="CorTema.cs" />
-    <Compile Include="Forms\Dependentes.cs">
+    <Compile Include="Forms_m\Dependentes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Dependentes.Designer.cs">
+    <Compile Include="Forms_m\Dependentes.Designer.cs">
       <DependentUpon>Dependentes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Membros.cs">
+    <Compile Include="Forms_m\Membros.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Membros.Designer.cs">
+    <Compile Include="Forms_m\Membros.Designer.cs">
       <DependentUpon>Membros.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Pagamentos.cs">
+    <Compile Include="Forms_m\Pagamentos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Pagamentos.Designer.cs">
+    <Compile Include="Forms_m\Pagamentos.Designer.cs">
       <DependentUpon>Pagamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms_p\Fabricantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_p\Fabricantes.Designer.cs">
+      <DependentUpon>Fabricantes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms_p\Fornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_p\Fornecedor.Designer.cs">
+      <DependentUpon>Fornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms_p\Grupo de bens.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_p\Grupo de bens.Designer.cs">
+      <DependentUpon>Grupo de bens.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms_p\Patrimônio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_p\Patrimônio.Designer.cs">
+      <DependentUpon>Patrimônio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms_p\Produto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_p\Produto.Designer.cs">
+      <DependentUpon>Produto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms_p\Setor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_p\Setor.Designer.cs">
+      <DependentUpon>Setor.cs</DependentUpon>
     </Compile>
     <Compile Include="gerenciamento_m.cs">
       <SubType>Form</SubType>
@@ -94,19 +130,46 @@
     <Compile Include="gerenciamento_m.Designer.cs">
       <DependentUpon>gerenciamento_m.cs</DependentUpon>
     </Compile>
+    <Compile Include="gerenciamento_p.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gerenciamento_p.Designer.cs">
+      <DependentUpon>gerenciamento_p.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\Dependentes.resx">
+    <EmbeddedResource Include="Forms_m\Dependentes.resx">
       <DependentUpon>Dependentes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Membros.resx">
+    <EmbeddedResource Include="Forms_m\Membros.resx">
       <DependentUpon>Membros.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Pagamentos.resx">
+    <EmbeddedResource Include="Forms_m\Pagamentos.resx">
       <DependentUpon>Pagamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_p\Fabricantes.resx">
+      <DependentUpon>Fabricantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_p\Fornecedor.resx">
+      <DependentUpon>Fornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_p\Grupo de bens.resx">
+      <DependentUpon>Grupo de bens.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_p\Patrimônio.resx">
+      <DependentUpon>Patrimônio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_p\Produto.resx">
+      <DependentUpon>Produto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_p\Setor.resx">
+      <DependentUpon>Setor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="gerenciamento_m.resx">
       <DependentUpon>gerenciamento_m.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gerenciamento_p.resx">
+      <DependentUpon>gerenciamento_p.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -150,6 +213,23 @@
   <ItemGroup>
     <None Include="Resources\imagem_2023-04-16_141523387.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\seguro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caracteristicas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fabricar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\entregador.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grafico-de-setores.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bens.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
