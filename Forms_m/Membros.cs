@@ -1,4 +1,5 @@
-﻿using System;
+﻿using projeto_integrado.Forms_m_inputs;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -34,6 +35,12 @@ namespace projeto_integrado.Forms
                     btn.FlatAppearance.BorderColor = CorTema.SecondaryColor;
                 }
             }
+        }
+
+        private void btn_adicionar_membros_m_Click(object sender, EventArgs e)
+        {
+            var forminputmembros = new membros_inputs();
+            forminputmembros.Show();
         }
     }
 }

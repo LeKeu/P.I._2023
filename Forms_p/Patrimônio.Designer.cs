@@ -67,6 +67,7 @@
             this.btn_adicionar_patrimonio_p.TabIndex = 16;
             this.btn_adicionar_patrimonio_p.Text = "Adicionar";
             this.btn_adicionar_patrimonio_p.UseVisualStyleBackColor = true;
+            this.btn_adicionar_patrimonio_p.Click += new System.EventHandler(this.btn_adicionar_patrimonio_p_Click);
             // 
             // datagridview_patrimonio_p
             // 
