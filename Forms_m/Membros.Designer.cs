@@ -67,6 +67,7 @@
             this.btn_adicionar_membros_m.TabIndex = 7;
             this.btn_adicionar_membros_m.Text = "Adicionar";
             this.btn_adicionar_membros_m.UseVisualStyleBackColor = true;
+            this.btn_adicionar_membros_m.Click += new System.EventHandler(this.btn_adicionar_membros_m_Click);
             // 
             // datagridview_membros_m
             // 

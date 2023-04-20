@@ -67,6 +67,7 @@
             this.btn_adicionar_dependentes_m.TabIndex = 12;
             this.btn_adicionar_dependentes_m.Text = "Adicionar";
             this.btn_adicionar_dependentes_m.UseVisualStyleBackColor = true;
+            this.btn_adicionar_dependentes_m.Click += new System.EventHandler(this.btn_adicionar_dependentes_m_Click);
             // 
             // datagridview_dependentes_m
             // 
