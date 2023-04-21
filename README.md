@@ -1,43 +1,39 @@
-# SISTEMA DE GERENCIAMENTO DE MEMBROS E PATRIMÔNIOS
-## CESUPA - Projeto Inetgrado 2023
+# Welcome to the P.I._2023 wiki!
 
-Projeto integrado realizado pelos alunos: 
+## Contexto do problema:
+* Cotijuba é apenas um dos diversos lugares que possuem instituições que buscam fazer a diferença na vida das pessoas de dentro e de fora de suas comunidades. No caso da 3° maior ilha do arquipélago belenense, essa instituição se chama MMIB (Movimento de Mulheres das Ilhas de Belém), que é uma associação composta majoritariamente por mulheres, onde o principal objetivo é afirmar a autonomia, a autoestima e desenvolver o conhecimento do cidadão. Considerando que o MMIB é uma associação sem fins lucrativos, é evidente que para continuar em atividade faz-se necessário o suporte contínuo de seus membros e associados. 
 
-Felipe Machado - felipemdramos@gmail.com;
+## O objetivo do projeto:
+* Esse projeto visa o desenvolvimento de um sistema de gerenciamento de membros e patrimônio e tem como intuito principal ser utilizado como uma solução para as dificuldades que a instituição conhecida como MMIB, que reside na Ilha de Cotijuba, no estado do Pará, sofre.
 
-Letícia Keuffer - lekeuffer@gmail.com;
+* Para a criação do projeto, foi importante levar em consideração a situação atual da organização: pouquíssima conexão com a internet e computadores que mal funcionam.
 
-Pedro Benitah - pedrobenitah@gmail.com;
 
-Vitor Gurjão - vitor.pombo.2003@gmail.com;
+## Tecnologias utilizadas:
 
-Vítor Longhi - vitorlr03@gmail.com;
+* Esse sistema está sendo desenvolvido em C# buscando uma melhor performance para máquinas com menor poder de processamento, e possuirá uma verificação de conexão com a Internet para a transferência de dados, garantindo seu funcionamento mesmo em lugares com acesso debilitado à Internet.
 
-### MAIS INFORMAÇÕES NA WIKI -> https://github.com/LeKeu/P.I._2023/wiki 
+## Funcionalidades
+###  1. EXTERNAS
 
-### OBJETIVO
-
-Esse projeto visa o desenvolvimento de um sistema de gerenciamento de membros e patrimônio e tem como intuito principal ser utilizado como uma solução para as dificuldades que a instituição conhecida como MMIB, que reside na Ilha de Cotijuba, no estado do Pará, sofre.
-
-Para a criação do projeto, foi importante levar em consideração a situação atual da organização: pouquíssima conexão com a internet e computadores que mal funcionam.
-
-Esse sistema está sendo desenvolvido em C# buscando uma melhor performance para máquinas com menor poder de processamento, e possuirá uma verificação de conexão
-com a Internet para a transferência de dados, garantindo seu funcionamento mesmo em lugares com acesso debilitado à Internet.
-
-### FUNCIONALIDADES
-EXTERNAS
-```
 * Cadastro de Membros e Patrimônios
 * Visualização de dados de Membros e Patrimônios
-```
-INTERNAS
-```
+### 2. INTERNAS
+
 * Conexão com o serviço de nuvem do Google
 * Checagem da conexão com a internet
 * Criação de um arquivo json para armazenar os dados localmente
 * Envio dos dados do arquivo json para a nuvem
 * Leitura e edição de dados salvos 
-```
 
-![image](https://user-images.githubusercontent.com/101370021/232625750-d0f194fc-970b-413f-aa00-386f49303d02.png)
+## DEMO
+![232625750-d0f194fc-970b-413f-aa00-386f49303d02](https://user-images.githubusercontent.com/80503035/233559599-f8bd8a40-4382-408b-af19-ed26da8b1b4a.png)
 
+##  Integrantes do projeto:
+* Felipe Machado Dias Ramos;
+* Leticia Keuffer Cavalleiro de Macedo;
+* Pedro Benitah Vieira Sanchez de Melo;
+* Vitor Gurjão Sampaio Pombo;
+* Vitor Longhi Ramôa.
+
+> Link do código: [SISTEMA DE GERENCIAMENTO DE MEMBROS E PATRIMÔNIOS](https://github.com/LeKeu/P.I._2023)
