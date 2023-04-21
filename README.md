@@ -1,4 +1,4 @@
-# Welcome to the P.I._2023 wiki!
+# SISTEMA DE GERENCIAMENTO DE MEMBROS E PATRIMÔNIOS
 
 ## Contexto do problema:
 * Cotijuba é apenas um dos diversos lugares que possuem instituições que buscam fazer a diferença na vida das pessoas de dentro e de fora de suas comunidades. No caso da 3° maior ilha do arquipélago belenense, essa instituição se chama MMIB (Movimento de Mulheres das Ilhas de Belém), que é uma associação composta majoritariamente por mulheres, onde o principal objetivo é afirmar a autonomia, a autoestima e desenvolver o conhecimento do cidadão. Considerando que o MMIB é uma associação sem fins lucrativos, é evidente que para continuar em atividade faz-se necessário o suporte contínuo de seus membros e associados. 
