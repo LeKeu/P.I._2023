@@ -393,6 +393,7 @@
             this.btn_membro_enviar_m.TabIndex = 38;
             this.btn_membro_enviar_m.Text = "Enviar";
             this.btn_membro_enviar_m.UseVisualStyleBackColor = true;
+            this.btn_membro_enviar_m.Click += new System.EventHandler(this.btn_membro_enviar_m_Click);
             // 
             // membros_inputs
             // 
