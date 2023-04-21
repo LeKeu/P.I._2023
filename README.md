@@ -13,6 +13,8 @@ Vitor Gurjão - vitor.pombo.2003@gmail.com;
 
 Vítor Longhi - vitorlr03@gmail.com;
 
+### MAIS INFORMAÇÕES NA WIKI -> https://github.com/LeKeu/P.I._2023/wiki 
+
 ### OBJETIVO
 
 Esse projeto visa o desenvolvimento de um sistema de gerenciamento de membros e patrimônio e tem como intuito principal ser utilizado como uma solução para as dificuldades que a instituição conhecida como MMIB, que reside na Ilha de Cotijuba, no estado do Pará, sofre.
