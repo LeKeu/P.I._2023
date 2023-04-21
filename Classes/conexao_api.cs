@@ -2,6 +2,8 @@
 using Google.Apis.Services;
 using Google.Apis.Sheets.v4;
 using Google.Apis.Sheets.v4.Data;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -91,21 +93,17 @@ namespace projeto_integrado.Classes
         public static void AddRow(string sheet, List<object> ob_lista)
         {
             // Especificando o range das colunas para leitura 
-            var range = $"{sheet}!A:E";
+            var range = $"{sheet}!B:S";
             var valueRange = new ValueRange();
+
             // Data for another Student...
-            //var oblist = new List<object>() { "BELA", "É", "MUITO", "BONITA", "MEU DEUS" };
-            var oblist = ob_lista;
-            valueRange.Values = new List<IList<object>> { oblist };
+            //var oblist = new List<object>() { "BELA", "É", "MUITO", "BONITA", "MEU DEUS" }
+            valueRange.Values = new List<IList<object>> { ob_lista };
+
             // Append the above record...
             var appendRequest = service.Spreadsheets.Values.Append(valueRange, SpreadsheetId, range);
             appendRequest.ValueInputOption = SpreadsheetsResource.ValuesResource.AppendRequest.ValueInputOptionEnum.USERENTERED;
             var appendReponse = appendRequest.Execute();
-        }
-
-        static void Convert_to_json()
-        {
-
         }
     }
 }
