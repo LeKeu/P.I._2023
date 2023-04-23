@@ -67,6 +67,7 @@
             this.btn_adicionar_setor_p.TabIndex = 24;
             this.btn_adicionar_setor_p.Text = "Adicionar";
             this.btn_adicionar_setor_p.UseVisualStyleBackColor = true;
+            this.btn_adicionar_setor_p.Click += new System.EventHandler(this.btn_adicionar_setor_p_Click);
             // 
             // datagridview_setor_p
             // 

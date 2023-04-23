@@ -44,6 +44,7 @@
             // 
             // btn_dependente_enviar_m
             // 
+            this.btn_dependente_enviar_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_dependente_enviar_m.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_dependente_enviar_m.Location = new System.Drawing.Point(354, 270);
             this.btn_dependente_enviar_m.Name = "btn_dependente_enviar_m";
@@ -54,6 +55,7 @@
             // 
             // input_dependente_celular_m
             // 
+            this.input_dependente_celular_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.input_dependente_celular_m.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.input_dependente_celular_m.Location = new System.Drawing.Point(266, 219);
             this.input_dependente_celular_m.Name = "input_dependente_celular_m";
@@ -62,6 +64,7 @@
             // 
             // lbl_dependente_celular_m
             // 
+            this.lbl_dependente_celular_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_dependente_celular_m.AutoSize = true;
             this.lbl_dependente_celular_m.Location = new System.Drawing.Point(263, 200);
             this.lbl_dependente_celular_m.Name = "lbl_dependente_celular_m";
@@ -71,6 +74,7 @@
             // 
             // input_dependente_parentesco_m
             // 
+            this.input_dependente_parentesco_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.input_dependente_parentesco_m.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.input_dependente_parentesco_m.Location = new System.Drawing.Point(430, 161);
             this.input_dependente_parentesco_m.Name = "input_dependente_parentesco_m";
@@ -79,6 +83,7 @@
             // 
             // lbl_dependente_parentesco_m
             // 
+            this.lbl_dependente_parentesco_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_dependente_parentesco_m.AutoSize = true;
             this.lbl_dependente_parentesco_m.Location = new System.Drawing.Point(427, 142);
             this.lbl_dependente_parentesco_m.Name = "lbl_dependente_parentesco_m";
@@ -88,6 +93,7 @@
             // 
             // input_dependente_datanasc_m
             // 
+            this.input_dependente_datanasc_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.input_dependente_datanasc_m.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.input_dependente_datanasc_m.Location = new System.Drawing.Point(102, 161);
             this.input_dependente_datanasc_m.Name = "input_dependente_datanasc_m";
@@ -96,6 +102,7 @@
             // 
             // lbl_dependente_datanasc_m
             // 
+            this.lbl_dependente_datanasc_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_dependente_datanasc_m.AutoSize = true;
             this.lbl_dependente_datanasc_m.Location = new System.Drawing.Point(99, 142);
             this.lbl_dependente_datanasc_m.Name = "lbl_dependente_datanasc_m";
@@ -105,6 +112,7 @@
             // 
             // input_dependente_sexo_m
             // 
+            this.input_dependente_sexo_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.input_dependente_sexo_m.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.input_dependente_sexo_m.Location = new System.Drawing.Point(430, 101);
             this.input_dependente_sexo_m.Name = "input_dependente_sexo_m";
@@ -113,6 +121,7 @@
             // 
             // lbl_dependente_sexo_m
             // 
+            this.lbl_dependente_sexo_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_dependente_sexo_m.AutoSize = true;
             this.lbl_dependente_sexo_m.Location = new System.Drawing.Point(427, 82);
             this.lbl_dependente_sexo_m.Name = "lbl_dependente_sexo_m";
@@ -122,6 +131,7 @@
             // 
             // input_dependente_nome_m
             // 
+            this.input_dependente_nome_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.input_dependente_nome_m.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.input_dependente_nome_m.Location = new System.Drawing.Point(102, 101);
             this.input_dependente_nome_m.Name = "input_dependente_nome_m";
@@ -130,6 +140,7 @@
             // 
             // lbl_dependente_nome_m
             // 
+            this.lbl_dependente_nome_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_dependente_nome_m.AutoSize = true;
             this.lbl_dependente_nome_m.Location = new System.Drawing.Point(99, 82);
             this.lbl_dependente_nome_m.Name = "lbl_dependente_nome_m";
@@ -139,6 +150,7 @@
             // 
             // lbl_dependente_titulo_inputs_m
             // 
+            this.lbl_dependente_titulo_inputs_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_dependente_titulo_inputs_m.AutoSize = true;
             this.lbl_dependente_titulo_inputs_m.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_dependente_titulo_inputs_m.Location = new System.Drawing.Point(325, 26);

@@ -67,6 +67,7 @@
             this.btn_adicionar_produto_p.TabIndex = 20;
             this.btn_adicionar_produto_p.Text = "Adicionar";
             this.btn_adicionar_produto_p.UseVisualStyleBackColor = true;
+            this.btn_adicionar_produto_p.Click += new System.EventHandler(this.btn_adicionar_produto_p_Click);
             // 
             // datagridview_produto_p
             // 
