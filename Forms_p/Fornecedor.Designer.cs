@@ -67,6 +67,7 @@
             this.btn_adicionar_fornecedor_p.TabIndex = 20;
             this.btn_adicionar_fornecedor_p.Text = "Adicionar";
             this.btn_adicionar_fornecedor_p.UseVisualStyleBackColor = true;
+            this.btn_adicionar_fornecedor_p.Click += new System.EventHandler(this.btn_adicionar_fornecedor_p_Click);
             // 
             // datagridview_fornecedor_p
             // 

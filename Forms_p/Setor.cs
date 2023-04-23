@@ -1,4 +1,5 @@
-﻿using System;
+﻿using projeto_integrado.Forms_p_inputs;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -34,6 +35,12 @@ namespace projeto_integrado.Forms_p
                     btn.FlatAppearance.BorderColor = CorTema.SecondaryColor;
                 }
             }
+        }
+
+        private void btn_adicionar_setor_p_Click(object sender, EventArgs e)
+        {
+            var forminputsetor = new setor_inputs();
+            forminputsetor.Show();
         }
     }
 }

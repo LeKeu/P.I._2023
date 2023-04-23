@@ -67,6 +67,7 @@
             this.btn_adicionar_grupo_de_bens_p.TabIndex = 24;
             this.btn_adicionar_grupo_de_bens_p.Text = "Adicionar";
             this.btn_adicionar_grupo_de_bens_p.UseVisualStyleBackColor = true;
+            this.btn_adicionar_grupo_de_bens_p.Click += new System.EventHandler(this.btn_adicionar_grupo_de_bens_p_Click);
             // 
             // datagridview_grupo_de_bens_p
             // 

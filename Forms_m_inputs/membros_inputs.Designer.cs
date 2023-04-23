@@ -70,6 +70,7 @@
             // 
             // lbl_membro_titulo_inputs_m
             // 
+            this.lbl_membro_titulo_inputs_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_membro_titulo_inputs_m.AutoSize = true;
             this.lbl_membro_titulo_inputs_m.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_membro_titulo_inputs_m.Location = new System.Drawing.Point(352, 32);
@@ -80,6 +81,7 @@
             // 
             // lbl_membro_nome_m
             // 
+            this.lbl_membro_nome_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_membro_nome_m.AutoSize = true;
             this.lbl_membro_nome_m.Location = new System.Drawing.Point(103, 84);
             this.lbl_membro_nome_m.Name = "lbl_membro_nome_m";
@@ -89,6 +91,7 @@
             // 
             // input_membro_nome_m
             // 
+            this.input_membro_nome_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.input_membro_nome_m.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.input_membro_nome_m.Location = new System.Drawing.Point(106, 103);
             this.input_membro_nome_m.Name = "input_membro_nome_m";
@@ -97,6 +100,7 @@
             // 
             // input_membro_matricula_m
             // 
+            this.input_membro_matricula_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.input_membro_matricula_m.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.input_membro_matricula_m.Location = new System.Drawing.Point(434, 103);
             this.input_membro_matricula_m.Name = "input_membro_matricula_m";
@@ -105,6 +109,7 @@
             // 
             // lbl_membro_matricula_m
             // 
+            this.lbl_membro_matricula_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_membro_matricula_m.AutoSize = true;
             this.lbl_membro_matricula_m.Location = new System.Drawing.Point(431, 84);
             this.lbl_membro_matricula_m.Name = "lbl_membro_matricula_m";
@@ -114,6 +119,7 @@
             // 
             // input_membro_datanasc_m
             // 
+            this.input_membro_datanasc_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.input_membro_datanasc_m.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.input_membro_datanasc_m.Location = new System.Drawing.Point(106, 163);
             this.input_membro_datanasc_m.Name = "input_membro_datanasc_m";
@@ -122,6 +128,7 @@
             // 
             // lbl_membro_datanasc_m
             // 
+            this.lbl_membro_datanasc_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_membro_datanasc_m.AutoSize = true;
             this.lbl_membro_datanasc_m.Location = new System.Drawing.Point(103, 144);
             this.lbl_membro_datanasc_m.Name = "lbl_membro_datanasc_m";
@@ -131,6 +138,7 @@
             // 
             // input_membro_cpf_m
             // 
+            this.input_membro_cpf_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.input_membro_cpf_m.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.input_membro_cpf_m.Location = new System.Drawing.Point(434, 163);
             this.input_membro_cpf_m.Name = "input_membro_cpf_m";
@@ -139,6 +147,7 @@
             // 
             // lbl_membro_cpf_m
             // 
+            this.lbl_membro_cpf_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_membro_cpf_m.AutoSize = true;
             this.lbl_membro_cpf_m.Location = new System.Drawing.Point(431, 144);
             this.lbl_membro_cpf_m.Name = "lbl_membro_cpf_m";
@@ -148,6 +157,7 @@
             // 
             // input_membro_rg_m
             // 
+            this.input_membro_rg_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.input_membro_rg_m.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.input_membro_rg_m.Location = new System.Drawing.Point(106, 225);
             this.input_membro_rg_m.Name = "input_membro_rg_m";
@@ -156,6 +166,7 @@
             // 
             // lbl_membro_rg_m
             // 
+            this.lbl_membro_rg_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_membro_rg_m.AutoSize = true;
             this.lbl_membro_rg_m.Location = new System.Drawing.Point(103, 206);
             this.lbl_membro_rg_m.Name = "lbl_membro_rg_m";
@@ -165,6 +176,7 @@
             // 
             // input_membro_celular_m
             // 
+            this.input_membro_celular_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.input_membro_celular_m.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.input_membro_celular_m.Location = new System.Drawing.Point(434, 225);
             this.input_membro_celular_m.Name = "input_membro_celular_m";
@@ -173,6 +185,7 @@
             // 
             // lbl_membro_celular_m
             // 
+            this.lbl_membro_celular_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_membro_celular_m.AutoSize = true;
             this.lbl_membro_celular_m.Location = new System.Drawing.Point(431, 206);
             this.lbl_membro_celular_m.Name = "lbl_membro_celular_m";
@@ -182,6 +195,7 @@
             // 
             // input_membro_email_m
             // 
+            this.input_membro_email_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.input_membro_email_m.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.input_membro_email_m.Location = new System.Drawing.Point(106, 290);
             this.input_membro_email_m.Name = "input_membro_email_m";
@@ -190,6 +204,7 @@
             // 
             // lbl_membro_email_m
             // 
+            this.lbl_membro_email_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_membro_email_m.AutoSize = true;
             this.lbl_membro_email_m.Location = new System.Drawing.Point(103, 271);
             this.lbl_membro_email_m.Name = "lbl_membro_email_m";
@@ -199,6 +214,7 @@
             // 
             // input_membro_filiacao_m
             // 
+            this.input_membro_filiacao_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.input_membro_filiacao_m.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.input_membro_filiacao_m.Location = new System.Drawing.Point(434, 290);
             this.input_membro_filiacao_m.Name = "input_membro_filiacao_m";
@@ -207,6 +223,7 @@
             // 
             // lbl_membro_filiacao_m
             // 
+            this.lbl_membro_filiacao_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_membro_filiacao_m.AutoSize = true;
             this.lbl_membro_filiacao_m.Location = new System.Drawing.Point(431, 271);
             this.lbl_membro_filiacao_m.Name = "lbl_membro_filiacao_m";
@@ -216,6 +233,7 @@
             // 
             // input_membro_enderresidencial_m
             // 
+            this.input_membro_enderresidencial_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.input_membro_enderresidencial_m.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.input_membro_enderresidencial_m.Location = new System.Drawing.Point(106, 424);
             this.input_membro_enderresidencial_m.Name = "input_membro_enderresidencial_m";
@@ -224,6 +242,7 @@
             // 
             // lbl_membro_enderresidencial_m
             // 
+            this.lbl_membro_enderresidencial_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_membro_enderresidencial_m.AutoSize = true;
             this.lbl_membro_enderresidencial_m.Location = new System.Drawing.Point(103, 405);
             this.lbl_membro_enderresidencial_m.Name = "lbl_membro_enderresidencial_m";
@@ -233,6 +252,7 @@
             // 
             // input_membro_endercomercial_m
             // 
+            this.input_membro_endercomercial_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.input_membro_endercomercial_m.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.input_membro_endercomercial_m.Location = new System.Drawing.Point(434, 424);
             this.input_membro_endercomercial_m.Name = "input_membro_endercomercial_m";
@@ -241,6 +261,7 @@
             // 
             // lbl_membro_endercomercial_m
             // 
+            this.lbl_membro_endercomercial_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_membro_endercomercial_m.AutoSize = true;
             this.lbl_membro_endercomercial_m.Location = new System.Drawing.Point(431, 405);
             this.lbl_membro_endercomercial_m.Name = "lbl_membro_endercomercial_m";
@@ -250,6 +271,7 @@
             // 
             // input_membro_profissao_m
             // 
+            this.input_membro_profissao_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.input_membro_profissao_m.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.input_membro_profissao_m.Location = new System.Drawing.Point(106, 356);
             this.input_membro_profissao_m.Name = "input_membro_profissao_m";
@@ -258,6 +280,7 @@
             // 
             // lbl_membro_profissao_m
             // 
+            this.lbl_membro_profissao_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_membro_profissao_m.AutoSize = true;
             this.lbl_membro_profissao_m.Location = new System.Drawing.Point(103, 337);
             this.lbl_membro_profissao_m.Name = "lbl_membro_profissao_m";
@@ -267,6 +290,7 @@
             // 
             // input_membro_sexo_m
             // 
+            this.input_membro_sexo_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.input_membro_sexo_m.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.input_membro_sexo_m.Location = new System.Drawing.Point(434, 356);
             this.input_membro_sexo_m.Name = "input_membro_sexo_m";
@@ -275,6 +299,7 @@
             // 
             // lbl_membro_sexo_m
             // 
+            this.lbl_membro_sexo_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_membro_sexo_m.AutoSize = true;
             this.lbl_membro_sexo_m.Location = new System.Drawing.Point(431, 337);
             this.lbl_membro_sexo_m.Name = "lbl_membro_sexo_m";
@@ -284,6 +309,7 @@
             // 
             // input_membro_estadocivil_m
             // 
+            this.input_membro_estadocivil_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.input_membro_estadocivil_m.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.input_membro_estadocivil_m.Location = new System.Drawing.Point(106, 489);
             this.input_membro_estadocivil_m.Name = "input_membro_estadocivil_m";
@@ -292,6 +318,7 @@
             // 
             // lbl_membro_estadocivil_m
             // 
+            this.lbl_membro_estadocivil_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_membro_estadocivil_m.AutoSize = true;
             this.lbl_membro_estadocivil_m.Location = new System.Drawing.Point(103, 470);
             this.lbl_membro_estadocivil_m.Name = "lbl_membro_estadocivil_m";
@@ -301,6 +328,7 @@
             // 
             // input_membro_conjuge_m
             // 
+            this.input_membro_conjuge_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.input_membro_conjuge_m.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.input_membro_conjuge_m.Location = new System.Drawing.Point(434, 489);
             this.input_membro_conjuge_m.Name = "input_membro_conjuge_m";
@@ -309,6 +337,7 @@
             // 
             // lbl_membro_conjuge_m
             // 
+            this.lbl_membro_conjuge_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_membro_conjuge_m.AutoSize = true;
             this.lbl_membro_conjuge_m.Location = new System.Drawing.Point(431, 470);
             this.lbl_membro_conjuge_m.Name = "lbl_membro_conjuge_m";
@@ -318,6 +347,7 @@
             // 
             // input_membro_localinclusao_m
             // 
+            this.input_membro_localinclusao_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.input_membro_localinclusao_m.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.input_membro_localinclusao_m.Location = new System.Drawing.Point(106, 558);
             this.input_membro_localinclusao_m.Name = "input_membro_localinclusao_m";
@@ -326,6 +356,7 @@
             // 
             // lbl_membro_localinclusao_m
             // 
+            this.lbl_membro_localinclusao_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_membro_localinclusao_m.AutoSize = true;
             this.lbl_membro_localinclusao_m.Location = new System.Drawing.Point(103, 539);
             this.lbl_membro_localinclusao_m.Name = "lbl_membro_localinclusao_m";
@@ -335,6 +366,7 @@
             // 
             // input_membro_datainclusao_m
             // 
+            this.input_membro_datainclusao_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.input_membro_datainclusao_m.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.input_membro_datainclusao_m.Location = new System.Drawing.Point(434, 558);
             this.input_membro_datainclusao_m.Name = "input_membro_datainclusao_m";
@@ -343,6 +375,7 @@
             // 
             // lbl_membro_datainclusao_m
             // 
+            this.lbl_membro_datainclusao_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_membro_datainclusao_m.AutoSize = true;
             this.lbl_membro_datainclusao_m.Location = new System.Drawing.Point(431, 539);
             this.lbl_membro_datainclusao_m.Name = "lbl_membro_datainclusao_m";
@@ -352,6 +385,7 @@
             // 
             // input_membro_coordenadora_m
             // 
+            this.input_membro_coordenadora_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.input_membro_coordenadora_m.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.input_membro_coordenadora_m.Location = new System.Drawing.Point(434, 624);
             this.input_membro_coordenadora_m.Name = "input_membro_coordenadora_m";
@@ -360,6 +394,7 @@
             // 
             // lbl_membro_coordenadora_m
             // 
+            this.lbl_membro_coordenadora_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_membro_coordenadora_m.AutoSize = true;
             this.lbl_membro_coordenadora_m.Location = new System.Drawing.Point(431, 605);
             this.lbl_membro_coordenadora_m.Name = "lbl_membro_coordenadora_m";
@@ -369,6 +404,7 @@
             // 
             // input_membro_status_m
             // 
+            this.input_membro_status_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.input_membro_status_m.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.input_membro_status_m.Location = new System.Drawing.Point(106, 624);
             this.input_membro_status_m.Name = "input_membro_status_m";
@@ -377,6 +413,7 @@
             // 
             // lbl_membro_status_m
             // 
+            this.lbl_membro_status_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_membro_status_m.AutoSize = true;
             this.lbl_membro_status_m.Location = new System.Drawing.Point(103, 605);
             this.lbl_membro_status_m.Name = "lbl_membro_status_m";
@@ -386,6 +423,7 @@
             // 
             // btn_membro_enviar_m
             // 
+            this.btn_membro_enviar_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_membro_enviar_m.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_membro_enviar_m.Location = new System.Drawing.Point(359, 677);
             this.btn_membro_enviar_m.Name = "btn_membro_enviar_m";

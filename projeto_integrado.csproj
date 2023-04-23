@@ -143,11 +143,41 @@
     <Compile Include="Forms_p\Setor.Designer.cs">
       <DependentUpon>Setor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms_p_inputs\fabricante_inputs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_p_inputs\fabricante_inputs.Designer.cs">
+      <DependentUpon>fabricante_inputs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms_p_inputs\fornecedor_inputs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_p_inputs\fornecedor_inputs.Designer.cs">
+      <DependentUpon>fornecedor_inputs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms_p_inputs\grupodebens_inputs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_p_inputs\grupodebens_inputs.Designer.cs">
+      <DependentUpon>grupodebens_inputs.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms_p_inputs\patrimonio_inputs.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms_p_inputs\patrimonio_inputs.Designer.cs">
       <DependentUpon>patrimonio_inputs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms_p_inputs\produto_inputs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_p_inputs\produto_inputs.Designer.cs">
+      <DependentUpon>produto_inputs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms_p_inputs\setor_inputs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_p_inputs\setor_inputs.Designer.cs">
+      <DependentUpon>setor_inputs.cs</DependentUpon>
     </Compile>
     <Compile Include="gerenciamento_m.cs">
       <SubType>Form</SubType>
@@ -199,8 +229,23 @@
     <EmbeddedResource Include="Forms_p\Setor.resx">
       <DependentUpon>Setor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms_p_inputs\fabricante_inputs.resx">
+      <DependentUpon>fabricante_inputs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_p_inputs\fornecedor_inputs.resx">
+      <DependentUpon>fornecedor_inputs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_p_inputs\grupodebens_inputs.resx">
+      <DependentUpon>grupodebens_inputs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms_p_inputs\patrimonio_inputs.resx">
       <DependentUpon>patrimonio_inputs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_p_inputs\produto_inputs.resx">
+      <DependentUpon>produto_inputs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_p_inputs\setor_inputs.resx">
+      <DependentUpon>setor_inputs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="gerenciamento_m.resx">
       <DependentUpon>gerenciamento_m.cs</DependentUpon>
