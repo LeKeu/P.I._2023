@@ -29,24 +29,34 @@
         private void InitializeComponent()
         {
             this.menu_lateral = new System.Windows.Forms.Panel();
-            this.pagamento_m = new System.Windows.Forms.Button();
-            this.dependente_m = new System.Windows.Forms.Button();
-            this.principal_m = new System.Windows.Forms.Button();
             this.painel_logo = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.painel_titulo = new System.Windows.Forms.Panel();
             this.btn_minimizar_m = new System.Windows.Forms.Button();
             this.btn_maximizar_m = new System.Windows.Forms.Button();
             this.btn_fechar_m = new System.Windows.Forms.Button();
-            this.btn_fechar_forms_filho_m = new System.Windows.Forms.Button();
             this.label_titulo_m = new System.Windows.Forms.Label();
             this.painel_principal_m = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel_gerenciarpatrimonio_m = new System.Windows.Forms.Panel();
+            this.btn_gerenciarpatrimonio_m = new System.Windows.Forms.Button();
+            this.label_gerenciarpatrimonio_m = new System.Windows.Forms.Label();
+            this.painel_gerenciarmembros_m = new System.Windows.Forms.Panel();
+            this.btn_gerenciarmembros_m = new System.Windows.Forms.Button();
+            this.label_titulo_gerenciarmembros_m = new System.Windows.Forms.Label();
+            this.pictureBox_gerenciarpatrimonio_m = new System.Windows.Forms.PictureBox();
+            this.pictureBox_gerenciarmembros_m = new System.Windows.Forms.PictureBox();
+            this.btn_fechar_forms_filho_m = new System.Windows.Forms.Button();
+            this.pagamento_m = new System.Windows.Forms.Button();
+            this.dependente_m = new System.Windows.Forms.Button();
+            this.principal_m = new System.Windows.Forms.Button();
             this.menu_lateral.SuspendLayout();
             this.painel_logo.SuspendLayout();
             this.painel_titulo.SuspendLayout();
             this.painel_principal_m.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel_gerenciarpatrimonio_m.SuspendLayout();
+            this.painel_gerenciarmembros_m.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_gerenciarpatrimonio_m)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_gerenciarmembros_m)).BeginInit();
             this.SuspendLayout();
             // 
             // menu_lateral
@@ -61,69 +71,6 @@
             this.menu_lateral.Name = "menu_lateral";
             this.menu_lateral.Size = new System.Drawing.Size(246, 581);
             this.menu_lateral.TabIndex = 0;
-            // 
-            // pagamento_m
-            // 
-            this.pagamento_m.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.pagamento_m.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pagamento_m.FlatAppearance.BorderSize = 0;
-            this.pagamento_m.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pagamento_m.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pagamento_m.ForeColor = System.Drawing.Color.Gainsboro;
-            this.pagamento_m.Image = global::projeto_integrado.Properties.Resources.dollar;
-            this.pagamento_m.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.pagamento_m.Location = new System.Drawing.Point(0, 200);
-            this.pagamento_m.Name = "pagamento_m";
-            this.pagamento_m.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.pagamento_m.Size = new System.Drawing.Size(246, 60);
-            this.pagamento_m.TabIndex = 3;
-            this.pagamento_m.Text = "    Pagamento";
-            this.pagamento_m.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.pagamento_m.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.pagamento_m.UseVisualStyleBackColor = false;
-            this.pagamento_m.Click += new System.EventHandler(this.pagamento_m_Click);
-            // 
-            // dependente_m
-            // 
-            this.dependente_m.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.dependente_m.Dock = System.Windows.Forms.DockStyle.Top;
-            this.dependente_m.FlatAppearance.BorderSize = 0;
-            this.dependente_m.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.dependente_m.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dependente_m.ForeColor = System.Drawing.Color.Gainsboro;
-            this.dependente_m.Image = global::projeto_integrado.Properties.Resources.people;
-            this.dependente_m.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.dependente_m.Location = new System.Drawing.Point(0, 140);
-            this.dependente_m.Name = "dependente_m";
-            this.dependente_m.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.dependente_m.Size = new System.Drawing.Size(246, 60);
-            this.dependente_m.TabIndex = 2;
-            this.dependente_m.Text = "    Dependentes";
-            this.dependente_m.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.dependente_m.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.dependente_m.UseVisualStyleBackColor = false;
-            this.dependente_m.Click += new System.EventHandler(this.dependente_m_Click);
-            // 
-            // principal_m
-            // 
-            this.principal_m.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.principal_m.Dock = System.Windows.Forms.DockStyle.Top;
-            this.principal_m.FlatAppearance.BorderSize = 0;
-            this.principal_m.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.principal_m.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.principal_m.ForeColor = System.Drawing.Color.Gainsboro;
-            this.principal_m.Image = global::projeto_integrado.Properties.Resources.user__2_;
-            this.principal_m.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.principal_m.Location = new System.Drawing.Point(0, 80);
-            this.principal_m.Name = "principal_m";
-            this.principal_m.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.principal_m.Size = new System.Drawing.Size(246, 60);
-            this.principal_m.TabIndex = 1;
-            this.principal_m.Text = "    Membros";
-            this.principal_m.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.principal_m.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.principal_m.UseVisualStyleBackColor = false;
-            this.principal_m.Click += new System.EventHandler(this.principal_m_Click);
             // 
             // painel_logo
             // 
@@ -206,19 +153,6 @@
             this.btn_fechar_m.UseVisualStyleBackColor = true;
             this.btn_fechar_m.Click += new System.EventHandler(this.btn_fechar_m_Click);
             // 
-            // btn_fechar_forms_filho_m
-            // 
-            this.btn_fechar_forms_filho_m.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btn_fechar_forms_filho_m.FlatAppearance.BorderSize = 0;
-            this.btn_fechar_forms_filho_m.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_fechar_forms_filho_m.Image = global::projeto_integrado.Properties.Resources.close__1_;
-            this.btn_fechar_forms_filho_m.Location = new System.Drawing.Point(0, 0);
-            this.btn_fechar_forms_filho_m.Name = "btn_fechar_forms_filho_m";
-            this.btn_fechar_forms_filho_m.Size = new System.Drawing.Size(75, 80);
-            this.btn_fechar_forms_filho_m.TabIndex = 1;
-            this.btn_fechar_forms_filho_m.UseVisualStyleBackColor = true;
-            this.btn_fechar_forms_filho_m.Click += new System.EventHandler(this.btn_fechar_forms_filho_m_Click);
-            // 
             // label_titulo_m
             // 
             this.label_titulo_m.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -233,24 +167,185 @@
             // 
             // painel_principal_m
             // 
-            this.painel_principal_m.Controls.Add(this.pictureBox1);
+            this.painel_principal_m.Controls.Add(this.panel_gerenciarpatrimonio_m);
+            this.painel_principal_m.Controls.Add(this.painel_gerenciarmembros_m);
             this.painel_principal_m.Dock = System.Windows.Forms.DockStyle.Fill;
             this.painel_principal_m.Location = new System.Drawing.Point(246, 80);
             this.painel_principal_m.Name = "painel_principal_m";
             this.painel_principal_m.Size = new System.Drawing.Size(860, 501);
             this.painel_principal_m.TabIndex = 2;
             // 
-            // pictureBox1
+            // panel_gerenciarpatrimonio_m
             // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.Image = global::projeto_integrado.Properties.Resources.imagem_2023_04_16_141523387;
-            this.pictureBox1.Location = new System.Drawing.Point(265, 88);
-            this.pictureBox1.MinimumSize = new System.Drawing.Size(100, 104);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(262, 266);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.panel_gerenciarpatrimonio_m.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel_gerenciarpatrimonio_m.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
+            this.panel_gerenciarpatrimonio_m.Controls.Add(this.btn_gerenciarpatrimonio_m);
+            this.panel_gerenciarpatrimonio_m.Controls.Add(this.label_gerenciarpatrimonio_m);
+            this.panel_gerenciarpatrimonio_m.Controls.Add(this.pictureBox_gerenciarpatrimonio_m);
+            this.panel_gerenciarpatrimonio_m.Location = new System.Drawing.Point(468, 89);
+            this.panel_gerenciarpatrimonio_m.Name = "panel_gerenciarpatrimonio_m";
+            this.panel_gerenciarpatrimonio_m.Size = new System.Drawing.Size(258, 302);
+            this.panel_gerenciarpatrimonio_m.TabIndex = 7;
+            // 
+            // btn_gerenciarpatrimonio_m
+            // 
+            this.btn_gerenciarpatrimonio_m.BackColor = System.Drawing.Color.White;
+            this.btn_gerenciarpatrimonio_m.FlatAppearance.BorderSize = 0;
+            this.btn_gerenciarpatrimonio_m.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_gerenciarpatrimonio_m.Location = new System.Drawing.Point(81, 197);
+            this.btn_gerenciarpatrimonio_m.Name = "btn_gerenciarpatrimonio_m";
+            this.btn_gerenciarpatrimonio_m.Size = new System.Drawing.Size(101, 32);
+            this.btn_gerenciarpatrimonio_m.TabIndex = 6;
+            this.btn_gerenciarpatrimonio_m.Text = "Gerenciar";
+            this.btn_gerenciarpatrimonio_m.UseVisualStyleBackColor = false;
+            this.btn_gerenciarpatrimonio_m.Click += new System.EventHandler(this.btn_gerenciarpatrimonio_m_Click);
+            // 
+            // label_gerenciarpatrimonio_m
+            // 
+            this.label_gerenciarpatrimonio_m.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label_gerenciarpatrimonio_m.AutoSize = true;
+            this.label_gerenciarpatrimonio_m.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label_gerenciarpatrimonio_m.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_gerenciarpatrimonio_m.ForeColor = System.Drawing.Color.White;
+            this.label_gerenciarpatrimonio_m.Location = new System.Drawing.Point(58, 128);
+            this.label_gerenciarpatrimonio_m.Name = "label_gerenciarpatrimonio_m";
+            this.label_gerenciarpatrimonio_m.Size = new System.Drawing.Size(143, 31);
+            this.label_gerenciarpatrimonio_m.TabIndex = 5;
+            this.label_gerenciarpatrimonio_m.Text = "Patrimônio";
+            // 
+            // painel_gerenciarmembros_m
+            // 
+            this.painel_gerenciarmembros_m.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.painel_gerenciarmembros_m.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
+            this.painel_gerenciarmembros_m.Controls.Add(this.btn_gerenciarmembros_m);
+            this.painel_gerenciarmembros_m.Controls.Add(this.label_titulo_gerenciarmembros_m);
+            this.painel_gerenciarmembros_m.Controls.Add(this.pictureBox_gerenciarmembros_m);
+            this.painel_gerenciarmembros_m.Location = new System.Drawing.Point(144, 89);
+            this.painel_gerenciarmembros_m.Name = "painel_gerenciarmembros_m";
+            this.painel_gerenciarmembros_m.Size = new System.Drawing.Size(258, 302);
+            this.painel_gerenciarmembros_m.TabIndex = 0;
+            // 
+            // btn_gerenciarmembros_m
+            // 
+            this.btn_gerenciarmembros_m.BackColor = System.Drawing.Color.White;
+            this.btn_gerenciarmembros_m.Enabled = false;
+            this.btn_gerenciarmembros_m.FlatAppearance.BorderSize = 0;
+            this.btn_gerenciarmembros_m.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_gerenciarmembros_m.Location = new System.Drawing.Point(81, 197);
+            this.btn_gerenciarmembros_m.Name = "btn_gerenciarmembros_m";
+            this.btn_gerenciarmembros_m.Size = new System.Drawing.Size(101, 32);
+            this.btn_gerenciarmembros_m.TabIndex = 6;
+            this.btn_gerenciarmembros_m.Text = "Gerenciar";
+            this.btn_gerenciarmembros_m.UseVisualStyleBackColor = false;
+            // 
+            // label_titulo_gerenciarmembros_m
+            // 
+            this.label_titulo_gerenciarmembros_m.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label_titulo_gerenciarmembros_m.AutoSize = true;
+            this.label_titulo_gerenciarmembros_m.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label_titulo_gerenciarmembros_m.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_titulo_gerenciarmembros_m.ForeColor = System.Drawing.Color.White;
+            this.label_titulo_gerenciarmembros_m.Location = new System.Drawing.Point(66, 128);
+            this.label_titulo_gerenciarmembros_m.Name = "label_titulo_gerenciarmembros_m";
+            this.label_titulo_gerenciarmembros_m.Size = new System.Drawing.Size(126, 31);
+            this.label_titulo_gerenciarmembros_m.TabIndex = 5;
+            this.label_titulo_gerenciarmembros_m.Text = "Membros";
+            // 
+            // pictureBox_gerenciarpatrimonio_m
+            // 
+            this.pictureBox_gerenciarpatrimonio_m.Image = global::projeto_integrado.Properties.Resources.monumento;
+            this.pictureBox_gerenciarpatrimonio_m.Location = new System.Drawing.Point(92, 32);
+            this.pictureBox_gerenciarpatrimonio_m.Name = "pictureBox_gerenciarpatrimonio_m";
+            this.pictureBox_gerenciarpatrimonio_m.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox_gerenciarpatrimonio_m.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox_gerenciarpatrimonio_m.TabIndex = 0;
+            this.pictureBox_gerenciarpatrimonio_m.TabStop = false;
+            // 
+            // pictureBox_gerenciarmembros_m
+            // 
+            this.pictureBox_gerenciarmembros_m.Image = global::projeto_integrado.Properties.Resources.trabalho_em_equipe;
+            this.pictureBox_gerenciarmembros_m.Location = new System.Drawing.Point(92, 32);
+            this.pictureBox_gerenciarmembros_m.Name = "pictureBox_gerenciarmembros_m";
+            this.pictureBox_gerenciarmembros_m.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox_gerenciarmembros_m.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox_gerenciarmembros_m.TabIndex = 0;
+            this.pictureBox_gerenciarmembros_m.TabStop = false;
+            // 
+            // btn_fechar_forms_filho_m
+            // 
+            this.btn_fechar_forms_filho_m.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btn_fechar_forms_filho_m.FlatAppearance.BorderSize = 0;
+            this.btn_fechar_forms_filho_m.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_fechar_forms_filho_m.Image = global::projeto_integrado.Properties.Resources.close__1_;
+            this.btn_fechar_forms_filho_m.Location = new System.Drawing.Point(0, 0);
+            this.btn_fechar_forms_filho_m.Name = "btn_fechar_forms_filho_m";
+            this.btn_fechar_forms_filho_m.Size = new System.Drawing.Size(75, 80);
+            this.btn_fechar_forms_filho_m.TabIndex = 1;
+            this.btn_fechar_forms_filho_m.UseVisualStyleBackColor = true;
+            this.btn_fechar_forms_filho_m.Click += new System.EventHandler(this.btn_fechar_forms_filho_m_Click);
+            // 
+            // pagamento_m
+            // 
+            this.pagamento_m.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.pagamento_m.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pagamento_m.FlatAppearance.BorderSize = 0;
+            this.pagamento_m.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pagamento_m.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pagamento_m.ForeColor = System.Drawing.Color.Gainsboro;
+            this.pagamento_m.Image = global::projeto_integrado.Properties.Resources.dollar;
+            this.pagamento_m.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.pagamento_m.Location = new System.Drawing.Point(0, 200);
+            this.pagamento_m.Name = "pagamento_m";
+            this.pagamento_m.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.pagamento_m.Size = new System.Drawing.Size(246, 60);
+            this.pagamento_m.TabIndex = 3;
+            this.pagamento_m.Text = "    Pagamento";
+            this.pagamento_m.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.pagamento_m.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.pagamento_m.UseVisualStyleBackColor = false;
+            this.pagamento_m.Click += new System.EventHandler(this.pagamento_m_Click);
+            // 
+            // dependente_m
+            // 
+            this.dependente_m.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.dependente_m.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dependente_m.FlatAppearance.BorderSize = 0;
+            this.dependente_m.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.dependente_m.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dependente_m.ForeColor = System.Drawing.Color.Gainsboro;
+            this.dependente_m.Image = global::projeto_integrado.Properties.Resources.people;
+            this.dependente_m.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.dependente_m.Location = new System.Drawing.Point(0, 140);
+            this.dependente_m.Name = "dependente_m";
+            this.dependente_m.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.dependente_m.Size = new System.Drawing.Size(246, 60);
+            this.dependente_m.TabIndex = 2;
+            this.dependente_m.Text = "    Dependentes";
+            this.dependente_m.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.dependente_m.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.dependente_m.UseVisualStyleBackColor = false;
+            this.dependente_m.Click += new System.EventHandler(this.dependente_m_Click);
+            // 
+            // principal_m
+            // 
+            this.principal_m.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.principal_m.Dock = System.Windows.Forms.DockStyle.Top;
+            this.principal_m.FlatAppearance.BorderSize = 0;
+            this.principal_m.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.principal_m.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.principal_m.ForeColor = System.Drawing.Color.Gainsboro;
+            this.principal_m.Image = global::projeto_integrado.Properties.Resources.user__2_;
+            this.principal_m.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.principal_m.Location = new System.Drawing.Point(0, 80);
+            this.principal_m.Name = "principal_m";
+            this.principal_m.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.principal_m.Size = new System.Drawing.Size(246, 60);
+            this.principal_m.TabIndex = 1;
+            this.principal_m.Text = "    Membros";
+            this.principal_m.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.principal_m.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.principal_m.UseVisualStyleBackColor = false;
+            this.principal_m.Click += new System.EventHandler(this.principal_m_Click);
             // 
             // gerenciamento_m
             // 
@@ -268,8 +363,12 @@
             this.painel_titulo.ResumeLayout(false);
             this.painel_titulo.PerformLayout();
             this.painel_principal_m.ResumeLayout(false);
-            this.painel_principal_m.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel_gerenciarpatrimonio_m.ResumeLayout(false);
+            this.panel_gerenciarpatrimonio_m.PerformLayout();
+            this.painel_gerenciarmembros_m.ResumeLayout(false);
+            this.painel_gerenciarmembros_m.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_gerenciarpatrimonio_m)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_gerenciarmembros_m)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -283,13 +382,20 @@
         private System.Windows.Forms.Panel painel_logo;
         private System.Windows.Forms.Panel painel_titulo;
         private System.Windows.Forms.Label label_titulo_m;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel painel_principal_m;
         private System.Windows.Forms.Button btn_fechar_forms_filho_m;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btn_minimizar_m;
         private System.Windows.Forms.Button btn_maximizar_m;
         private System.Windows.Forms.Button btn_fechar_m;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel painel_gerenciarmembros_m;
+        private System.Windows.Forms.PictureBox pictureBox_gerenciarmembros_m;
+        private System.Windows.Forms.Label label_titulo_gerenciarmembros_m;
+        private System.Windows.Forms.Button btn_gerenciarmembros_m;
+        private System.Windows.Forms.Panel panel_gerenciarpatrimonio_m;
+        private System.Windows.Forms.Button btn_gerenciarpatrimonio_m;
+        private System.Windows.Forms.Label label_gerenciarpatrimonio_m;
+        private System.Windows.Forms.PictureBox pictureBox_gerenciarpatrimonio_m;
     }
 }
 
