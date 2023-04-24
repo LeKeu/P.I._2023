@@ -29,27 +29,27 @@
         private void InitializeComponent()
         {
             this.painel_principal_p = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.painel_titulo_p = new System.Windows.Forms.Panel();
             this.btn_minimizar_p = new System.Windows.Forms.Button();
             this.btn_maximizar_p = new System.Windows.Forms.Button();
             this.btn_fechar_p = new System.Windows.Forms.Button();
+            this.btn_fechar_forms_filho_p = new System.Windows.Forms.Button();
             this.label_titulo_p = new System.Windows.Forms.Label();
             this.painel_menu_lateral_p = new System.Windows.Forms.Panel();
-            this.painel_logo_p = new System.Windows.Forms.Panel();
-            this.lbl_projeto_integrado_p = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btn_fechar_forms_filho_p = new System.Windows.Forms.Button();
             this.btn_grupo_de_bens_p = new System.Windows.Forms.Button();
             this.btn_setor_p = new System.Windows.Forms.Button();
             this.btn_fornecedor_p = new System.Windows.Forms.Button();
             this.btn_fabricantes_p = new System.Windows.Forms.Button();
             this.btn_produto_p = new System.Windows.Forms.Button();
             this.btn_principal_p = new System.Windows.Forms.Button();
+            this.painel_logo_p = new System.Windows.Forms.Panel();
+            this.lbl_projeto_integrado_p = new System.Windows.Forms.Label();
             this.painel_principal_p.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.painel_titulo_p.SuspendLayout();
             this.painel_menu_lateral_p.SuspendLayout();
             this.painel_logo_p.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // painel_principal_p
@@ -60,6 +60,18 @@
             this.painel_principal_p.Name = "painel_principal_p";
             this.painel_principal_p.Size = new System.Drawing.Size(860, 501);
             this.painel_principal_p.TabIndex = 5;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.Image = global::projeto_integrado.Properties.Resources.imagem_2023_04_16_141523387;
+            this.pictureBox1.Location = new System.Drawing.Point(265, 88);
+            this.pictureBox1.MinimumSize = new System.Drawing.Size(100, 104);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(262, 266);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // painel_titulo_p
             // 
@@ -81,13 +93,13 @@
             this.btn_minimizar_p.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_minimizar_p.FlatAppearance.BorderSize = 0;
             this.btn_minimizar_p.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_minimizar_p.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_minimizar_p.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_minimizar_p.ForeColor = System.Drawing.Color.White;
             this.btn_minimizar_p.Location = new System.Drawing.Point(766, 0);
             this.btn_minimizar_p.Name = "btn_minimizar_p";
             this.btn_minimizar_p.Size = new System.Drawing.Size(30, 30);
             this.btn_minimizar_p.TabIndex = 4;
-            this.btn_minimizar_p.Text = "O";
+            this.btn_minimizar_p.Text = "-";
             this.btn_minimizar_p.UseVisualStyleBackColor = true;
             this.btn_minimizar_p.Click += new System.EventHandler(this.btn_minimizar_p_Click);
             // 
@@ -121,6 +133,19 @@
             this.btn_fechar_p.UseVisualStyleBackColor = true;
             this.btn_fechar_p.Click += new System.EventHandler(this.btn_fechar_p_Click);
             // 
+            // btn_fechar_forms_filho_p
+            // 
+            this.btn_fechar_forms_filho_p.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btn_fechar_forms_filho_p.FlatAppearance.BorderSize = 0;
+            this.btn_fechar_forms_filho_p.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_fechar_forms_filho_p.Image = global::projeto_integrado.Properties.Resources.close__1_;
+            this.btn_fechar_forms_filho_p.Location = new System.Drawing.Point(0, 0);
+            this.btn_fechar_forms_filho_p.Name = "btn_fechar_forms_filho_p";
+            this.btn_fechar_forms_filho_p.Size = new System.Drawing.Size(75, 80);
+            this.btn_fechar_forms_filho_p.TabIndex = 1;
+            this.btn_fechar_forms_filho_p.UseVisualStyleBackColor = true;
+            this.btn_fechar_forms_filho_p.Click += new System.EventHandler(this.btn_fechar_forms_filho_p_Click);
+            // 
             // label_titulo_p
             // 
             this.label_titulo_p.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -148,52 +173,6 @@
             this.painel_menu_lateral_p.Name = "painel_menu_lateral_p";
             this.painel_menu_lateral_p.Size = new System.Drawing.Size(246, 581);
             this.painel_menu_lateral_p.TabIndex = 3;
-            // 
-            // painel_logo_p
-            // 
-            this.painel_logo_p.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
-            this.painel_logo_p.Controls.Add(this.lbl_projeto_integrado_p);
-            this.painel_logo_p.Dock = System.Windows.Forms.DockStyle.Top;
-            this.painel_logo_p.Location = new System.Drawing.Point(0, 0);
-            this.painel_logo_p.Name = "painel_logo_p";
-            this.painel_logo_p.Size = new System.Drawing.Size(246, 80);
-            this.painel_logo_p.TabIndex = 0;
-            // 
-            // lbl_projeto_integrado_p
-            // 
-            this.lbl_projeto_integrado_p.AutoSize = true;
-            this.lbl_projeto_integrado_p.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_projeto_integrado_p.ForeColor = System.Drawing.Color.LightGray;
-            this.lbl_projeto_integrado_p.Location = new System.Drawing.Point(43, 31);
-            this.lbl_projeto_integrado_p.Name = "lbl_projeto_integrado_p";
-            this.lbl_projeto_integrado_p.Size = new System.Drawing.Size(160, 25);
-            this.lbl_projeto_integrado_p.TabIndex = 0;
-            this.lbl_projeto_integrado_p.Text = "Projeto Integrado";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.Image = global::projeto_integrado.Properties.Resources.imagem_2023_04_16_141523387;
-            this.pictureBox1.Location = new System.Drawing.Point(265, 88);
-            this.pictureBox1.MinimumSize = new System.Drawing.Size(100, 104);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(262, 266);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btn_fechar_forms_filho_p
-            // 
-            this.btn_fechar_forms_filho_p.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btn_fechar_forms_filho_p.FlatAppearance.BorderSize = 0;
-            this.btn_fechar_forms_filho_p.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_fechar_forms_filho_p.Image = global::projeto_integrado.Properties.Resources.close__1_;
-            this.btn_fechar_forms_filho_p.Location = new System.Drawing.Point(0, 0);
-            this.btn_fechar_forms_filho_p.Name = "btn_fechar_forms_filho_p";
-            this.btn_fechar_forms_filho_p.Size = new System.Drawing.Size(75, 80);
-            this.btn_fechar_forms_filho_p.TabIndex = 1;
-            this.btn_fechar_forms_filho_p.UseVisualStyleBackColor = true;
-            this.btn_fechar_forms_filho_p.Click += new System.EventHandler(this.btn_fechar_forms_filho_p_Click);
             // 
             // btn_grupo_de_bens_p
             // 
@@ -321,6 +300,27 @@
             this.btn_principal_p.UseVisualStyleBackColor = false;
             this.btn_principal_p.Click += new System.EventHandler(this.btn_principal_p_Click);
             // 
+            // painel_logo_p
+            // 
+            this.painel_logo_p.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            this.painel_logo_p.Controls.Add(this.lbl_projeto_integrado_p);
+            this.painel_logo_p.Dock = System.Windows.Forms.DockStyle.Top;
+            this.painel_logo_p.Location = new System.Drawing.Point(0, 0);
+            this.painel_logo_p.Name = "painel_logo_p";
+            this.painel_logo_p.Size = new System.Drawing.Size(246, 80);
+            this.painel_logo_p.TabIndex = 0;
+            // 
+            // lbl_projeto_integrado_p
+            // 
+            this.lbl_projeto_integrado_p.AutoSize = true;
+            this.lbl_projeto_integrado_p.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_projeto_integrado_p.ForeColor = System.Drawing.Color.LightGray;
+            this.lbl_projeto_integrado_p.Location = new System.Drawing.Point(43, 31);
+            this.lbl_projeto_integrado_p.Name = "lbl_projeto_integrado_p";
+            this.lbl_projeto_integrado_p.Size = new System.Drawing.Size(160, 25);
+            this.lbl_projeto_integrado_p.TabIndex = 0;
+            this.lbl_projeto_integrado_p.Text = "Projeto Integrado";
+            // 
             // gerenciamento_p
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -333,12 +333,12 @@
             this.Text = "gerenciamento_p";
             this.painel_principal_p.ResumeLayout(false);
             this.painel_principal_p.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.painel_titulo_p.ResumeLayout(false);
             this.painel_titulo_p.PerformLayout();
             this.painel_menu_lateral_p.ResumeLayout(false);
             this.painel_logo_p.ResumeLayout(false);
             this.painel_logo_p.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

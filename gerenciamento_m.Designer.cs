@@ -166,13 +166,13 @@
             this.btn_minimizar_m.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_minimizar_m.FlatAppearance.BorderSize = 0;
             this.btn_minimizar_m.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_minimizar_m.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_minimizar_m.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_minimizar_m.ForeColor = System.Drawing.Color.White;
             this.btn_minimizar_m.Location = new System.Drawing.Point(766, 0);
             this.btn_minimizar_m.Name = "btn_minimizar_m";
             this.btn_minimizar_m.Size = new System.Drawing.Size(30, 30);
             this.btn_minimizar_m.TabIndex = 4;
-            this.btn_minimizar_m.Text = "O";
+            this.btn_minimizar_m.Text = "-";
             this.btn_minimizar_m.UseVisualStyleBackColor = true;
             this.btn_minimizar_m.Click += new System.EventHandler(this.btn_minimizar_m_Click);
             // 
