@@ -33,7 +33,6 @@
             this.input_membro_nome_m = new System.Windows.Forms.TextBox();
             this.input_membro_matricula_m = new System.Windows.Forms.TextBox();
             this.lbl_membro_matricula_m = new System.Windows.Forms.Label();
-            this.input_membro_datanasc_m = new System.Windows.Forms.TextBox();
             this.lbl_membro_datanasc_m = new System.Windows.Forms.Label();
             this.input_membro_cpf_m = new System.Windows.Forms.TextBox();
             this.lbl_membro_cpf_m = new System.Windows.Forms.Label();
@@ -66,6 +65,7 @@
             this.input_membro_status_m = new System.Windows.Forms.TextBox();
             this.lbl_membro_status_m = new System.Windows.Forms.Label();
             this.btn_membro_enviar_m = new System.Windows.Forms.Button();
+            this.dateTimePicker_membro_datanasc_m = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // lbl_membro_titulo_inputs_m
@@ -116,15 +116,6 @@
             this.lbl_membro_matricula_m.Size = new System.Drawing.Size(61, 16);
             this.lbl_membro_matricula_m.TabIndex = 3;
             this.lbl_membro_matricula_m.Text = "Matricula";
-            // 
-            // input_membro_datanasc_m
-            // 
-            this.input_membro_datanasc_m.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.input_membro_datanasc_m.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.input_membro_datanasc_m.Location = new System.Drawing.Point(106, 163);
-            this.input_membro_datanasc_m.Name = "input_membro_datanasc_m";
-            this.input_membro_datanasc_m.Size = new System.Drawing.Size(284, 22);
-            this.input_membro_datanasc_m.TabIndex = 6;
             // 
             // lbl_membro_datanasc_m
             // 
@@ -433,11 +424,19 @@
             this.btn_membro_enviar_m.UseVisualStyleBackColor = true;
             this.btn_membro_enviar_m.Click += new System.EventHandler(this.btn_membro_enviar_m_Click);
             // 
+            // dateTimePicker_membro_datanasc_m
+            // 
+            this.dateTimePicker_membro_datanasc_m.Location = new System.Drawing.Point(106, 163);
+            this.dateTimePicker_membro_datanasc_m.Name = "dateTimePicker_membro_datanasc_m";
+            this.dateTimePicker_membro_datanasc_m.Size = new System.Drawing.Size(284, 22);
+            this.dateTimePicker_membro_datanasc_m.TabIndex = 39;
+            // 
             // membros_inputs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 748);
+            this.Controls.Add(this.dateTimePicker_membro_datanasc_m);
             this.Controls.Add(this.btn_membro_enviar_m);
             this.Controls.Add(this.input_membro_coordenadora_m);
             this.Controls.Add(this.lbl_membro_coordenadora_m);
@@ -469,7 +468,6 @@
             this.Controls.Add(this.lbl_membro_rg_m);
             this.Controls.Add(this.input_membro_cpf_m);
             this.Controls.Add(this.lbl_membro_cpf_m);
-            this.Controls.Add(this.input_membro_datanasc_m);
             this.Controls.Add(this.lbl_membro_datanasc_m);
             this.Controls.Add(this.input_membro_matricula_m);
             this.Controls.Add(this.lbl_membro_matricula_m);
@@ -490,7 +488,6 @@
         private System.Windows.Forms.TextBox input_membro_nome_m;
         private System.Windows.Forms.TextBox input_membro_matricula_m;
         private System.Windows.Forms.Label lbl_membro_matricula_m;
-        private System.Windows.Forms.TextBox input_membro_datanasc_m;
         private System.Windows.Forms.Label lbl_membro_datanasc_m;
         private System.Windows.Forms.TextBox input_membro_cpf_m;
         private System.Windows.Forms.Label lbl_membro_cpf_m;
@@ -523,5 +520,6 @@
         private System.Windows.Forms.TextBox input_membro_status_m;
         private System.Windows.Forms.Label lbl_membro_status_m;
         private System.Windows.Forms.Button btn_membro_enviar_m;
+        private System.Windows.Forms.DateTimePicker dateTimePicker_membro_datanasc_m;
     }
 }

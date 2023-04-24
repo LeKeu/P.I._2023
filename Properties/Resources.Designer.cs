@@ -153,6 +153,16 @@ namespace projeto_integrado.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap monumento {
+            get {
+                object obj = ResourceManager.GetObject("monumento", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap people {
             get {
                 object obj = ResourceManager.GetObject("people", resourceCulture);
@@ -166,6 +176,16 @@ namespace projeto_integrado.Properties {
         internal static System.Drawing.Bitmap seguro {
             get {
                 object obj = ResourceManager.GetObject("seguro", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap trabalho_em_equipe {
+            get {
+                object obj = ResourceManager.GetObject("trabalho-em-equipe", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

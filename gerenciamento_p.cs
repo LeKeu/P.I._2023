@@ -8,6 +8,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace projeto_integrado
 {
@@ -19,6 +20,7 @@ namespace projeto_integrado
         private Random random;
         private int tempIndex;
         private Form activeForm;
+        Thread th;
 
         public gerenciamento_p()
         {
@@ -168,6 +170,19 @@ namespace projeto_integrado
         private void btn_minimizar_p_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        public void opengerenciarmembros(object obj)
+        {
+            Application.Run(new gerenciamento_m());
+        }
+
+        private void btn_gerenciarmembros_p_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            th = new Thread(opengerenciarmembros);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
         }
     }
 }
