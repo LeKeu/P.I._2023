@@ -90,6 +90,40 @@ namespace projeto_integrado.Classes
             }
         }
 
+        public static IList<IList<object>> ReadTableColumnName(string sheet) // STRING OU static readonly string??
+        {
+
+            // Specifying Column Range for reading...
+            var range = $"{sheet}!A1:Y1";
+            SpreadsheetsResource.ValuesResource.GetRequest request =
+                    service.Spreadsheets.Values.Get(SpreadsheetId, range);
+
+            // Ecexuting Read Operation...
+            var response = request.Execute();
+
+            // Getting all records from Column A to E...
+            IList<IList<object>> values = response.Values;
+
+            if (values != null && values.Count > 0)
+            {
+                Console.WriteLine("DATA FOUND");
+                /*
+                for(int i = 0; i < values.Count; i++)
+                {
+                    string items = string.Join(Environment.NewLine, values[i]);
+
+                    Console.WriteLine(items);
+                }
+                */
+                return (values);
+            }
+            else
+            {
+                Console.WriteLine("No data found.");
+                return null;
+            }
+        }
+
         public static void AddRow(string sheet, List<object> ob_lista)
         {
             // Especificando o range das colunas para leitura 
