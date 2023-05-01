@@ -36,7 +36,8 @@ namespace projeto_integrado.Classes
             // se for verdadeiro - se houver conexão - ler do arquivo json
             if (is_connected)
             {
-                json_funcs.Read_from_json();
+                conexao_api.ReadTableColumnName("Membro");
+                
             }
         }
 
