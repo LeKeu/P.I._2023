@@ -52,6 +52,7 @@
             this.btn_dependente_enviar_m.TabIndex = 76;
             this.btn_dependente_enviar_m.Text = "Enviar";
             this.btn_dependente_enviar_m.UseVisualStyleBackColor = true;
+            this.btn_dependente_enviar_m.Click += new System.EventHandler(this.btn_dependente_enviar_m_Click);
             // 
             // input_dependente_celular_m
             // 
