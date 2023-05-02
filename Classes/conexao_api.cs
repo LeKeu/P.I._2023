@@ -17,29 +17,21 @@ namespace projeto_integrado.Classes
     {
         static readonly string[] Scopes = { SheetsService.Scope.Spreadsheets };
         static readonly string ApplicationName = "GRP-MMIB";
-        //static readonly string sheet = "Membro";
         static readonly string SpreadsheetId = "1OYojwhnlzXB0kaJNVM1dsZrUUlRdlpS2OSzuVassbN0";
         static SheetsService service;
-
-        /*
-        static void Main()
-        {
-            Init();
-        }
-        */
 
         public static void Init()
         {
             GoogleCredential credential;
 
-            //Reading Credentials File...
+            //Lendo as credencias do arquivo
             using (var stream = new FileStream("chave_coisa_servico.json", FileMode.Open, FileAccess.Read)) // ou chvae_coisa_servico
             {
                 credential = GoogleCredential.FromStream(stream)
                     .CreateScoped(Scopes);
             }
 
-            // Creating Google Sheets API service...
+            // Criando o serviço do Google Planilhas API
             service = new SheetsService(new BaseClientService.Initializer()
             {
                 HttpClientInitializer = credential,
@@ -50,15 +42,15 @@ namespace projeto_integrado.Classes
         static void ReadSheet(string sheet) // STRING OU static readonly string??
         {
 
-            // Specifying Column Range for reading...
+            // Especificando o range da coluna
             var range = $"{sheet}!A:E";
             SpreadsheetsResource.ValuesResource.GetRequest request =
                     service.Spreadsheets.Values.Get(SpreadsheetId, range);
 
-            // Ecexuting Read Operation...
+            // Ecevutando a operação de Read
             var response = request.Execute();
 
-            // Getting all records from Column A to E...
+            // Pegando todos os valores das colunas especificadas
             IList<IList<object>> values = response.Values;
 
             if (values != null && values.Count > 0)
@@ -90,18 +82,17 @@ namespace projeto_integrado.Classes
             }
         }
 
-        public static IList<IList<object>> ReadTableColumnName(string sheet) // STRING OU static readonly string??
+        public static IList<IList<object>> ReadTableColumnName(string sheet, string ultima_coluna) // STRING OU static readonly string??
         {
-
-            // Specifying Column Range for reading...
-            var range = $"{sheet}!A1:Y1";
+            // Especificando o range da coluna. Se eu quiser todos os dados das colunas, eu não adiciono a linha 
+            var range = $"{sheet}!A1:{ultima_coluna}1";
             SpreadsheetsResource.ValuesResource.GetRequest request =
                     service.Spreadsheets.Values.Get(SpreadsheetId, range);
 
-            // Ecexuting Read Operation...
+            // Executando a operação de Read
             var response = request.Execute();
 
-            // Getting all records from Column A to E...
+            // Pegando todos os valores das colunas especificadas
             IList<IList<object>> values = response.Values;
 
             if (values != null && values.Count > 0)
@@ -130,11 +121,10 @@ namespace projeto_integrado.Classes
             var range = $"{sheet}!B:S";
             var valueRange = new ValueRange();
 
-            // Data for another Student...
             //var oblist = new List<object>() { "BELA", "É", "MUITO", "BONITA", "MEU DEUS" }
             valueRange.Values = new List<IList<object>> { ob_lista };
 
-            // Append the above record...
+            // Append the above record
             var appendRequest = service.Spreadsheets.Values.Append(valueRange, SpreadsheetId, range);
             appendRequest.ValueInputOption = SpreadsheetsResource.ValuesResource.AppendRequest.ValueInputOptionEnum.USERENTERED;
             var appendReponse = appendRequest.Execute();

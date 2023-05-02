@@ -12,23 +12,26 @@ namespace projeto_integrado.Classes
 {
     internal class json_funcs
     {
-        public static void Convert_to_json(List<string> dados, string nome_tabela)
+        public static void Convert_to_json(List<string> dados, string nome_tabela, string ultima_coluna)
         {
-
+            // path do arquivo json, onde será guardado as informações
             string arq_path = @"C:\Users\Lenovo\Desktop\JSONTESTE.json";
             // ler todos os dados que o arq contém
             var jsonData = System.IO.File.ReadAllText(arq_path);
             // des-serializar o arquivo e guardar em uma lista
             var dados_salvos = JsonConvert.DeserializeObject<List<object>>(jsonData);
 
+            // dicionário para conter os dados recebidos dos inputs em suas respectivas colunas
             Dictionary<string, string> dict_dados = new Dictionary<string, string>();
 
-            var values_colunas = conexao_api.ReadTableColumnName("Membro");
-            dict_dados.Add("Tabela", "Membro");
+            // retornando o nome das colunas da tabela específica
+            var values_colunas = conexao_api.ReadTableColumnName(nome_tabela, ultima_coluna);
+            dict_dados.Add("Tabela", nome_tabela);
             foreach (var row in values_colunas)
             {
                 for (int i = 0; i < row.Count; i++)
                 {
+                    //adicionando no dict a chave com seu valor
                     dict_dados.Add((string)row[i], dados[i]);
                 }
             }
