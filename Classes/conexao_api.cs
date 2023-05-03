@@ -39,11 +39,11 @@ namespace projeto_integrado.Classes
             });
         }
 
-        static void ReadSheet(string sheet) // STRING OU static readonly string??
+        static void ReadSheet(string sheet, string ultima_coluna) // STRING OU static readonly string??
         {
 
             // Especificando o range da coluna
-            var range = $"{sheet}!A:E";
+            var range = $"{sheet}!A:{ultima_coluna}";
             SpreadsheetsResource.ValuesResource.GetRequest request =
                     service.Spreadsheets.Values.Get(SpreadsheetId, range);
 
@@ -82,7 +82,7 @@ namespace projeto_integrado.Classes
             }
         }
 
-        public static IList<IList<object>> ReadTableColumnName(string sheet, string ultima_coluna) // STRING OU static readonly string??
+        public static IList<IList<object>> ReadTableColumnName(string sheet, string ultima_coluna)
         {
             // Especificando o range da coluna. Se eu quiser todos os dados das colunas, eu não adiciono a linha 
             var range = $"{sheet}!A1:{ultima_coluna}1";

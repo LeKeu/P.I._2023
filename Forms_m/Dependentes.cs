@@ -1,4 +1,5 @@
-﻿using projeto_integrado.Forms_m_inputs;
+﻿using projeto_integrado.Classes;
+using projeto_integrado.Forms_m_inputs;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,6 +17,13 @@ namespace projeto_integrado.Forms
         public Dependentes()
         {
             InitializeComponent();
+            //datagridview_dependentes_m.DataSource = json_funcs.Read_from_json();
+        }
+
+        protected override void OnShown(EventArgs e)
+        {
+            base.OnShown(e);
+            btn_invisivel_dependentes_m.PerformClick();
         }
 
         private void Dependentes_Load(object sender, EventArgs e)
@@ -41,6 +49,30 @@ namespace projeto_integrado.Forms
         {
             var forminputdependentes = new dependentes_inputs();
             forminputdependentes.Show();
+        }
+
+        private void datagridview_dependentes_m_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btn_invisivel_dependentes_m_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < datagridview_dependentes_m.Rows.Count - 1; i++)
+            {
+
+                var row = datagridview_dependentes_m.Rows[i];
+
+                Console.WriteLine(row);
+                if (row.Cells[0].Value.ToString() != "Dependente")
+                {
+                    Console.WriteLine("aqui " + row.Cells[0].Value.ToString() + " i - " + i);
+                    MessageBox.Show(row.Cells[0].Value.ToString());
+                    row.Visible = false;
+                    row.Selected = false;
+                    
+                }
+            }
         }
     }
 }

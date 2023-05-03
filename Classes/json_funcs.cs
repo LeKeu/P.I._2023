@@ -1,7 +1,10 @@
-﻿using Newtonsoft.Json;
+﻿using Google.Apis.Sheets.v4.Data;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Data;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
@@ -55,25 +58,32 @@ namespace projeto_integrado.Classes
             */
         }
 
-        public static void Read_from_json()  // lendo do arq json criado
+        public static DataTable Read_from_json()  // lendo do arq json criado
         {
             string arq_path = @"C:\Users\Lenovo\Desktop\JSONTESTE.json";  // pegar caminho automatico!
-            
-            dynamic jsonArq = JsonConvert.DeserializeObject(File.ReadAllText(arq_path));
-            List<object> aaa = new List<object>();
+            List<string> dict_dados_leitura = new List<string>();
 
-            Console.WriteLine(jsonArq.Count);
-            foreach ( var item in jsonArq )
+            dynamic jsonArq = JsonConvert.DeserializeObject(File.ReadAllText(arq_path), (typeof(DataTable)));
+            Console.WriteLine(jsonArq.GetType());
+            //Console.WriteLine("Count - "+jsonArq.Count);
+
+            Dictionary<string, string> dict_filtrado = new Dictionary<string, string>();
+            /*
+            for (int i = 0; i < jsonArq.Count; i++)
             {
-                aaa.Add(item);
+                //string items = string.Join(Environment.NewLine, jsonArq);
+
+                if(jsonArq[i]["Tabela"] == nome_tabela){
+                    dict_filtrado.Add(jsonArq[i].key, jsonArq[i].value);
+
+                    
+                }
+                
             }
+            */
+            
+            return jsonArq;
 
-            Console.WriteLine(aaa[0]);
-            Console.WriteLine(aaa[1]);
-
-            Console.WriteLine(aaa[2].GetType());
-
-            //return(nsei);
 
         }
     }
