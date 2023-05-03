@@ -17,7 +17,7 @@ namespace projeto_integrado.Forms
         public Dependentes()
         {
             InitializeComponent();
-            //datagridview_dependentes_m.DataSource = json_funcs.Read_from_json();
+            datagridview_dependentes_m.DataSource = json_funcs.Read_from_json();
         }
 
         protected override void OnShown(EventArgs e)
@@ -63,11 +63,10 @@ namespace projeto_integrado.Forms
 
                 var row = datagridview_dependentes_m.Rows[i];
 
-                Console.WriteLine(row);
                 if (row.Cells[0].Value.ToString() != "Dependente")
                 {
-                    Console.WriteLine("aqui " + row.Cells[0].Value.ToString() + " i - " + i);
-                    MessageBox.Show(row.Cells[0].Value.ToString());
+                    //MessageBox.Show(row.Cells[0].Value.ToString());
+                    datagridview_dependentes_m.CurrentCell = null;
                     row.Visible = false;
                     row.Selected = false;
                     

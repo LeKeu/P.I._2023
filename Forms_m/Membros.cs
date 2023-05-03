@@ -17,7 +17,7 @@ namespace projeto_integrado.Forms
         public Membros()
         {
             InitializeComponent();
-            //datagridview_membros_m.DataSource = json_funcs.Read_from_json();
+            datagridview_membros_m.DataSource = json_funcs.Read_from_json();
         }
 
         protected override void OnShown(EventArgs e)
@@ -63,14 +63,11 @@ namespace projeto_integrado.Forms
 
                 var row = datagridview_membros_m.Rows[i];
 
-                Console.WriteLine(row);
                 if (row.Cells[0].Value.ToString() != "Membro")
                 {
-                    Console.WriteLine("aqui" + row.Cells[0].Value.ToString() + "i - " + i);
-
+                    datagridview_membros_m.CurrentCell = null;
                     row.Visible = false;
                     row.Selected = false;
-                    //MessageBox.Show(row.Cells[0].Value.ToString());
                 }
             }
         }
