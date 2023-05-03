@@ -32,6 +32,7 @@
             this.btn_editar_membros_m = new System.Windows.Forms.Button();
             this.btn_adicionar_membros_m = new System.Windows.Forms.Button();
             this.datagridview_membros_m = new System.Windows.Forms.DataGridView();
+            this.btn_invisivel_membros_m = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.datagridview_membros_m)).BeginInit();
             this.SuspendLayout();
             // 
@@ -81,12 +82,24 @@
             this.datagridview_membros_m.RowTemplate.Height = 24;
             this.datagridview_membros_m.Size = new System.Drawing.Size(642, 369);
             this.datagridview_membros_m.TabIndex = 6;
+            this.datagridview_membros_m.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagridview_membros_m_CellContentClick);
+            // 
+            // btn_invisivel_membros_m
+            // 
+            this.btn_invisivel_membros_m.Location = new System.Drawing.Point(428, 435);
+            this.btn_invisivel_membros_m.Name = "btn_invisivel_membros_m";
+            this.btn_invisivel_membros_m.Size = new System.Drawing.Size(75, 23);
+            this.btn_invisivel_membros_m.TabIndex = 10;
+            this.btn_invisivel_membros_m.Text = "button1";
+            this.btn_invisivel_membros_m.UseVisualStyleBackColor = true;
+            this.btn_invisivel_membros_m.Click += new System.EventHandler(this.btn_invisivel_membros_m_Click);
             // 
             // Membros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(855, 498);
+            this.Controls.Add(this.btn_invisivel_membros_m);
             this.Controls.Add(this.btn_deletar_membros_m);
             this.Controls.Add(this.btn_editar_membros_m);
             this.Controls.Add(this.btn_adicionar_membros_m);
@@ -105,5 +118,6 @@
         private System.Windows.Forms.Button btn_editar_membros_m;
         private System.Windows.Forms.Button btn_adicionar_membros_m;
         private System.Windows.Forms.DataGridView datagridview_membros_m;
+        private System.Windows.Forms.Button btn_invisivel_membros_m;
     }
 }
