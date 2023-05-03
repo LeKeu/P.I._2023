@@ -26,7 +26,7 @@ namespace projeto_integrado.Forms_m_inputs
             string nome_tabela = "Membro";
 
             //func p gravar os dados no json
-            //json_funcs.Convert_to_json(dados, nome_tabela, "Y");
+            json_funcs.Convert_to_json(dados, nome_tabela, "Y");
 
             //conexao_api.AddRow("Membro", new List<object>() { input_membro_matricula_m.Text, input_membro_nome_m.Text, input_membro_datanasc_m.Text, input_membro_cpf_m.Text, input_membro_rg_m.Text, input_membro_celular_m.Text, input_membro_email_m.Text, input_membro_filiacao_m.Text, input_membro_enderresidencial_m.Text, input_membro_profissao_m.Text, input_membro_endercomercial_m.Text, input_membro_estadocivil_m.Text, input_membro_conjuge_m.Text, input_membro_localinclusao_m.Text, input_membro_datainclusao_m.Text, input_membro_sexo_m.Text });
         }

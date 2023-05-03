@@ -25,7 +25,7 @@ namespace projeto_integrado.Forms_m_inputs
             string nome_tabela = "Dependente";
 
             //func p gravar os dados no json
-            //json_funcs.Convert_to_json(dados, nome_tabela, "G");
+            json_funcs.Convert_to_json(dados, nome_tabela, "G");
         }
     }
 }
