@@ -17,7 +17,6 @@ namespace projeto_integrado.Forms
         public Membros()
         {
             InitializeComponent();
-            datagridview_membros_m.DataSource = json_funcs.Read_from_json_datagridview();
         }
 
         protected override void OnShown(EventArgs e)
@@ -28,6 +27,7 @@ namespace projeto_integrado.Forms
 
         private void Membros_Load_1(object sender, EventArgs e)
         {
+            timer_membro_m.Start();
             CarregarTema();
         }
 
@@ -61,47 +61,15 @@ namespace projeto_integrado.Forms
             /*
              Parte que tira as colunas de outras tables
              */
-            datagridview_membros_m.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
-            datagridview_membros_m.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
-
-            var values_colunas = conexao_api.ReadTableColumnName("Membro", "Y");
-
-            for (int i = 0; i < datagridview_membros_m.Rows.Count - 1; i++)
-            {
-
-                var row = datagridview_membros_m.Rows[i];
-
-                if (row.Cells[0].Value.ToString() != "Membro")
-                {
-                    datagridview_membros_m.CurrentCell = null;
-                    row.Visible = false;
-                    row.Selected = false;
-                }
-            }
-
-            for (int i = 0; i < datagridview_membros_m.Columns.Count; i++)
-            {
-                datagridview_membros_m.Columns[i].Visible = false;
-            }
-
-            foreach (var coluna in values_colunas)
-            {
-                for (int i = 0; i < coluna.Count; i++)
-                {
-                    datagridview_membros_m.Columns[(string)coluna[i]].Visible = true;
-                    
-                }
-            }
-        }
-
-        public void refreshtable()
-        {
-
+            datagridview_membros_m.DataSource = json_funcs.Read_from_json_datagridview();
+            timer_refresh.refreshReg(datagridview_membros_m, "Membro", "Y");
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-
+            datagridview_membros_m.DataSource = json_funcs.Read_from_json_datagridview();
+            timer_refresh.refreshReg(datagridview_membros_m, "Membro", "Y");
+            timer_membro_m.Start();
         }
     }
 }

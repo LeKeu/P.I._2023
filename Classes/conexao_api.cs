@@ -37,7 +37,7 @@ namespace projeto_integrado.Classes
             GoogleCredential credential;
 
             //Lendo as credencias do arquivo
-            using (var stream = new FileStream("chave_coisa_servico.json", FileMode.Open, FileAccess.Read)) // ou chvae_coisa_servico
+            using (var stream = new FileStream("chave_credenciais.json", FileMode.Open, FileAccess.Read)) // ou chvae_coisa_servico
             {
                 credential = GoogleCredential.FromStream(stream)
                     .CreateScoped(Scopes);

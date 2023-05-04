@@ -70,6 +70,7 @@
     <Compile Include="Classes\conexao_api.cs" />
     <Compile Include="Classes\conexao_internet.cs" />
     <Compile Include="Classes\json_funcs.cs" />
+    <Compile Include="Classes\timer_refresh.cs" />
     <Compile Include="CorTema.cs" />
     <Compile Include="Forms_m\Dependentes.cs">
       <SubType>Form</SubType>
