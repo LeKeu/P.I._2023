@@ -34,7 +34,7 @@
             this.btn_adicionar_membros_m = new System.Windows.Forms.Button();
             this.datagridview_membros_m = new System.Windows.Forms.DataGridView();
             this.btn_invisivel_membros_m = new System.Windows.Forms.Button();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer_membro_m = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.datagridview_membros_m)).BeginInit();
             this.SuspendLayout();
             // 
@@ -96,9 +96,10 @@
             this.btn_invisivel_membros_m.UseVisualStyleBackColor = true;
             this.btn_invisivel_membros_m.Click += new System.EventHandler(this.btn_invisivel_membros_m_Click);
             // 
-            // timer1
+            // timer_membro_m
             // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.timer_membro_m.Interval = 5000;
+            this.timer_membro_m.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Membros
             // 
@@ -125,6 +126,6 @@
         private System.Windows.Forms.Button btn_adicionar_membros_m;
         private System.Windows.Forms.DataGridView datagridview_membros_m;
         private System.Windows.Forms.Button btn_invisivel_membros_m;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timer_membro_m;
     }
 }
