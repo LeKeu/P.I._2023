@@ -28,11 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btn_deletar_membros_m = new System.Windows.Forms.Button();
             this.btn_editar_membros_m = new System.Windows.Forms.Button();
             this.btn_adicionar_membros_m = new System.Windows.Forms.Button();
             this.datagridview_membros_m = new System.Windows.Forms.DataGridView();
             this.btn_invisivel_membros_m = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.datagridview_membros_m)).BeginInit();
             this.SuspendLayout();
             // 
@@ -94,6 +96,10 @@
             this.btn_invisivel_membros_m.UseVisualStyleBackColor = true;
             this.btn_invisivel_membros_m.Click += new System.EventHandler(this.btn_invisivel_membros_m_Click);
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Membros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -119,5 +125,6 @@
         private System.Windows.Forms.Button btn_adicionar_membros_m;
         private System.Windows.Forms.DataGridView datagridview_membros_m;
         private System.Windows.Forms.Button btn_invisivel_membros_m;
+        private System.Windows.Forms.Timer timer1;
     }
 }

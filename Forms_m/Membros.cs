@@ -71,5 +71,15 @@ namespace projeto_integrado.Forms
                 }
             }
         }
+
+        public void refreshtable()
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
+        }
     }
 }

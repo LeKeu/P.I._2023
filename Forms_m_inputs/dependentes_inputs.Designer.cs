@@ -33,13 +33,15 @@
             this.lbl_dependente_celular_m = new System.Windows.Forms.Label();
             this.input_dependente_parentesco_m = new System.Windows.Forms.TextBox();
             this.lbl_dependente_parentesco_m = new System.Windows.Forms.Label();
-            this.input_dependente_datanasc_m = new System.Windows.Forms.TextBox();
             this.lbl_dependente_datanasc_m = new System.Windows.Forms.Label();
             this.input_dependente_sexo_m = new System.Windows.Forms.TextBox();
             this.lbl_dependente_sexo_m = new System.Windows.Forms.Label();
             this.input_dependente_nome_m = new System.Windows.Forms.TextBox();
             this.lbl_dependente_nome_m = new System.Windows.Forms.Label();
             this.lbl_dependente_titulo_inputs_m = new System.Windows.Forms.Label();
+            this.dateTimePicker_dependente_datanasc_m = new System.Windows.Forms.DateTimePicker();
+            this.input_dependente_nomemembrovinculado_m = new System.Windows.Forms.TextBox();
+            this.lbl_dependente_nomemembrovinculado_m = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn_dependente_enviar_m
@@ -58,7 +60,7 @@
             // 
             this.input_dependente_celular_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.input_dependente_celular_m.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.input_dependente_celular_m.Location = new System.Drawing.Point(266, 219);
+            this.input_dependente_celular_m.Location = new System.Drawing.Point(102, 221);
             this.input_dependente_celular_m.Name = "input_dependente_celular_m";
             this.input_dependente_celular_m.Size = new System.Drawing.Size(284, 22);
             this.input_dependente_celular_m.TabIndex = 51;
@@ -67,7 +69,7 @@
             // 
             this.lbl_dependente_celular_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_dependente_celular_m.AutoSize = true;
-            this.lbl_dependente_celular_m.Location = new System.Drawing.Point(263, 200);
+            this.lbl_dependente_celular_m.Location = new System.Drawing.Point(99, 202);
             this.lbl_dependente_celular_m.Name = "lbl_dependente_celular_m";
             this.lbl_dependente_celular_m.Size = new System.Drawing.Size(49, 16);
             this.lbl_dependente_celular_m.TabIndex = 50;
@@ -91,15 +93,6 @@
             this.lbl_dependente_parentesco_m.Size = new System.Drawing.Size(76, 16);
             this.lbl_dependente_parentesco_m.TabIndex = 46;
             this.lbl_dependente_parentesco_m.Text = "Parentesco";
-            // 
-            // input_dependente_datanasc_m
-            // 
-            this.input_dependente_datanasc_m.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.input_dependente_datanasc_m.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.input_dependente_datanasc_m.Location = new System.Drawing.Point(102, 161);
-            this.input_dependente_datanasc_m.Name = "input_dependente_datanasc_m";
-            this.input_dependente_datanasc_m.Size = new System.Drawing.Size(284, 22);
-            this.input_dependente_datanasc_m.TabIndex = 45;
             // 
             // lbl_dependente_datanasc_m
             // 
@@ -160,17 +153,48 @@
             this.lbl_dependente_titulo_inputs_m.TabIndex = 39;
             this.lbl_dependente_titulo_inputs_m.Text = "Dependentes";
             // 
+            // dateTimePicker_dependente_datanasc_m
+            // 
+            this.dateTimePicker_dependente_datanasc_m.Location = new System.Drawing.Point(102, 161);
+            this.dateTimePicker_dependente_datanasc_m.Name = "dateTimePicker_dependente_datanasc_m";
+            this.dateTimePicker_dependente_datanasc_m.Size = new System.Drawing.Size(284, 22);
+            this.dateTimePicker_dependente_datanasc_m.TabIndex = 77;
+            // 
+            // input_dependente_nomemembrovinculado_m
+            // 
+            this.input_dependente_nomemembrovinculado_m.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.input_dependente_nomemembrovinculado_m.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.input_dependente_nomemembrovinculado_m.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.input_dependente_nomemembrovinculado_m.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.input_dependente_nomemembrovinculado_m.Location = new System.Drawing.Point(430, 221);
+            this.input_dependente_nomemembrovinculado_m.Name = "input_dependente_nomemembrovinculado_m";
+            this.input_dependente_nomemembrovinculado_m.Size = new System.Drawing.Size(284, 22);
+            this.input_dependente_nomemembrovinculado_m.TabIndex = 79;
+            this.input_dependente_nomemembrovinculado_m.TextChanged += new System.EventHandler(this.input_dependente_nomemembrovinculado_m_TextChanged);
+            // 
+            // lbl_dependente_nomemembrovinculado_m
+            // 
+            this.lbl_dependente_nomemembrovinculado_m.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_dependente_nomemembrovinculado_m.AutoSize = true;
+            this.lbl_dependente_nomemembrovinculado_m.Location = new System.Drawing.Point(427, 202);
+            this.lbl_dependente_nomemembrovinculado_m.Name = "lbl_dependente_nomemembrovinculado_m";
+            this.lbl_dependente_nomemembrovinculado_m.Size = new System.Drawing.Size(177, 16);
+            this.lbl_dependente_nomemembrovinculado_m.TabIndex = 78;
+            this.lbl_dependente_nomemembrovinculado_m.Text = "Nome do membro vinculado";
+            // 
             // dependentes_inputs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 334);
+            this.Controls.Add(this.input_dependente_nomemembrovinculado_m);
+            this.Controls.Add(this.lbl_dependente_nomemembrovinculado_m);
+            this.Controls.Add(this.dateTimePicker_dependente_datanasc_m);
             this.Controls.Add(this.btn_dependente_enviar_m);
             this.Controls.Add(this.input_dependente_celular_m);
             this.Controls.Add(this.lbl_dependente_celular_m);
             this.Controls.Add(this.input_dependente_parentesco_m);
             this.Controls.Add(this.lbl_dependente_parentesco_m);
-            this.Controls.Add(this.input_dependente_datanasc_m);
             this.Controls.Add(this.lbl_dependente_datanasc_m);
             this.Controls.Add(this.input_dependente_sexo_m);
             this.Controls.Add(this.lbl_dependente_sexo_m);
@@ -191,12 +215,14 @@
         private System.Windows.Forms.Label lbl_dependente_celular_m;
         private System.Windows.Forms.TextBox input_dependente_parentesco_m;
         private System.Windows.Forms.Label lbl_dependente_parentesco_m;
-        private System.Windows.Forms.TextBox input_dependente_datanasc_m;
         private System.Windows.Forms.Label lbl_dependente_datanasc_m;
         private System.Windows.Forms.TextBox input_dependente_sexo_m;
         private System.Windows.Forms.Label lbl_dependente_sexo_m;
         private System.Windows.Forms.TextBox input_dependente_nome_m;
         private System.Windows.Forms.Label lbl_dependente_nome_m;
         private System.Windows.Forms.Label lbl_dependente_titulo_inputs_m;
+        private System.Windows.Forms.DateTimePicker dateTimePicker_dependente_datanasc_m;
+        private System.Windows.Forms.TextBox input_dependente_nomemembrovinculado_m;
+        private System.Windows.Forms.Label lbl_dependente_nomemembrovinculado_m;
     }
 }
