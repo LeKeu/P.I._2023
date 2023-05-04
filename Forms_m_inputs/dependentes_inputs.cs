@@ -55,5 +55,15 @@ namespace projeto_integrado.Forms_m_inputs
             textBox.AutoCompleteSource = AutoCompleteSource.CustomSource;
             textBox.AutoCompleteCustomSource = source;
         }
+
+        private void dependentes_inputs_Load(object sender, EventArgs e)
+        {
+            input_dependente_nomemembrovinculado_m.AutoCompleteCustomSource.Clear();
+            List<string> list = new List<string> { "longhi", "Leka", "filo", "Goretti", "gu" };
+
+            string[] arrayt = list.ToArray();
+
+            input_dependente_nomemembrovinculado_m.AutoCompleteCustomSource.AddRange(arrayt);
+        }
     }
 }

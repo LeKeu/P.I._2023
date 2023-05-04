@@ -203,6 +203,7 @@
             this.Controls.Add(this.lbl_dependente_titulo_inputs_m);
             this.Name = "dependentes_inputs";
             this.Text = "dependentes_inputs";
+            this.Load += new System.EventHandler(this.dependentes_inputs_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
