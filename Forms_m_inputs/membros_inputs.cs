@@ -22,11 +22,23 @@ namespace projeto_integrado.Forms_m_inputs
 
         private void btn_membro_enviar_m_Click(object sender, EventArgs e)
         {
-            List<string> dados = new List<string>() { "ID-?", input_membro_matricula_m.Text, input_membro_nome_m.Text, dateTimePicker_membro_datanasc_m.Text, input_membro_cpf_m.Text, input_membro_rg_m.Text, input_membro_celular_m.Text, input_membro_email_m.Text, input_membro_filiacao_m.Text, input_membro_enderresidencial_m.Text, input_membro_profissao_m.Text, input_membro_endercomercial_m.Text, input_membro_estadocivil_m.Text, input_membro_conjuge_m.Text, input_membro_localinclusao_m.Text, input_membro_datainclusao_m.Text, input_membro_sexo_m.Text, input_membro_status_m.Text, "corrdenadora", "datasaida", "assmembro", "asscorrdsocial", "asscorrdadm", "asscoordfinanc", "fotomembro"  };
-            string nome_tabela = "Membro";
+            var confirmResult = MessageBox.Show("Tem certeza que deseja enviar essas informações?",
+                                     "Confirmar",
+                                     MessageBoxButtons.YesNo);
+            if (confirmResult == DialogResult.Yes)
+            {
+                List<string> dados = new List<string>() { "ID-?", input_membro_matricula_m.Text, input_membro_nome_m.Text, dateTimePicker_membro_datanasc_m.Text, input_membro_cpf_m.Text, input_membro_rg_m.Text, input_membro_celular_m.Text, input_membro_email_m.Text, input_membro_filiacao_m.Text, input_membro_enderresidencial_m.Text, input_membro_profissao_m.Text, input_membro_endercomercial_m.Text, input_membro_estadocivil_m.Text, input_membro_conjuge_m.Text, input_membro_localinclusao_m.Text, dateTimePicker_membro_datainclusao_m.Text, input_membro_sexo_m.Text, input_membro_status_m.Text, "corrdenadora", "datasaida", "assmembro", "asscorrdsocial", "asscorrdadm", "asscoordfinanc", "fotomembro" };
+                string nome_tabela = "Membro";
 
-            //func p gravar os dados no json
-            json_funcs.Convert_to_json(dados, nome_tabela, "Y");
+                //func p gravar os dados no json
+                json_funcs.Convert_to_json(dados, nome_tabela, "Y");
+
+                this.Close();
+            }
+            else
+            {
+                
+            }
 
             //conexao_api.AddRow("Membro", new List<object>() { input_membro_matricula_m.Text, input_membro_nome_m.Text, input_membro_datanasc_m.Text, input_membro_cpf_m.Text, input_membro_rg_m.Text, input_membro_celular_m.Text, input_membro_email_m.Text, input_membro_filiacao_m.Text, input_membro_enderresidencial_m.Text, input_membro_profissao_m.Text, input_membro_endercomercial_m.Text, input_membro_estadocivil_m.Text, input_membro_conjuge_m.Text, input_membro_localinclusao_m.Text, input_membro_datainclusao_m.Text, input_membro_sexo_m.Text });
         }

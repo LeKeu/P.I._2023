@@ -67,6 +67,7 @@
             this.btn_adicionar_pagamentos_m.TabIndex = 17;
             this.btn_adicionar_pagamentos_m.Text = "Adicionar";
             this.btn_adicionar_pagamentos_m.UseVisualStyleBackColor = true;
+            this.btn_adicionar_pagamentos_m.Click += new System.EventHandler(this.btn_adicionar_pagamentos_m_Click);
             // 
             // datagridview_pagamentos_m
             // 

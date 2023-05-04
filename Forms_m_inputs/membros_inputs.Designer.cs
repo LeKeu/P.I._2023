@@ -58,7 +58,6 @@
             this.lbl_membro_conjuge_m = new System.Windows.Forms.Label();
             this.input_membro_localinclusao_m = new System.Windows.Forms.TextBox();
             this.lbl_membro_localinclusao_m = new System.Windows.Forms.Label();
-            this.input_membro_datainclusao_m = new System.Windows.Forms.TextBox();
             this.lbl_membro_datainclusao_m = new System.Windows.Forms.Label();
             this.input_membro_coordenadora_m = new System.Windows.Forms.TextBox();
             this.lbl_membro_coordenadora_m = new System.Windows.Forms.Label();
@@ -66,6 +65,7 @@
             this.lbl_membro_status_m = new System.Windows.Forms.Label();
             this.btn_membro_enviar_m = new System.Windows.Forms.Button();
             this.dateTimePicker_membro_datanasc_m = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker_membro_datainclusao_m = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // lbl_membro_titulo_inputs_m
@@ -355,15 +355,6 @@
             this.lbl_membro_localinclusao_m.TabIndex = 30;
             this.lbl_membro_localinclusao_m.Text = "Local de inclusão";
             // 
-            // input_membro_datainclusao_m
-            // 
-            this.input_membro_datainclusao_m.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.input_membro_datainclusao_m.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.input_membro_datainclusao_m.Location = new System.Drawing.Point(434, 558);
-            this.input_membro_datainclusao_m.Name = "input_membro_datainclusao_m";
-            this.input_membro_datainclusao_m.Size = new System.Drawing.Size(284, 22);
-            this.input_membro_datainclusao_m.TabIndex = 33;
-            // 
             // lbl_membro_datainclusao_m
             // 
             this.lbl_membro_datainclusao_m.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -431,18 +422,25 @@
             this.dateTimePicker_membro_datanasc_m.Size = new System.Drawing.Size(284, 22);
             this.dateTimePicker_membro_datanasc_m.TabIndex = 39;
             // 
+            // dateTimePicker_membro_datainclusao_m
+            // 
+            this.dateTimePicker_membro_datainclusao_m.Location = new System.Drawing.Point(434, 558);
+            this.dateTimePicker_membro_datainclusao_m.Name = "dateTimePicker_membro_datainclusao_m";
+            this.dateTimePicker_membro_datainclusao_m.Size = new System.Drawing.Size(284, 22);
+            this.dateTimePicker_membro_datainclusao_m.TabIndex = 40;
+            // 
             // membros_inputs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 748);
+            this.Controls.Add(this.dateTimePicker_membro_datainclusao_m);
             this.Controls.Add(this.dateTimePicker_membro_datanasc_m);
             this.Controls.Add(this.btn_membro_enviar_m);
             this.Controls.Add(this.input_membro_coordenadora_m);
             this.Controls.Add(this.lbl_membro_coordenadora_m);
             this.Controls.Add(this.input_membro_status_m);
             this.Controls.Add(this.lbl_membro_status_m);
-            this.Controls.Add(this.input_membro_datainclusao_m);
             this.Controls.Add(this.lbl_membro_datainclusao_m);
             this.Controls.Add(this.input_membro_localinclusao_m);
             this.Controls.Add(this.lbl_membro_localinclusao_m);
@@ -513,7 +511,6 @@
         private System.Windows.Forms.Label lbl_membro_conjuge_m;
         private System.Windows.Forms.TextBox input_membro_localinclusao_m;
         private System.Windows.Forms.Label lbl_membro_localinclusao_m;
-        private System.Windows.Forms.TextBox input_membro_datainclusao_m;
         private System.Windows.Forms.Label lbl_membro_datainclusao_m;
         private System.Windows.Forms.TextBox input_membro_coordenadora_m;
         private System.Windows.Forms.Label lbl_membro_coordenadora_m;
@@ -521,5 +518,6 @@
         private System.Windows.Forms.Label lbl_membro_status_m;
         private System.Windows.Forms.Button btn_membro_enviar_m;
         private System.Windows.Forms.DateTimePicker dateTimePicker_membro_datanasc_m;
+        private System.Windows.Forms.DateTimePicker dateTimePicker_membro_datainclusao_m;
     }
 }
