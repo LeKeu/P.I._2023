@@ -19,9 +19,21 @@ namespace projeto_integrado.Classes
         static readonly string ApplicationName = "GRP-MMIB";
         static readonly string SpreadsheetId = "1OYojwhnlzXB0kaJNVM1dsZrUUlRdlpS2OSzuVassbN0";
         static SheetsService service;
+        static Dictionary<string, string> colunas_paginas = new Dictionary<string, string> ();
 
         public static void Init()
         {
+            colunas_paginas.Add("Membro", "Y");
+            colunas_paginas.Add("Dependente", "G");
+            colunas_paginas.Add("ListaPagamento", "O");
+            colunas_paginas.Add("Patrimonio", "P");
+            colunas_paginas.Add("PatrimonioFabricante", "C");
+            colunas_paginas.Add("PatrimonioGrupoBens", "D");
+            colunas_paginas.Add("PatrimonioProduto", "J");
+            colunas_paginas.Add("PatrimonioSetor", "C");
+            colunas_paginas.Add("PatrimonioFornecedor", "D");
+
+
             GoogleCredential credential;
 
             //Lendo as credencias do arquivo
@@ -115,19 +127,46 @@ namespace projeto_integrado.Classes
             }
         }
 
-        public static void AddRow(string sheet, List<object> ob_lista)
+        public static void AddRow(string sheet, string ultima_coluna, dynamic ob_lista)
         {
             // Especificando o range das colunas para leitura 
-            var range = $"{sheet}!B:S";
+            //var range = $"{sheet}!A:{ultima_coluna}";
             var valueRange = new ValueRange();
 
             //var oblist = new List<object>() { "BELA", "É", "MUITO", "BONITA", "MEU DEUS" }
-            valueRange.Values = new List<IList<object>> { ob_lista };
+            
 
+            Console.WriteLine("1 --> "+ob_lista);
+            Console.WriteLine("2 --> " + ob_lista.GetType());
+            Console.WriteLine("3 --> " + ob_lista.ToString());
+            Console.WriteLine("4 --> " + ob_lista[0]);
+
+            foreach (var coisa in ob_lista)
+            {
+                var range = $"{coisa["Tabela"]}!A:{colunas_paginas[coisa["Tabela"].ToString()]}";
+                
+                
+
+                valueRange.Values = new List<IList<object>> { coisa.Values };
+
+                Console.WriteLine(coisa["Tabela"]+" "+valueRange.Values.Count);
+
+                coisa.Remove("Tabela");
+
+                var appendRequest = service.Spreadsheets.Values.Append(valueRange, SpreadsheetId, range);
+                appendRequest.ValueInputOption = SpreadsheetsResource.ValuesResource.AppendRequest.ValueInputOptionEnum.USERENTERED;
+                var appendReponse = appendRequest.Execute();
+
+                //valueRange.Values.Clear();
+            }
+            //Console.WriteLine("5 --> " + ob_lista[0]["Tabela"]);
+
+            /*
             // Append the above record
             var appendRequest = service.Spreadsheets.Values.Append(valueRange, SpreadsheetId, range);
             appendRequest.ValueInputOption = SpreadsheetsResource.ValuesResource.AppendRequest.ValueInputOptionEnum.USERENTERED;
             var appendReponse = appendRequest.Execute();
+            */
         }
     }
 }

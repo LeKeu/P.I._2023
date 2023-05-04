@@ -17,7 +17,7 @@ namespace projeto_integrado.Forms
         public Membros()
         {
             InitializeComponent();
-            datagridview_membros_m.DataSource = json_funcs.Read_from_json();
+            datagridview_membros_m.DataSource = json_funcs.Read_from_json_datagridview();
         }
 
         protected override void OnShown(EventArgs e)
@@ -58,6 +58,14 @@ namespace projeto_integrado.Forms
 
         private void btn_invisivel_membros_m_Click(object sender, EventArgs e)
         {
+            /*
+             Parte que tira as colunas de outras tables
+             */
+            datagridview_membros_m.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
+            datagridview_membros_m.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
+
+            var values_colunas = conexao_api.ReadTableColumnName("Membro", "Y");
+
             for (int i = 0; i < datagridview_membros_m.Rows.Count - 1; i++)
             {
 
@@ -68,6 +76,20 @@ namespace projeto_integrado.Forms
                     datagridview_membros_m.CurrentCell = null;
                     row.Visible = false;
                     row.Selected = false;
+                }
+            }
+
+            for (int i = 0; i < datagridview_membros_m.Columns.Count; i++)
+            {
+                datagridview_membros_m.Columns[i].Visible = false;
+            }
+
+            foreach (var coluna in values_colunas)
+            {
+                for (int i = 0; i < coluna.Count; i++)
+                {
+                    datagridview_membros_m.Columns[(string)coluna[i]].Visible = true;
+                    
                 }
             }
         }

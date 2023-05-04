@@ -17,13 +17,13 @@ namespace projeto_integrado.Forms
         public Dependentes()
         {
             InitializeComponent();
-            datagridview_dependentes_m.DataSource = json_funcs.Read_from_json();
+            //datagridview_dependentes_m.DataSource = json_funcs.Read_from_json();
         }
 
         protected override void OnShown(EventArgs e)
         {
             base.OnShown(e);
-            btn_invisivel_dependentes_m.PerformClick();
+            //btn_invisivel_dependentes_m.PerformClick();
         }
 
         private void Dependentes_Load(object sender, EventArgs e)
@@ -58,6 +58,11 @@ namespace projeto_integrado.Forms
 
         private void btn_invisivel_dependentes_m_Click(object sender, EventArgs e)
         {
+            datagridview_dependentes_m.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
+            datagridview_dependentes_m.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
+
+            var values_colunas = conexao_api.ReadTableColumnName("Dependente", "G");
+
             for (int i = 0; i < datagridview_dependentes_m.Rows.Count - 1; i++)
             {
 
@@ -65,11 +70,24 @@ namespace projeto_integrado.Forms
 
                 if (row.Cells[0].Value.ToString() != "Dependente")
                 {
-                    //MessageBox.Show(row.Cells[0].Value.ToString());
                     datagridview_dependentes_m.CurrentCell = null;
                     row.Visible = false;
                     row.Selected = false;
-                    
+                }
+            }
+
+            for (int i = 0; i < datagridview_dependentes_m.Columns.Count; i++)
+            {
+                datagridview_dependentes_m.Columns[i].Visible = false;
+            }
+
+            foreach (var coluna in values_colunas)
+            {
+                for (int i = 0; i < coluna.Count; i++)
+                {
+                    //adicionando no dict a chave com seu valor
+                    datagridview_dependentes_m.Columns[(string)coluna[i]].Visible = true;
+
                 }
             }
         }
