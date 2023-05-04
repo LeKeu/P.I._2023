@@ -32,6 +32,7 @@
             this.btn_editar_patrimonio_p = new System.Windows.Forms.Button();
             this.btn_adicionar_patrimonio_p = new System.Windows.Forms.Button();
             this.datagridview_patrimonio_p = new System.Windows.Forms.DataGridView();
+            this.btn_invisivel_patrimonio_m = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.datagridview_patrimonio_p)).BeginInit();
             this.SuspendLayout();
             // 
@@ -82,11 +83,22 @@
             this.datagridview_patrimonio_p.Size = new System.Drawing.Size(642, 369);
             this.datagridview_patrimonio_p.TabIndex = 15;
             // 
+            // btn_invisivel_patrimonio_m
+            // 
+            this.btn_invisivel_patrimonio_m.Location = new System.Drawing.Point(338, 442);
+            this.btn_invisivel_patrimonio_m.Name = "btn_invisivel_patrimonio_m";
+            this.btn_invisivel_patrimonio_m.Size = new System.Drawing.Size(75, 23);
+            this.btn_invisivel_patrimonio_m.TabIndex = 19;
+            this.btn_invisivel_patrimonio_m.Text = "button1";
+            this.btn_invisivel_patrimonio_m.UseVisualStyleBackColor = true;
+            this.btn_invisivel_patrimonio_m.Click += new System.EventHandler(this.btn_invisivel_patrimonio_m_Click);
+            // 
             // Patrimônio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(855, 498);
+            this.Controls.Add(this.btn_invisivel_patrimonio_m);
             this.Controls.Add(this.btn_deletar_patrimonio_p);
             this.Controls.Add(this.btn_editar_patrimonio_p);
             this.Controls.Add(this.btn_adicionar_patrimonio_p);
@@ -105,5 +117,6 @@
         private System.Windows.Forms.Button btn_editar_patrimonio_p;
         private System.Windows.Forms.Button btn_adicionar_patrimonio_p;
         private System.Windows.Forms.DataGridView datagridview_patrimonio_p;
+        private System.Windows.Forms.Button btn_invisivel_patrimonio_m;
     }
 }

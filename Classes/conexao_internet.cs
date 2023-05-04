@@ -36,8 +36,15 @@ namespace projeto_integrado.Classes
             // se for verdadeiro - se houver conexão - ler do arquivo json
             if (is_connected)
             {
-                //conexao_api.ReadTableColumnName("Membro");
-                
+                var arq_json_lido = json_funcs.Read_from_json();
+                //conexao_api.AddRow("testesheet", "ultcol teste", arq_json_lido);
+                /*
+                foreach (var coisa in arq_json_lido)
+                {
+                    Console.WriteLine(coisa["Tabela"].ToString());    
+                }
+                */
+
             }
         }
 

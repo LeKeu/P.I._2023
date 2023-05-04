@@ -54,12 +54,25 @@ namespace projeto_integrado.Classes
             
         }
 
-        public static DataTable Read_from_json()  // lendo do arq json criado
+        public static DataTable Read_from_json_datagridview()  // lendo do arq json criado
         {
             string arq_path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop)+@"\JSONTESTE.json";  // pegar caminho automatico!
             List<string> dict_dados_leitura = new List<string>();
 
             dynamic jsonArq = JsonConvert.DeserializeObject(File.ReadAllText(arq_path), (typeof(DataTable)));
+            Console.WriteLine(jsonArq.GetType());
+
+            return jsonArq;
+
+
+        }
+
+        public static dynamic Read_from_json()  // lendo do arq json criado
+        {
+            string arq_path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\JSONTESTE.json";  // pegar caminho automatico!
+            List<string> dict_dados_leitura = new List<string>();
+
+            dynamic jsonArq = JsonConvert.DeserializeObject(File.ReadAllText(arq_path));
             Console.WriteLine(jsonArq.GetType());
 
             return jsonArq;
