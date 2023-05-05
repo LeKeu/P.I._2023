@@ -10,6 +10,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace projeto_integrado.Classes
 {
@@ -133,31 +134,64 @@ namespace projeto_integrado.Classes
             //var range = $"{sheet}!A:{ultima_coluna}";
             var valueRange = new ValueRange();
 
-            //var oblist = new List<object>() { "BELA", "É", "MUITO", "BONITA", "MEU DEUS" }
-            
+            //var oblist = new List<object>() { "THOR", "É", "MUITO", "BONITA", "MEU DEUS" };
 
-            Console.WriteLine("1 --> "+ob_lista);
-            Console.WriteLine("2 --> " + ob_lista.GetType());
-            Console.WriteLine("3 --> " + ob_lista.ToString());
-            Console.WriteLine("4 --> " + ob_lista[0]);
+            //string x = Convert.ToString(ob_lista);
+            //JObject jsonObj = JObject.Parse(x);
+            //Dictionary<string, string> dictObj = jsonObj.ToObject<Dictionary<string, string>>();
+
+            Console.WriteLine(ob_lista[0].GetType());
+
+
+            for (int i = 0; i <  ob_lista.Count; i++)
+            {
+                //var range = $"{coisa["Tabela"]}!A:{colunas_paginas[coisa["Tabela"].ToString()]}";
+                //coisa.Remove("Tabela");
+
+                var range = "";
+
+                var oblist = new List<object>();
+                foreach (JProperty property in ob_lista[i].Properties())
+                {
+                    //Console.WriteLine(property.Name + " - " + property.Value);
+                    if (property.Name == "Tabela")
+                    {
+                        //Console.WriteLine("WOWO - " + property.Value.ToString());
+                        range = $"{property.Value}!A:{colunas_paginas[property.Value.ToString()]}";
+                        Console.WriteLine(range);
+                    }
+                    oblist.Add(property.Value);
+
+                }
+                valueRange.Values = new List<IList<object>> { oblist };
+
+                
+                var appendRequest = service.Spreadsheets.Values.Append(valueRange, SpreadsheetId, range);
+                appendRequest.ValueInputOption = SpreadsheetsResource.ValuesResource.AppendRequest.ValueInputOptionEnum.USERENTERED;
+                var appendReponse = appendRequest.Execute();
+                
+                valueRange.Values.Clear();
+            }
+            
 
             foreach (var coisa in ob_lista)
             {
                 var range = $"{coisa["Tabela"]}!A:{colunas_paginas[coisa["Tabela"].ToString()]}";
-                
-                
-
-                valueRange.Values = new List<IList<object>> { coisa.Values };
-
-                Console.WriteLine(coisa["Tabela"]+" "+valueRange.Values.Count);
-
                 coisa.Remove("Tabela");
+                //Console.WriteLine(" COISOS VALORESSSS "+coisa);
 
-                var appendRequest = service.Spreadsheets.Values.Append(valueRange, SpreadsheetId, range);
+                /*
+                valueRange.Values = new List<IList<object>> { oblist };
+
+                //Console.WriteLine(coisa["Tabela"]+" "+valueRange.Values.Count);
+
+                var appendRequest = service.Spreadsheets.Values.Append( valueRange, SpreadsheetId, range);
                 appendRequest.ValueInputOption = SpreadsheetsResource.ValuesResource.AppendRequest.ValueInputOptionEnum.USERENTERED;
                 var appendReponse = appendRequest.Execute();
 
-                //valueRange.Values.Clear();
+                valueRange.Values.Clear();
+                //arrayOfAllValues.Clear();
+                */
             }
             //Console.WriteLine("5 --> " + ob_lista[0]["Tabela"]);
 

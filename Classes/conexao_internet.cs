@@ -18,7 +18,7 @@ namespace projeto_integrado.Classes
         // AS FUNÇÕES ABAIXO, EM CONJUNTO, FAZEM A CHECAGEM DA CONEXÃO COM INTERNET
         public static void Run000()  // TAVA INTERNAL AO INVES DE PUBLIC
         {
-            int seconds = 5 * 1000; // de 5 em 5 segundos
+            int seconds = 30 * 1000; // de 10 em 10 segundos
 
             var timer = new System.Threading.Timer(checarInternetFunc, null, 0, seconds);
 
@@ -37,7 +37,7 @@ namespace projeto_integrado.Classes
             if (is_connected)
             {
                 var arq_json_lido = json_funcs.Read_from_json();
-                //conexao_api.AddRow("testesheet", "ultcol teste", arq_json_lido);
+                conexao_api.AddRow("testesheet", "ultcol teste", arq_json_lido);
                 /*
                 foreach (var coisa in arq_json_lido)
                 {

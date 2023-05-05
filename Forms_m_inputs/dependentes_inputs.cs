@@ -42,18 +42,7 @@ namespace projeto_integrado.Forms_m_inputs
 
         private void input_dependente_nomemembrovinculado_m_TextChanged(object sender, EventArgs e)
         {
-            AutoCompleteStringCollection source = new AutoCompleteStringCollection();
-            // Add each item to the collection
-            source.Add("tuelho");
-            source.Add("caronyr");
-            source.Add("Irineu");
-            source.Add("Pindamanhongaba");
-            source.Add("Je suis lefeu");
-            source.Add("Vundaba");
-            source.Add("vucu");
-            TextBox textBox = new TextBox();
-            textBox.AutoCompleteSource = AutoCompleteSource.CustomSource;
-            textBox.AutoCompleteCustomSource = source;
+            //o que era pra ser aqui?32
         }
 
         private void dependentes_inputs_Load(object sender, EventArgs e)
