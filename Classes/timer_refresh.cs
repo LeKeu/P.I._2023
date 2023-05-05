@@ -15,14 +15,14 @@ namespace projeto_integrado.Classes
             datagridview.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
             datagridview.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
 
-            var values_colunas = conexao_api.ReadTableColumnName("Membro", "Y");
+            var values_colunas = conexao_api.ReadTableColumnName(nome_tabela, ultima_coluna);
 
             for (int i = 0; i < datagridview.Rows.Count - 1; i++)
             {
 
                 var row = datagridview.Rows[i];
 
-                if (row.Cells[0].Value.ToString() != "Membro")
+                if (row.Cells[0].Value.ToString() != nome_tabela)
                 {
                     datagridview.CurrentCell = null;
                     row.Visible = false;

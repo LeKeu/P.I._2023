@@ -1,4 +1,5 @@
-﻿using Google.Apis.Sheets.v4.Data;
+﻿using Google.Apis.Sheets.v4;
+using Google.Apis.Sheets.v4.Data;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
@@ -10,6 +11,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace projeto_integrado.Classes
 {
@@ -78,6 +80,12 @@ namespace projeto_integrado.Classes
             return jsonArq;
 
 
+        }
+
+        public static void ReadTableRowValue(DataGridView datagridview, string nome_tabela, string ultima_coluna)
+        {
+
+            //var teste = timer_refresh.refreshReg()
         }
     }
 }
