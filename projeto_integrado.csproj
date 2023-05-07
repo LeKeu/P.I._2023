@@ -108,6 +108,18 @@
     <Compile Include="Forms_m_inputs\pagamentos_inputs.Designer.cs">
       <DependentUpon>pagamentos_inputs.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms_m_inputs_editar\dependentes_inputs_editar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_m_inputs_editar\dependentes_inputs_editar.Designer.cs">
+      <DependentUpon>dependentes_inputs_editar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms_m_inputs_editar\membros_inputs_editar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_m_inputs_editar\membros_inputs_editar.Designer.cs">
+      <DependentUpon>membros_inputs_editar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms_p\Fabricantes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -180,6 +192,12 @@
     <Compile Include="Forms_p_inputs\setor_inputs.Designer.cs">
       <DependentUpon>setor_inputs.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms_p_inputs_editar\Patrimonio_inputs_editar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_p_inputs_editar\Patrimonio_inputs_editar.Designer.cs">
+      <DependentUpon>Patrimonio_inputs_editar.cs</DependentUpon>
+    </Compile>
     <Compile Include="gerenciamento_m.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -212,6 +230,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms_m_inputs\pagamentos_inputs.resx">
       <DependentUpon>pagamentos_inputs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_m_inputs_editar\dependentes_inputs_editar.resx">
+      <DependentUpon>dependentes_inputs_editar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_m_inputs_editar\membros_inputs_editar.resx">
+      <DependentUpon>membros_inputs_editar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms_p\Fabricantes.resx">
       <DependentUpon>Fabricantes.cs</DependentUpon>
@@ -248,6 +272,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms_p_inputs\setor_inputs.resx">
       <DependentUpon>setor_inputs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_p_inputs_editar\Patrimonio_inputs_editar.resx">
+      <DependentUpon>Patrimonio_inputs_editar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="gerenciamento_m.resx">
       <DependentUpon>gerenciamento_m.cs</DependentUpon>

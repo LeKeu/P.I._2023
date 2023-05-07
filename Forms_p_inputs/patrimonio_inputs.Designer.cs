@@ -271,6 +271,7 @@
             // 
             // dateTimePicker_patrimonio_datacompra_p
             // 
+            this.dateTimePicker_patrimonio_datacompra_p.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker_patrimonio_datacompra_p.Location = new System.Drawing.Point(429, 160);
             this.dateTimePicker_patrimonio_datacompra_p.Name = "dateTimePicker_patrimonio_datacompra_p";
             this.dateTimePicker_patrimonio_datacompra_p.Size = new System.Drawing.Size(284, 22);
@@ -278,6 +279,7 @@
             // 
             // dateTimePicker_patrimonio_fimgarantia_p
             // 
+            this.dateTimePicker_patrimonio_fimgarantia_p.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker_patrimonio_fimgarantia_p.Location = new System.Drawing.Point(101, 222);
             this.dateTimePicker_patrimonio_fimgarantia_p.Name = "dateTimePicker_patrimonio_fimgarantia_p";
             this.dateTimePicker_patrimonio_fimgarantia_p.Size = new System.Drawing.Size(284, 22);
@@ -322,28 +324,28 @@
         #endregion
 
         private System.Windows.Forms.Button btn_patrimonio_enviar_p;
-        private System.Windows.Forms.TextBox input_patrimonio_ordemcompra_p;
         private System.Windows.Forms.Label lbl_patrimonio_ordemcompra_p;
-        private System.Windows.Forms.TextBox input_patrimonio_status_p;
         private System.Windows.Forms.Label lbl_patrimonio_status_p;
-        private System.Windows.Forms.TextBox input_patrimonio_observacao_p;
         private System.Windows.Forms.Label lbl_patrimonio_observacao_p;
-        private System.Windows.Forms.TextBox input_patrimonio_valoratual_p;
         private System.Windows.Forms.Label lbl_patrimonio_valoratual_p;
-        private System.Windows.Forms.TextBox input_patrimonio_estadoconservacao_p;
         private System.Windows.Forms.Label lbl_patrimonio_estadoconservacao_p;
-        private System.Windows.Forms.TextBox input_patrimonio_valorbem_p;
         private System.Windows.Forms.Label lbl_patrimonio_valorbem_p;
         private System.Windows.Forms.Label lbl_patrimonio_fimgarantia_p;
         private System.Windows.Forms.Label lbl_patrimonio_datacompra_p;
-        private System.Windows.Forms.TextBox input_patrimonio_notafiscal_p;
         private System.Windows.Forms.Label lbl_patrimonio_notafiscal_p;
-        private System.Windows.Forms.TextBox input_patrimonio_numserie_p;
         private System.Windows.Forms.Label lbl_patrimonio_numserie_p;
-        private System.Windows.Forms.TextBox input_patrimonio_numpat_p;
         private System.Windows.Forms.Label lbl_patrimonio_numpat_p;
         private System.Windows.Forms.Label lbl_patrimonio_titulo_inputs_p;
-        private System.Windows.Forms.DateTimePicker dateTimePicker_patrimonio_datacompra_p;
-        private System.Windows.Forms.DateTimePicker dateTimePicker_patrimonio_fimgarantia_p;
+        public System.Windows.Forms.TextBox input_patrimonio_ordemcompra_p;
+        public System.Windows.Forms.TextBox input_patrimonio_status_p;
+        public System.Windows.Forms.TextBox input_patrimonio_observacao_p;
+        public System.Windows.Forms.TextBox input_patrimonio_valoratual_p;
+        public System.Windows.Forms.TextBox input_patrimonio_estadoconservacao_p;
+        public System.Windows.Forms.TextBox input_patrimonio_valorbem_p;
+        public System.Windows.Forms.TextBox input_patrimonio_notafiscal_p;
+        public System.Windows.Forms.TextBox input_patrimonio_numserie_p;
+        public System.Windows.Forms.TextBox input_patrimonio_numpat_p;
+        public System.Windows.Forms.DateTimePicker dateTimePicker_patrimonio_datacompra_p;
+        public System.Windows.Forms.DateTimePicker dateTimePicker_patrimonio_fimgarantia_p;
     }
 }
