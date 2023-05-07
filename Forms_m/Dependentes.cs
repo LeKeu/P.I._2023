@@ -1,5 +1,6 @@
 ﻿using projeto_integrado.Classes;
 using projeto_integrado.Forms_m_inputs;
+using projeto_integrado.Forms_m_inputs_editar;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -90,6 +91,20 @@ namespace projeto_integrado.Forms
 
                 }
             }
+        }
+
+        private void datagridview_dependentes_m_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int indexRow = e.RowIndex;
+            DataGridViewRow row = datagridview_dependentes_m.Rows[indexRow];
+
+            var forminputeditardependentes = new dependentes_inputs_editar();
+            forminputeditardependentes.input_editar_dependente_nome_m.Text = row.Cells[3].Value.ToString();
+            forminputeditardependentes.input_editar_dependente_sexo_m.Text = row.Cells[5].Value.ToString();
+            forminputeditardependentes.dateTimePicker_editar_dependente_datanasc_m.Text = row.Cells[6].Value.ToString();
+            forminputeditardependentes.input_editar_dependente_parentesco_m.Text = row.Cells[7].Value.ToString();
+            forminputeditardependentes.input_editar_dependente_nomemembrovinculado_m.Text = row.Cells[1].Value.ToString();
+            forminputeditardependentes.Show();
         }
     }
 }

@@ -83,6 +83,7 @@
             this.datagridview_dependentes_m.Size = new System.Drawing.Size(642, 369);
             this.datagridview_dependentes_m.TabIndex = 11;
             this.datagridview_dependentes_m.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagridview_dependentes_m_CellContentClick);
+            this.datagridview_dependentes_m.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagridview_dependentes_m_CellDoubleClick);
             // 
             // btn_invisivel_dependentes_m
             // 

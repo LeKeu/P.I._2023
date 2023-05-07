@@ -29,42 +29,23 @@
         private void InitializeComponent()
         {
             this.btn_setor_enviar_p = new System.Windows.Forms.Button();
-            this.input_setor_ativo_p = new System.Windows.Forms.TextBox();
-            this.lbl_setor_ativo_p = new System.Windows.Forms.Label();
             this.input_setor_nome_p = new System.Windows.Forms.TextBox();
             this.lbl_setor_nome_p = new System.Windows.Forms.Label();
             this.lbl_setor_titulo_inputs_p = new System.Windows.Forms.Label();
+            this.checkBox_setor_ativo_p = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // btn_setor_enviar_p
             // 
             this.btn_setor_enviar_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_setor_enviar_p.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_setor_enviar_p.Location = new System.Drawing.Point(351, 216);
+            this.btn_setor_enviar_p.Location = new System.Drawing.Point(348, 216);
             this.btn_setor_enviar_p.Name = "btn_setor_enviar_p";
             this.btn_setor_enviar_p.Size = new System.Drawing.Size(109, 33);
             this.btn_setor_enviar_p.TabIndex = 106;
             this.btn_setor_enviar_p.Text = "Enviar";
             this.btn_setor_enviar_p.UseVisualStyleBackColor = true;
-            // 
-            // input_setor_ativo_p
-            // 
-            this.input_setor_ativo_p.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.input_setor_ativo_p.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.input_setor_ativo_p.Location = new System.Drawing.Point(259, 163);
-            this.input_setor_ativo_p.Name = "input_setor_ativo_p";
-            this.input_setor_ativo_p.Size = new System.Drawing.Size(284, 22);
-            this.input_setor_ativo_p.TabIndex = 105;
-            // 
-            // lbl_setor_ativo_p
-            // 
-            this.lbl_setor_ativo_p.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl_setor_ativo_p.AutoSize = true;
-            this.lbl_setor_ativo_p.Location = new System.Drawing.Point(256, 144);
-            this.lbl_setor_ativo_p.Name = "lbl_setor_ativo_p";
-            this.lbl_setor_ativo_p.Size = new System.Drawing.Size(37, 16);
-            this.lbl_setor_ativo_p.TabIndex = 104;
-            this.lbl_setor_ativo_p.Text = "Ativo";
+            this.btn_setor_enviar_p.Click += new System.EventHandler(this.btn_setor_enviar_p_Click);
             // 
             // input_setor_nome_p
             // 
@@ -96,14 +77,23 @@
             this.lbl_setor_titulo_inputs_p.TabIndex = 101;
             this.lbl_setor_titulo_inputs_p.Text = "Setor";
             // 
+            // checkBox_setor_ativo_p
+            // 
+            this.checkBox_setor_ativo_p.AutoSize = true;
+            this.checkBox_setor_ativo_p.Location = new System.Drawing.Point(369, 162);
+            this.checkBox_setor_ativo_p.Name = "checkBox_setor_ativo_p";
+            this.checkBox_setor_ativo_p.Size = new System.Drawing.Size(66, 20);
+            this.checkBox_setor_ativo_p.TabIndex = 107;
+            this.checkBox_setor_ativo_p.Text = "Ativo?";
+            this.checkBox_setor_ativo_p.UseVisualStyleBackColor = true;
+            // 
             // setor_inputs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 296);
+            this.Controls.Add(this.checkBox_setor_ativo_p);
             this.Controls.Add(this.btn_setor_enviar_p);
-            this.Controls.Add(this.input_setor_ativo_p);
-            this.Controls.Add(this.lbl_setor_ativo_p);
             this.Controls.Add(this.input_setor_nome_p);
             this.Controls.Add(this.lbl_setor_nome_p);
             this.Controls.Add(this.lbl_setor_titulo_inputs_p);
@@ -117,10 +107,9 @@
         #endregion
 
         private System.Windows.Forms.Button btn_setor_enviar_p;
-        private System.Windows.Forms.TextBox input_setor_ativo_p;
-        private System.Windows.Forms.Label lbl_setor_ativo_p;
         private System.Windows.Forms.TextBox input_setor_nome_p;
         private System.Windows.Forms.Label lbl_setor_nome_p;
         private System.Windows.Forms.Label lbl_setor_titulo_inputs_p;
+        private System.Windows.Forms.CheckBox checkBox_setor_ativo_p;
     }
 }
