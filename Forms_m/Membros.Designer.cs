@@ -84,6 +84,7 @@
             this.datagridview_membros_m.RowTemplate.Height = 24;
             this.datagridview_membros_m.Size = new System.Drawing.Size(642, 369);
             this.datagridview_membros_m.TabIndex = 6;
+            this.datagridview_membros_m.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagridview_membros_m_CellContentClick);
             this.datagridview_membros_m.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagridview_membros_m_CellDoubleClick);
             // 
             // btn_invisivel_membros_m

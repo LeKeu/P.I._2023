@@ -68,6 +68,9 @@
             this.lbl_editar_membro_coordenadora_m = new System.Windows.Forms.Label();
             this.input_editar_membro_status_m = new System.Windows.Forms.TextBox();
             this.lbl_editar_membro_status_m = new System.Windows.Forms.Label();
+            this.upload_img_editar_membro_editar = new System.Windows.Forms.Button();
+            this.img_editar_membro = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.img_editar_membro)).BeginInit();
             this.SuspendLayout();
             // 
             // dateTimePicker_editar_membro_datainclusao_m
@@ -389,7 +392,7 @@
             // 
             this.lbl_editar_membro_datadesaida_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_editar_membro_datadesaida_m.AutoSize = true;
-            this.lbl_editar_membro_datadesaida_m.Location = new System.Drawing.Point(260, 628);
+            this.lbl_editar_membro_datadesaida_m.Location = new System.Drawing.Point(91, 631);
             this.lbl_editar_membro_datadesaida_m.Name = "lbl_editar_membro_datadesaida_m";
             this.lbl_editar_membro_datadesaida_m.Size = new System.Drawing.Size(181, 16);
             this.lbl_editar_membro_datadesaida_m.TabIndex = 80;
@@ -399,7 +402,7 @@
             // 
             this.input_editar_membro_datadesaida_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.input_editar_membro_datadesaida_m.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.input_editar_membro_datadesaida_m.Location = new System.Drawing.Point(263, 647);
+            this.input_editar_membro_datadesaida_m.Location = new System.Drawing.Point(94, 650);
             this.input_editar_membro_datadesaida_m.Name = "input_editar_membro_datadesaida_m";
             this.input_editar_membro_datadesaida_m.Size = new System.Drawing.Size(284, 22);
             this.input_editar_membro_datadesaida_m.TabIndex = 79;
@@ -408,7 +411,7 @@
             // 
             this.btn_editar_membro_editar_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_editar_membro_editar_m.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_editar_membro_editar_m.Location = new System.Drawing.Point(346, 695);
+            this.btn_editar_membro_editar_m.Location = new System.Drawing.Point(177, 698);
             this.btn_editar_membro_editar_m.Name = "btn_editar_membro_editar_m";
             this.btn_editar_membro_editar_m.Size = new System.Drawing.Size(109, 33);
             this.btn_editar_membro_editar_m.TabIndex = 78;
@@ -454,11 +457,34 @@
             this.lbl_editar_membro_status_m.TabIndex = 74;
             this.lbl_editar_membro_status_m.Text = "Status";
             // 
+            // upload_img_editar_membro_editar
+            // 
+            this.upload_img_editar_membro_editar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.upload_img_editar_membro_editar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.upload_img_editar_membro_editar.Location = new System.Drawing.Point(462, 698);
+            this.upload_img_editar_membro_editar.Name = "upload_img_editar_membro_editar";
+            this.upload_img_editar_membro_editar.Size = new System.Drawing.Size(109, 33);
+            this.upload_img_editar_membro_editar.TabIndex = 82;
+            this.upload_img_editar_membro_editar.Text = "Upload";
+            this.upload_img_editar_membro_editar.UseVisualStyleBackColor = true;
+            this.upload_img_editar_membro_editar.Click += new System.EventHandler(this.upload_img_editar_membro_editar_Click);
+            // 
+            // img_editar_membro
+            // 
+            this.img_editar_membro.Location = new System.Drawing.Point(577, 636);
+            this.img_editar_membro.Name = "img_editar_membro";
+            this.img_editar_membro.Size = new System.Drawing.Size(129, 95);
+            this.img_editar_membro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.img_editar_membro.TabIndex = 81;
+            this.img_editar_membro.TabStop = false;
+            // 
             // membros_inputs_editar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 753);
+            this.Controls.Add(this.upload_img_editar_membro_editar);
+            this.Controls.Add(this.img_editar_membro);
             this.Controls.Add(this.lbl_editar_membro_datadesaida_m);
             this.Controls.Add(this.input_editar_membro_datadesaida_m);
             this.Controls.Add(this.btn_editar_membro_editar_m);
@@ -501,6 +527,7 @@
             this.Controls.Add(this.lbl_editar_membro_titulo_inputs_m);
             this.Name = "membros_inputs_editar";
             this.Text = "membros_inputs_editar";
+            ((System.ComponentModel.ISupportInitialize)(this.img_editar_membro)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -548,5 +575,7 @@
         private System.Windows.Forms.Label lbl_editar_membro_coordenadora_m;
         public System.Windows.Forms.TextBox input_editar_membro_status_m;
         private System.Windows.Forms.Label lbl_editar_membro_status_m;
+        private System.Windows.Forms.Button upload_img_editar_membro_editar;
+        public System.Windows.Forms.PictureBox img_editar_membro;
     }
 }

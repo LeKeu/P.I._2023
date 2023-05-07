@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(membros_inputs));
             this.lbl_membro_titulo_inputs_m = new System.Windows.Forms.Label();
             this.lbl_membro_nome_m = new System.Windows.Forms.Label();
             this.input_membro_nome_m = new System.Windows.Forms.TextBox();
@@ -68,6 +69,9 @@
             this.dateTimePicker_membro_datainclusao_m = new System.Windows.Forms.DateTimePicker();
             this.input_membro_datadesaida_m = new System.Windows.Forms.TextBox();
             this.lbl_membro_datadesaida_m = new System.Windows.Forms.Label();
+            this.img_membro = new System.Windows.Forms.PictureBox();
+            this.upload_img_membro = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.img_membro)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_membro_titulo_inputs_m
@@ -409,7 +413,7 @@
             // 
             this.btn_membro_enviar_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_membro_enviar_m.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_membro_enviar_m.Location = new System.Drawing.Point(359, 756);
+            this.btn_membro_enviar_m.Location = new System.Drawing.Point(196, 752);
             this.btn_membro_enviar_m.Name = "btn_membro_enviar_m";
             this.btn_membro_enviar_m.Size = new System.Drawing.Size(109, 33);
             this.btn_membro_enviar_m.TabIndex = 38;
@@ -439,7 +443,7 @@
             // 
             this.input_membro_datadesaida_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.input_membro_datadesaida_m.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.input_membro_datadesaida_m.Location = new System.Drawing.Point(269, 694);
+            this.input_membro_datadesaida_m.Location = new System.Drawing.Point(106, 690);
             this.input_membro_datadesaida_m.Name = "input_membro_datadesaida_m";
             this.input_membro_datadesaida_m.Size = new System.Drawing.Size(284, 22);
             this.input_membro_datadesaida_m.TabIndex = 41;
@@ -448,17 +452,41 @@
             // 
             this.lbl_membro_datadesaida_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_membro_datadesaida_m.AutoSize = true;
-            this.lbl_membro_datadesaida_m.Location = new System.Drawing.Point(266, 675);
+            this.lbl_membro_datadesaida_m.Location = new System.Drawing.Point(103, 671);
             this.lbl_membro_datadesaida_m.Name = "lbl_membro_datadesaida_m";
             this.lbl_membro_datadesaida_m.Size = new System.Drawing.Size(181, 16);
             this.lbl_membro_datadesaida_m.TabIndex = 42;
             this.lbl_membro_datadesaida_m.Text = "Data de saída (dd/mm/aaaa)";
+            // 
+            // img_membro
+            // 
+            this.img_membro.Image = ((System.Drawing.Image)(resources.GetObject("img_membro.Image")));
+            this.img_membro.Location = new System.Drawing.Point(589, 690);
+            this.img_membro.Name = "img_membro";
+            this.img_membro.Size = new System.Drawing.Size(129, 95);
+            this.img_membro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.img_membro.TabIndex = 43;
+            this.img_membro.TabStop = false;
+            // 
+            // upload_img_membro
+            // 
+            this.upload_img_membro.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.upload_img_membro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.upload_img_membro.Location = new System.Drawing.Point(474, 752);
+            this.upload_img_membro.Name = "upload_img_membro";
+            this.upload_img_membro.Size = new System.Drawing.Size(109, 33);
+            this.upload_img_membro.TabIndex = 44;
+            this.upload_img_membro.Text = "Upload";
+            this.upload_img_membro.UseVisualStyleBackColor = true;
+            this.upload_img_membro.Click += new System.EventHandler(this.upload_img_membro_Click);
             // 
             // membros_inputs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 906);
+            this.Controls.Add(this.upload_img_membro);
+            this.Controls.Add(this.img_membro);
             this.Controls.Add(this.lbl_membro_datadesaida_m);
             this.Controls.Add(this.input_membro_datadesaida_m);
             this.Controls.Add(this.dateTimePicker_membro_datainclusao_m);
@@ -501,6 +529,7 @@
             this.Controls.Add(this.lbl_membro_titulo_inputs_m);
             this.Name = "membros_inputs";
             this.Text = "membros_inputs";
+            ((System.ComponentModel.ISupportInitialize)(this.img_membro)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -548,5 +577,7 @@
         public System.Windows.Forms.DateTimePicker dateTimePicker_membro_datainclusao_m;
         public System.Windows.Forms.TextBox input_membro_datadesaida_m;
         private System.Windows.Forms.Label lbl_membro_datadesaida_m;
+        private System.Windows.Forms.PictureBox img_membro;
+        private System.Windows.Forms.Button upload_img_membro;
     }
 }
