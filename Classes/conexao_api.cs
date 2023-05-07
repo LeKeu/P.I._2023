@@ -34,7 +34,6 @@ namespace projeto_integrado.Classes
             colunas_paginas.Add("PatrimonioSetor", "C");
             colunas_paginas.Add("PatrimonioFornecedor", "D");
 
-
             GoogleCredential credential;
 
             //Lendo as credencias do arquivo

@@ -54,38 +54,8 @@ namespace projeto_integrado.Forms_p
 
         private void btn_invisivel_patrimonio_m_Click(object sender, EventArgs e)
         {
-            datagridview_patrimonio_p.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
-            datagridview_patrimonio_p.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
-
-            var values_colunas = json_funcs.ColumnName("Patrimonio");
-
-            for (int i = 0; i < datagridview_patrimonio_p.Rows.Count - 1; i++)
-            {
-
-                var row = datagridview_patrimonio_p.Rows[i];
-
-                if (row.Cells[0].Value.ToString() != "Patrimonio")
-                {
-                    datagridview_patrimonio_p.CurrentCell = null;
-                    row.Visible = false;
-                    row.Selected = false;
-                }
-            }
-
-            for (int i = 0; i < datagridview_patrimonio_p.Columns.Count; i++)
-            {
-                datagridview_patrimonio_p.Columns[i].Visible = false;
-            }
-
-            foreach (var coluna in values_colunas)
-            {
-                for (int i = 0; i < coluna.Count; i++)
-                {
-                    //adicionando no dict a chave com seu valor
-                    datagridview_patrimonio_p.Columns[(string)coluna[i]].Visible = true;
-
-                }
-            }
+            datagridview_patrimonio_p.DataSource = json_funcs.Read_from_json_datagridview();
+            timer_refresh.refreshReg(datagridview_patrimonio_p, "Patrimonio", "P");
         }
     }
 }
