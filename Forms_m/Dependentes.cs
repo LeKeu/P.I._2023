@@ -61,7 +61,7 @@ namespace projeto_integrado.Forms
             datagridview_dependentes_m.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
             datagridview_dependentes_m.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
 
-            var values_colunas = conexao_api.ReadTableColumnName("Dependente", "G");
+            var values_colunas = json_funcs.ColumnName("Dependente");
 
             for (int i = 0; i < datagridview_dependentes_m.Rows.Count - 1; i++)
             {
