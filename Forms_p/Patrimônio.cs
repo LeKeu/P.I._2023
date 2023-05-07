@@ -57,7 +57,7 @@ namespace projeto_integrado.Forms_p
             datagridview_patrimonio_p.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
             datagridview_patrimonio_p.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
 
-            var values_colunas = conexao_api.ReadTableColumnName("Patrimonio", "P");
+            var values_colunas = json_funcs.ColumnName("Patrimonio");
 
             for (int i = 0; i < datagridview_patrimonio_p.Rows.Count - 1; i++)
             {

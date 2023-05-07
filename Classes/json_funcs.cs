@@ -17,6 +17,16 @@ namespace projeto_integrado.Classes
 {
     internal class json_funcs
     {
+        static List<object> memb_col = new List<object>() { "IdMembro", "Matricula", "Nome", "DataNasc", "CPF", "RG", "Celular", "Email", "Filiacao", "EnderResidencial", "Profissao", "EnderComercial", "EstadoCivil", "Conjuge", "LocInclusao", "DataInclusao", "Sexo", "Status", "Coordenadora", "DataSaida", "AssMembro", "AssCoordSocial", "AssCoordAdm", "AssCoordFinanceira", "FotoMembro" };
+        static List<object> dep_col = new List<object>() { "IdMembro", "IdDependente", "Nome", "FotoDependente", "Sexo", "DataNasc", "Parentesco"};
+        static List<object> listaPag_col = new List<object>() { "IdMembro", "Nome", "Pagamento", "Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez" };
+        static List<object> patrim_col = new List<object>() { "IdPatrimonio", "NumeroPat", "NumeroSerie", "NotaFiscal", "DataCompra", "FimGarantia", "ValorBem", "EstadoConservacao", "ValorAtual", "IdPatrimonioSetor", "IdPatrimonioProduto", "IdMembroResponsavel", "IdPatrimonioFornecedor", "Observacao", "Status", "OrdemCompra" };
+        static List<object> patriFabr_col = new List<object>() { "IdPatrimonioFabricante", "NomeFabricante", "Ativo" };
+        static List<object> patriGrBens_col = new List<object>() { "IdPatrimonioGrupoBens", "NomeGrupoBens", "IdentificadorGrupoBens", "Ativo" };
+        static List<object> patriProd_col = new List<object>() { "IdPatrimonioProduto", "DescriçãoDetalhada", "DepreciacaoAnual", "IdPatrimonioGrupo", "DescricaoResumida", "CodigoProduto", "IdPatrimonioFabricante", "Modelo", "VidaUtilAnos", "Ativo" };
+        static List<object> patriSet_col = new List<object>() { "IdPatrimonioSetor", "NomeSetor", "Ativo" };
+        static List<object> patriForn_col = new List<object>() { "IdPatrimonioFornecedor", "NomeFornecedor", "CNPJ", "Ativo" };
+        
         public static void Convert_to_json(List<string> dados, string nome_tabela, string ultima_coluna)
         {
             // path do arquivo json, onde será guardado as informações
@@ -30,7 +40,7 @@ namespace projeto_integrado.Classes
             Dictionary<string, string> dict_dados = new Dictionary<string, string>();
 
             // retornando o nome das colunas da tabela específica
-            var values_colunas = conexao_api.ReadTableColumnName(nome_tabela, ultima_coluna);
+            var values_colunas = ColumnName(nome_tabela);
             dict_dados.Add("Tabela", nome_tabela);
             foreach (var row in values_colunas)
             {
@@ -85,6 +95,61 @@ namespace projeto_integrado.Classes
         public static void ReadTableRowValue(DataGridView datagridview, string nome_tabela, string ultima_coluna)
         {
 
+            //var teste = timer_refresh.refreshReg()
+        }
+        // ReadTableColumnName
+        public static IList<IList<object>> ColumnName(string nome_tabela)
+        {
+            switch (nome_tabela)
+            {
+                case "Membro":
+                    IList<IList<object>> case01 = new List<IList<object>>();
+                    case01.Add(memb_col);
+                    return case01;
+
+                case "Dependente":
+                    IList<IList<object>> case02 = new List<IList<object>>();
+                    case02.Add(dep_col);
+                    return case02;
+
+                case "ListaPagamento":
+                    IList<IList<object>> case03 = new List<IList<object>>();
+                    case03.Add(listaPag_col);
+                    return case03;
+
+                case "Patrimonio":
+                    IList<IList<object>> case04 = new List<IList<object>>();
+                    case04.Add(patrim_col);
+                    return case04;
+
+                case "PatrimonioFabricante":
+                    IList<IList<object>> case05 = new List<IList<object>>();
+                    case05.Add(patriFabr_col);
+                    return case05;
+
+                case "PatrimonioGrupoBens":
+                    IList<IList<object>> case06 = new List<IList<object>>();
+                    case06.Add(patriGrBens_col);
+                    return case06;
+
+                case "PatrimonioProduto":
+                    IList<IList<object>> case07 = new List<IList<object>>();
+                    case07.Add(patriProd_col);
+                    return case07;
+
+                case "PatrimonioSetor":
+                    IList<IList<object>> case08 = new List<IList<object>>();
+                    case08.Add(patriSet_col);
+                    return case08;
+
+                case "PatrimonioFornecedor":
+                    IList<IList<object>> case09 = new List<IList<object>>();
+                    case09.Add(patriForn_col);
+                    return case09;
+
+                default:
+                    return null;
+            }
             //var teste = timer_refresh.refreshReg()
         }
     }

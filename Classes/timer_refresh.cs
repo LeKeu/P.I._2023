@@ -15,7 +15,7 @@ namespace projeto_integrado.Classes
             datagridview.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
             datagridview.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
 
-            var values_colunas = conexao_api.ReadTableColumnName(nome_tabela, ultima_coluna);
+            var values_colunas = json_funcs.ColumnName(nome_tabela);
 
             for (int i = 0; i < datagridview.Rows.Count - 1; i++)
             {
