@@ -95,8 +95,8 @@ namespace projeto_integrado.Forms
             forminputeditarmembros.input_editar_membro_status_m.Text = row.Cells[17].Value.ToString();
             forminputeditarmembros.input_editar_membro_coordenadora_m.Text = row.Cells[18].Value.ToString();
             forminputeditarmembros.input_editar_membro_datadesaida_m.Text = row.Cells[19].Value.ToString();
-            forminputeditarmembros.img_editar_membro.Image = System.Drawing.Image.FromStream(new MemoryStream(Convert.FromBase64String(row.Cells[25].Value.ToString())));
-            Console.WriteLine("25--> "+row.Cells[25].Value.ToString());
+            //forminputeditarmembros.img_editar_membro.Image = System.Drawing.Image.FromStream(new MemoryStream(Convert.FromBase64String(row.Cells[25].Value.ToString())));
+            //Console.WriteLine("25--> "+row.Cells[25].Value.ToString());
             forminputeditarmembros.Show();
         }
 
