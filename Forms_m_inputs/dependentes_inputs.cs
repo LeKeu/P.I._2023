@@ -48,9 +48,9 @@ namespace projeto_integrado.Forms_m_inputs
         private void dependentes_inputs_Load(object sender, EventArgs e)
         {
             input_dependente_nomemembrovinculado_m.AutoCompleteCustomSource.Clear();
-            List<string> list = new List<string> { "longhi", "Leka", "filo", "Goretti", "gu" };
+            List<string> valores = json_funcs.ReadTableRowValue("Membro", "Nome");
 
-            string[] arrayt = list.ToArray();
+            string[] arrayt = valores.ToArray();
 
             input_dependente_nomemembrovinculado_m.AutoCompleteCustomSource.AddRange(arrayt);
         }
