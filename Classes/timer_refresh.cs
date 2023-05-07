@@ -43,6 +43,7 @@ namespace projeto_integrado.Classes
 
                 }
             }
+            Console.WriteLine("QUANTIDADE DE LINHAS "+datagridview.Rows.Count + "NOME TABELA " + nome_tabela);
         }
     }
 
