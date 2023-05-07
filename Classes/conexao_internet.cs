@@ -31,12 +31,12 @@ namespace projeto_integrado.Classes
 
             // abaixo há uma var booleana que recebe, convertendo de string para bool, true ou false
             bool is_connected = Convert.ToBoolean(InternetGetConnectedState(out descric, 0).ToString());
-            
+
             // se for verdadeiro - se houver conexão - ler do arquivo json
             if (is_connected)
             {
                 var arq_json_lido = json_funcs.Read_from_json();
-                //conexao_api.AddRow("testesheet", "ultcol teste", arq_json_lido);
+                conexao_api.AddRow(arq_json_lido);
             }
         }
     }

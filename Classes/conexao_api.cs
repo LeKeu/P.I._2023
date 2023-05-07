@@ -20,7 +20,7 @@ namespace projeto_integrado.Classes
         static readonly string ApplicationName = "GRP-MMIB";
         static readonly string SpreadsheetId = "1OYojwhnlzXB0kaJNVM1dsZrUUlRdlpS2OSzuVassbN0";
         static SheetsService service;
-        static Dictionary<string, string> colunas_paginas = new Dictionary<string, string> ();
+        static Dictionary<string, string> colunas_paginas = new Dictionary<string, string>();
 
         public static void Init()
         {
@@ -51,7 +51,7 @@ namespace projeto_integrado.Classes
             });
         }
 
-        static void ReadSheet(string sheet, string ultima_coluna) // STRING OU static readonly string??
+        public static IList<IList<object>> ReadSheet(string sheet, string ultima_coluna) // STRING OU static readonly string??
         {
 
             // Especificando o range da coluna
@@ -68,6 +68,7 @@ namespace projeto_integrado.Classes
             if (values != null && values.Count > 0)
             {
                 Console.WriteLine("DATA FOUND");
+                return values;
                 /*
                 var json_arq = Newtonsoft.Json.JsonConvert.SerializeObject(values);
                 string arq_path = @"C:\Users\Lenovo\Desktop\aaa\JSONTESTE.json";
@@ -84,6 +85,7 @@ namespace projeto_integrado.Classes
             else
             {
                 Console.WriteLine("No data found.");
+                return null;
             }
         }
 
@@ -107,39 +109,53 @@ namespace projeto_integrado.Classes
             }
             else
             {
-                Console.WriteLine("No data found.");
+                Console.WriteLine("NO DATA FOUND");
                 return null;
             }
         }
 
-        public static void AddRow(string sheet, string ultima_coluna, dynamic ob_lista)
+        public static void AddRow(dynamic ob_lista)
         {
             var valueRange = new ValueRange();
-             Console.WriteLine(ob_lista[0].GetType());
+            //Console.WriteLine(ob_lista[0].GetType());
 
 
-            for (int i = 0; i <  ob_lista.Count; i++)
+            for (int i = 0; i < ob_lista.Count; i++)
             {
                 var range = "";
+                IList<IList<object>> teste;
 
                 var oblist = new List<object>();
                 foreach (JProperty property in ob_lista[i].Properties())
                 {
                     if (property.Name == "Tabela")
                     {
-                        range = $"{property.Value}!A:{colunas_paginas[property.Value.ToString()]}";
-                        Console.WriteLine(range);
-                    }
-                    oblist.Add(property.Value);
+                        string tabela_name = property.Name;
 
+                        range = $"{property.Value}!A:{colunas_paginas[property.Value.ToString()]}";
+                        //Console.WriteLine(range);
+                        teste = ReadSheet(property.Value.ToString(), colunas_paginas[property.Value.ToString()]);
+                        Console.WriteLine("YASSS" + teste[0]);
+                        /*
+                        foreach (var coisa in teste)
+                        {
+                            //Console.WriteLine(string.Join("-", coisa[0]));
+                            Console.WriteLine("YASSS"+coisa[0]);
+                        }
+                        */
+                    }
+                    else
+                    {
+                        oblist.Add(property.Value);
+                    }
                 }
                 valueRange.Values = new List<IList<object>> { oblist };
 
-                
+
                 var appendRequest = service.Spreadsheets.Values.Append(valueRange, SpreadsheetId, range);
                 appendRequest.ValueInputOption = SpreadsheetsResource.ValuesResource.AppendRequest.ValueInputOptionEnum.USERENTERED;
                 var appendReponse = appendRequest.Execute();
-                
+
                 valueRange.Values.Clear();
             }
         }
