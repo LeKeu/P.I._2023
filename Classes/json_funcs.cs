@@ -9,6 +9,7 @@ using System.Data;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -72,11 +73,8 @@ namespace projeto_integrado.Classes
             List<string> dict_dados_leitura = new List<string>();
 
             dynamic jsonArq = JsonConvert.DeserializeObject(File.ReadAllText(arq_path), (typeof(DataTable)));
-            Console.WriteLine(jsonArq.GetType());
 
             return jsonArq;
-
-
         }
 
         public static dynamic Read_from_json()  // lendo do arq json criado
@@ -85,17 +83,29 @@ namespace projeto_integrado.Classes
             List<string> dict_dados_leitura = new List<string>();
 
             dynamic jsonArq = JsonConvert.DeserializeObject(File.ReadAllText(arq_path));
-            Console.WriteLine(jsonArq.GetType());
 
             return jsonArq;
 
 
         }
 
-        public static void ReadTableRowValue(DataGridView datagridview, string nome_tabela, string ultima_coluna)
+        public static List<string> ReadTableRowValue(string nome_tabela, string nome_chave)
         {
+            /*Função que recebe o nome da tabela e o nome da chave (coluna) que deseja ser pego todos os valores
+             No caso, pode ser usada para, do arquivo json, conseguir pegar os dados de uma chave específica.
+             */
+            var arq_json = Read_from_json();
+            List<string> valores = new List<string>();
 
-            //var teste = timer_refresh.refreshReg()
+            foreach (var coisa in arq_json)
+            {
+                if (coisa.GetValue("Tabela").ToString() == nome_tabela)
+                {
+                    valores.Add(coisa.GetValue(nome_chave).ToString());
+                }
+            }
+
+            return valores;
         }
         // ReadTableColumnName
         public static IList<IList<object>> ColumnName(string nome_tabela)
