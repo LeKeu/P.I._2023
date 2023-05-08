@@ -170,5 +170,15 @@ namespace projeto_integrado
             th.SetApartmentState(ApartmentState.STA);
             th.Start();
         }
+
+        private void gerenciamento_m_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gerenciamento_m_FormClosed(object sender, FormClosedEventArgs e)
+        {
+
+        }
     }
 }

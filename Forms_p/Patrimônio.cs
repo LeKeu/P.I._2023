@@ -20,7 +20,7 @@ namespace projeto_integrado.Forms_p
         public Patrimônio()
         {
             InitializeComponent();
-            datagridview_patrimonio_p.DataSource = json_funcs.Read_from_json_datagridview();
+            //datagridview_patrimonio_p.DataSource = json_funcs.Read_from_json_datagridview();
         }
 
         protected override void OnShown(EventArgs e)
@@ -31,6 +31,7 @@ namespace projeto_integrado.Forms_p
 
         private void Patrimônio_Load(object sender, EventArgs e)
         {
+            timer_patrimonio_p.Start();
             CarregarTema();
         }
 
@@ -60,14 +61,21 @@ namespace projeto_integrado.Forms_p
             timer_refresh.refreshReg(datagridview_patrimonio_p, "Patrimonio", "P");
         }
 
+        private void timer_patrimonio_p_Tick(object sender, EventArgs e)
+        {
+            datagridview_patrimonio_p.DataSource = json_funcs.Read_from_json_datagridview();
+            timer_refresh.refreshReg(datagridview_patrimonio_p, "Patrimonio", "P");
+            timer_patrimonio_p.Start();
+        }
+
         private void datagridview_patrimonio_p_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
+
             int indexRow = e.RowIndex;
             DataGridViewRow row = datagridview_patrimonio_p.Rows[indexRow];
 
             var forminputeditarpatrimonio = new Patrimonio_inputs_editar();
-            forminputeditarpatrimonio.input_editar_patrimonio_numpat_p.Text = row.Cells[1].Value.ToString();
-            forminputeditarpatrimonio.input_editar_patrimonio_numserie_p.Text = row.Cells[2].Value.ToString();
+            forminputeditarpatrimonio.input_editar_patrimonio_numpat_p.Text = row.Cells[2].Value.ToString();
             forminputeditarpatrimonio.input_editar_patrimonio_notafiscal_p.Text = row.Cells[3].Value.ToString();
             forminputeditarpatrimonio.dateTimePicker_editar_patrimonio_datacompra_p.Text = row.Cells[4].Value.ToString();
             forminputeditarpatrimonio.dateTimePicker_editar_patrimonio_fimgarantia_p.Text = row.Cells[5].Value.ToString();
@@ -78,6 +86,26 @@ namespace projeto_integrado.Forms_p
             forminputeditarpatrimonio.input_editar_patrimonio_ordemcompra_p.Text = row.Cells[15].Value.ToString();
             forminputeditarpatrimonio.input_editar_patrimonio_observacao_p.Text = row.Cells[13].Value.ToString();
             forminputeditarpatrimonio.Show();
+            Console.WriteLine("6--> " + row.Cells[6].Value.ToString());
+            Console.WriteLine("7--> " + row.Cells[7].Value.ToString());
+            Console.WriteLine("8--> " + row.Cells[8].Value.ToString());
+            Console.WriteLine("6--> " + row.Cells[6].Value.GetType());
+            Console.WriteLine("7--> " + row.Cells[7].Value.GetType());
+            Console.WriteLine("8--> " + row.Cells[8].Value.GetType());
         }
+
+        /*
+        public static T ConvertFromDBVal<T>(object obj)
+        {
+            if (obj == null || obj == DBNull.Value)
+            {
+                return default(T); // returns the default value for the type
+            }
+            else
+            {
+                return (T)obj;
+            }
+        }
+        */
     }
 }

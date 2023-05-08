@@ -28,11 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btn_deletar_patrimonio_p = new System.Windows.Forms.Button();
             this.btn_editar_patrimonio_p = new System.Windows.Forms.Button();
             this.btn_adicionar_patrimonio_p = new System.Windows.Forms.Button();
             this.datagridview_patrimonio_p = new System.Windows.Forms.DataGridView();
             this.btn_invisivel_patrimonio_m = new System.Windows.Forms.Button();
+            this.timer_patrimonio_p = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.datagridview_patrimonio_p)).BeginInit();
             this.SuspendLayout();
             // 
@@ -94,6 +96,11 @@
             this.btn_invisivel_patrimonio_m.UseVisualStyleBackColor = true;
             this.btn_invisivel_patrimonio_m.Click += new System.EventHandler(this.btn_invisivel_patrimonio_m_Click);
             // 
+            // timer_patrimonio_p
+            // 
+            this.timer_patrimonio_p.Interval = 5000;
+            this.timer_patrimonio_p.Tick += new System.EventHandler(this.timer_patrimonio_p_Tick);
+            // 
             // Patrimônio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -119,5 +126,6 @@
         private System.Windows.Forms.Button btn_adicionar_patrimonio_p;
         private System.Windows.Forms.DataGridView datagridview_patrimonio_p;
         private System.Windows.Forms.Button btn_invisivel_patrimonio_m;
+        private System.Windows.Forms.Timer timer_patrimonio_p;
     }
 }
