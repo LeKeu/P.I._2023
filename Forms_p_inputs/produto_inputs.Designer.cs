@@ -244,21 +244,21 @@
         #endregion
 
         private System.Windows.Forms.Button btn_produto_enviar_p;
-        private System.Windows.Forms.TextBox input_produto_descricaodetalhada_p;
         private System.Windows.Forms.Label lbl_produto_descricaodetalhada_p;
-        private System.Windows.Forms.TextBox input_produto_descricaoresumida_p;
         private System.Windows.Forms.Label lbl_produto_descricaoresumida_p;
         private System.Windows.Forms.Label lbl_produto_ativo_p;
-        private System.Windows.Forms.TextBox input_produto_vidautilanos_p;
         private System.Windows.Forms.Label lbl_produto_vidautilanos_p;
-        private System.Windows.Forms.TextBox input_produto_modelo_p;
         private System.Windows.Forms.Label lbl_produto_modelo_p;
-        private System.Windows.Forms.TextBox input_produto_codproduto_p;
         private System.Windows.Forms.Label lbl_produto_codigoproduto_p;
-        private System.Windows.Forms.TextBox input_produto_depreciacaoanual_p;
         private System.Windows.Forms.Label lbl_produto_depreciacaoanual_p;
         private System.Windows.Forms.Label lbl_produto_titulo_inputs_p;
-        private System.Windows.Forms.DateTimePicker dateTimePicker_produto_ativo_p;
-        private System.Windows.Forms.CheckBox checkBox_produto_ativo_p;
+        public System.Windows.Forms.TextBox input_produto_descricaodetalhada_p;
+        public System.Windows.Forms.TextBox input_produto_descricaoresumida_p;
+        public System.Windows.Forms.TextBox input_produto_vidautilanos_p;
+        public System.Windows.Forms.TextBox input_produto_modelo_p;
+        public System.Windows.Forms.TextBox input_produto_codproduto_p;
+        public System.Windows.Forms.TextBox input_produto_depreciacaoanual_p;
+        public System.Windows.Forms.DateTimePicker dateTimePicker_produto_ativo_p;
+        public System.Windows.Forms.CheckBox checkBox_produto_ativo_p;
     }
 }

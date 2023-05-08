@@ -75,23 +75,18 @@ namespace projeto_integrado.Forms_p
             DataGridViewRow row = datagridview_patrimonio_p.Rows[indexRow];
 
             var forminputeditarpatrimonio = new Patrimonio_inputs_editar();
-            forminputeditarpatrimonio.input_editar_patrimonio_numpat_p.Text = row.Cells[2].Value.ToString();
-            forminputeditarpatrimonio.input_editar_patrimonio_notafiscal_p.Text = row.Cells[3].Value.ToString();
-            forminputeditarpatrimonio.dateTimePicker_editar_patrimonio_datacompra_p.Text = row.Cells[4].Value.ToString();
-            forminputeditarpatrimonio.dateTimePicker_editar_patrimonio_fimgarantia_p.Text = row.Cells[5].Value.ToString();
-            forminputeditarpatrimonio.input_editar_patrimonio_valorbem_p.Text = row.Cells[6].Value.ToString();
-            forminputeditarpatrimonio.input_editar_patrimonio_estadoconservacao_p.Text = row.Cells[7].Value.ToString();
-            forminputeditarpatrimonio.input_editar_patrimonio_valoratual_p.Text = row.Cells[8].Value.ToString();
-            forminputeditarpatrimonio.input_editar_patrimonio_status_p.Text = row.Cells[14].Value.ToString();
-            forminputeditarpatrimonio.input_editar_patrimonio_ordemcompra_p.Text = row.Cells[15].Value.ToString();
-            forminputeditarpatrimonio.input_editar_patrimonio_observacao_p.Text = row.Cells[13].Value.ToString();
+            forminputeditarpatrimonio.input_editar_patrimonio_numpat_p.Text = row.Cells[30].Value.ToString();
+            forminputeditarpatrimonio.input_editar_patrimonio_numserie_p.Text = row.Cells[31].Value.ToString();
+            forminputeditarpatrimonio.input_editar_patrimonio_notafiscal_p.Text = row.Cells[32].Value.ToString();
+            forminputeditarpatrimonio.dateTimePicker_editar_patrimonio_datacompra_p.Text = row.Cells[33].Value.ToString();
+            forminputeditarpatrimonio.dateTimePicker_editar_patrimonio_fimgarantia_p.Text = row.Cells[34].Value.ToString();
+            forminputeditarpatrimonio.input_editar_patrimonio_valorbem_p.Text = row.Cells[35].Value.ToString();
+            forminputeditarpatrimonio.input_editar_patrimonio_estadoconservacao_p.Text = row.Cells[36].Value.ToString();
+            forminputeditarpatrimonio.input_editar_patrimonio_valoratual_p.Text = row.Cells[37].Value.ToString();
+            forminputeditarpatrimonio.input_editar_patrimonio_status_p.Text = row.Cells[18].Value.ToString();
+            forminputeditarpatrimonio.input_editar_patrimonio_ordemcompra_p.Text = row.Cells[43].Value.ToString();
+            forminputeditarpatrimonio.input_editar_patrimonio_observacao_p.Text = row.Cells[42].Value.ToString();
             forminputeditarpatrimonio.Show();
-            Console.WriteLine("6--> " + row.Cells[6].Value.ToString());
-            Console.WriteLine("7--> " + row.Cells[7].Value.ToString());
-            Console.WriteLine("8--> " + row.Cells[8].Value.ToString());
-            Console.WriteLine("6--> " + row.Cells[6].Value.GetType());
-            Console.WriteLine("7--> " + row.Cells[7].Value.GetType());
-            Console.WriteLine("8--> " + row.Cells[8].Value.GetType());
         }
 
         /*
