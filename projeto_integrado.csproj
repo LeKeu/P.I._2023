@@ -198,6 +198,12 @@
     <Compile Include="Forms_p_inputs_editar\Patrimonio_inputs_editar.Designer.cs">
       <DependentUpon>Patrimonio_inputs_editar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms_p_inputs_editar\produto_inputs_editar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_p_inputs_editar\produto_inputs_editar.Designer.cs">
+      <DependentUpon>produto_inputs_editar.cs</DependentUpon>
+    </Compile>
     <Compile Include="gerenciamento_m.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -275,6 +281,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms_p_inputs_editar\Patrimonio_inputs_editar.resx">
       <DependentUpon>Patrimonio_inputs_editar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_p_inputs_editar\produto_inputs_editar.resx">
+      <DependentUpon>produto_inputs_editar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="gerenciamento_m.resx">
       <DependentUpon>gerenciamento_m.cs</DependentUpon>

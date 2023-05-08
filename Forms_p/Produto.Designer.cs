@@ -84,6 +84,7 @@
             this.datagridview_produto_p.RowTemplate.Height = 24;
             this.datagridview_produto_p.Size = new System.Drawing.Size(642, 369);
             this.datagridview_produto_p.TabIndex = 19;
+            this.datagridview_produto_p.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagridview_produto_p_CellDoubleClick);
             // 
             // btn_invisivel_produto_p
             // 
