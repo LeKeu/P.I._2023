@@ -30,14 +30,19 @@ namespace projeto_integrado.Forms_m_inputs_editar
                 var Membros = new Membros();
                 string id_membro = Membros.id_membro;
 
-                Console.WriteLine("NOME DO MEMBRO --> "+id_membro);
+                MemoryStream ms = new MemoryStream();
+                Bitmap bmping = new Bitmap(img_editar_membro.Image);
+                bmping.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+                byte[] photoData = new byte[ms.Length];
+                ms.Position = 0;
+                ms.Read(photoData, 0, photoData.Length);
 
-                var teste = json_funcs.ReadTableRow("Membro", "Nome", id_membro);
-                Console.WriteLine("teste count "+teste.Count);
-                foreach(var coisa in teste)
-                {
-                    //Console.WriteLine("bu --> "+coisa.ToString());
-                }
+                //Console.WriteLine("NOME DO MEMBRO --> "+id_membro);
+                List<string> dados = new List<string>() { "ID-?", input_editar_membro_matricula_m.Text, input_editar_membro_nome_m.Text, dateTimePicker_editar_membro_datanasc_m.Text, input_editar_membro_cpf_m.Text, input_editar_membro_rg_m.Text, input_editar_membro_celular_m.Text, input_editar_membro_email_m.Text, input_editar_membro_filiacao_m.Text, input_editar_membro_enderresidencial_m.Text, input_editar_membro_profissao_m.Text, input_editar_membro_endercomercial_m.Text, input_editar_membro_estadocivil_m.Text, input_editar_membro_conjuge_m.Text, input_editar_membro_localinclusao_m.Text, dateTimePicker_editar_membro_datainclusao_m.Text, input_editar_membro_sexo_m.Text, input_editar_membro_status_m.Text, "corrdenadora", "datasaida", "assmembro", "asscorrdsocial", "asscorrdadm", "asscoordfinanc", Convert.ToBase64String(photoData) };
+
+                //json_funcs.UpdateValueJson("Membro", "Nome", id_membro, dados);
+                //Console.WriteLine("teste count "+teste.Count);
+                
 
                 //MemoryStream ms = new MemoryStream();
                 //Bitmap bmping = new Bitmap(img_editar_membro.Image);
