@@ -82,14 +82,14 @@ namespace projeto_integrado.Forms_p
                 Console.WriteLine(i + "lolo --> " + row.Cells[i].Value);
             }
 
-            forminputeditarproduto.input_editar_produto_depreciacaoanual_p.Text = row.Cells[2].Value.ToString();
-            forminputeditarproduto.input_editar_produto_codproduto_p.Text = row.Cells[5].Value.ToString();
-            forminputeditarproduto.input_editar_produto_modelo_p.Text = row.Cells[7].Value.ToString();
-            forminputeditarproduto.input_editar_produto_vidautilanos_p.Text = row.Cells[8].Value.ToString();
+            forminputeditarproduto.input_editar_produto_depreciacaoanual_p.Text = row.Cells[65].Value.ToString();
+            forminputeditarproduto.input_editar_produto_codproduto_p.Text = row.Cells[68].Value.ToString();
+            forminputeditarproduto.input_editar_produto_modelo_p.Text = row.Cells[69].Value.ToString();
+            forminputeditarproduto.input_editar_produto_vidautilanos_p.Text = row.Cells[70].Value.ToString();
             //forminputeditarproduto.dateTimePicker_editar_produto_datafimgarantia_p.Text = row.Cells[15].Value.ToString();
-            forminputeditarproduto.input_editar_produto_descricaoresumida_p.Text = row.Cells[4].Value.ToString();
-            //forminputeditarproduto.checkBox_editar_produto_ativo_p.Checked = row.Cells[9].Value.ToString();
-            forminputeditarproduto.input_editar_produto_descricaodetalhada_p.Text = row.Cells[1].Value.ToString();
+            forminputeditarproduto.input_editar_produto_descricaoresumida_p.Text = row.Cells[67].Value.ToString();
+            //forminputeditarproduto.checkBox_editar_produto_ativo_p.Checked = row.Cells[60].Value.ToString();
+            forminputeditarproduto.input_editar_produto_descricaodetalhada_p.Text = row.Cells[64].Value.ToString();
             //forminputeditarproduto.img_editar_membro.Image = System.Drawing.Image.FromStream(new MemoryStream(Convert.FromBase64String(row.Cells[25].Value.ToString())));
             //Console.WriteLine("25--> "+row.Cells[25].Value.ToString());
             forminputeditarproduto.Show();

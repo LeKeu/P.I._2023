@@ -84,6 +84,7 @@
             this.datagridview_grupo_de_bens_p.RowTemplate.Height = 24;
             this.datagridview_grupo_de_bens_p.Size = new System.Drawing.Size(642, 369);
             this.datagridview_grupo_de_bens_p.TabIndex = 23;
+            this.datagridview_grupo_de_bens_p.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagridview_grupo_de_bens_p_CellDoubleClick);
             // 
             // btn_invisivel_patriGrBens_p
             // 

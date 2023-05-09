@@ -72,12 +72,17 @@ namespace projeto_integrado.Forms
             int indexRow = e.RowIndex;
             DataGridViewRow row = datagridview_dependentes_m.Rows[indexRow];
 
+            for (int i = 0; i < row.Cells.Count; i++)
+            {
+                Console.WriteLine(i + "lolo --> " + row.Cells[i].Value);
+            }
+
             var forminputeditardependentes = new dependentes_inputs_editar();
             forminputeditardependentes.input_editar_dependente_nome_m.Text = row.Cells[3].Value.ToString();
-            forminputeditardependentes.input_editar_dependente_sexo_m.Text = row.Cells[5].Value.ToString();
-            forminputeditardependentes.dateTimePicker_editar_dependente_datanasc_m.Text = row.Cells[6].Value.ToString();
-            forminputeditardependentes.input_editar_dependente_parentesco_m.Text = row.Cells[7].Value.ToString();
-            forminputeditardependentes.input_editar_dependente_nomemembrovinculado_m.Text = row.Cells[1].Value.ToString();
+            forminputeditardependentes.input_editar_dependente_sexo_m.Text = row.Cells[17].Value.ToString();
+            forminputeditardependentes.dateTimePicker_editar_dependente_datanasc_m.Text = row.Cells[4].Value.ToString();
+            forminputeditardependentes.input_editar_dependente_parentesco_m.Text = row.Cells[29].Value.ToString();
+            forminputeditardependentes.input_editar_dependente_nomemembrovinculado_m.Text = row.Cells[26].Value.ToString();
             forminputeditardependentes.Show();
         }
 

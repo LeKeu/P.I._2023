@@ -25,11 +25,11 @@ namespace projeto_integrado.Forms_m_inputs
                                      MessageBoxButtons.YesNo);
             if (confirmResult == DialogResult.Yes)
             {
-                List<string> dados = new List<string>() { "ID-?", input_pagamento_nome_m.Text, input_pagamento_valor_m.Text, "janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro" };
-                string nome_tabela = "ListaPagamento";
+                //List<string> dados = new List<string>() { "ID-?", input_pagamento_nome_m.Text, input_pagamento_valor_m.Text, "janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro" };
+                //string nome_tabela = "ListaPagamento";
 
                 //func p gravar os dados no json
-                json_funcs.Convert_to_json(dados, nome_tabela, "O");
+                //json_funcs.Convert_to_json(dados, nome_tabela, "O");
 
                 this.Close();
             }

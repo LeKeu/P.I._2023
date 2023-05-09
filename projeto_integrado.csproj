@@ -120,6 +120,12 @@
     <Compile Include="Forms_m_inputs_editar\membros_inputs_editar.Designer.cs">
       <DependentUpon>membros_inputs_editar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms_m_inputs_editar\pagamentos_inputs_editar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_m_inputs_editar\pagamentos_inputs_editar.Designer.cs">
+      <DependentUpon>pagamentos_inputs_editar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms_p\Fabricantes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -192,6 +198,24 @@
     <Compile Include="Forms_p_inputs\setor_inputs.Designer.cs">
       <DependentUpon>setor_inputs.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms_p_inputs_editar\fabricante_inputs_editar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_p_inputs_editar\fabricante_inputs_editar.Designer.cs">
+      <DependentUpon>fabricante_inputs_editar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms_p_inputs_editar\fornecedor_inputs_editar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_p_inputs_editar\fornecedor_inputs_editar.Designer.cs">
+      <DependentUpon>fornecedor_inputs_editar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms_p_inputs_editar\grupodebens_inputs_editar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_p_inputs_editar\grupodebens_inputs_editar.Designer.cs">
+      <DependentUpon>grupodebens_inputs_editar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms_p_inputs_editar\Patrimonio_inputs_editar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -203,6 +227,12 @@
     </Compile>
     <Compile Include="Forms_p_inputs_editar\produto_inputs_editar.Designer.cs">
       <DependentUpon>produto_inputs_editar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms_p_inputs_editar\setor_inputs_editar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_p_inputs_editar\setor_inputs_editar.Designer.cs">
+      <DependentUpon>setor_inputs_editar.cs</DependentUpon>
     </Compile>
     <Compile Include="gerenciamento_m.cs">
       <SubType>Form</SubType>
@@ -243,6 +273,9 @@
     <EmbeddedResource Include="Forms_m_inputs_editar\membros_inputs_editar.resx">
       <DependentUpon>membros_inputs_editar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms_m_inputs_editar\pagamentos_inputs_editar.resx">
+      <DependentUpon>pagamentos_inputs_editar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms_p\Fabricantes.resx">
       <DependentUpon>Fabricantes.cs</DependentUpon>
     </EmbeddedResource>
@@ -279,11 +312,23 @@
     <EmbeddedResource Include="Forms_p_inputs\setor_inputs.resx">
       <DependentUpon>setor_inputs.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms_p_inputs_editar\fabricante_inputs_editar.resx">
+      <DependentUpon>fabricante_inputs_editar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_p_inputs_editar\fornecedor_inputs_editar.resx">
+      <DependentUpon>fornecedor_inputs_editar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_p_inputs_editar\grupodebens_inputs_editar.resx">
+      <DependentUpon>grupodebens_inputs_editar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms_p_inputs_editar\Patrimonio_inputs_editar.resx">
       <DependentUpon>Patrimonio_inputs_editar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms_p_inputs_editar\produto_inputs_editar.resx">
       <DependentUpon>produto_inputs_editar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_p_inputs_editar\setor_inputs_editar.resx">
+      <DependentUpon>setor_inputs_editar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="gerenciamento_m.resx">
       <DependentUpon>gerenciamento_m.cs</DependentUpon>

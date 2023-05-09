@@ -84,6 +84,7 @@
             this.datagridview_pagamentos_m.RowTemplate.Height = 24;
             this.datagridview_pagamentos_m.Size = new System.Drawing.Size(642, 369);
             this.datagridview_pagamentos_m.TabIndex = 16;
+            this.datagridview_pagamentos_m.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagridview_pagamentos_m_CellDoubleClick);
             // 
             // btn_invisivel_memListPag_m
             // 

@@ -107,9 +107,9 @@
         #endregion
 
         private System.Windows.Forms.Button btn_fabricantes_enviar_p;
-        private System.Windows.Forms.TextBox input_fabricante_nome_p;
         private System.Windows.Forms.Label lbl_fabricante_nome_p;
         private System.Windows.Forms.Label lbl_fabricante_titulo_inputs_p;
-        private System.Windows.Forms.CheckBox checkBox_fabricante_ativo_p;
+        public System.Windows.Forms.TextBox input_fabricante_nome_p;
+        public System.Windows.Forms.CheckBox checkBox_fabricante_ativo_p;
     }
 }

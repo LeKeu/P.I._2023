@@ -84,6 +84,7 @@
             this.datagridview_setor_p.RowTemplate.Height = 24;
             this.datagridview_setor_p.Size = new System.Drawing.Size(642, 369);
             this.datagridview_setor_p.TabIndex = 23;
+            this.datagridview_setor_p.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagridview_setor_p_CellDoubleClick);
             // 
             // btn_invisivel_patrSetor_p
             // 
