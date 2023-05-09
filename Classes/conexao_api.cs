@@ -67,7 +67,7 @@ namespace projeto_integrado.Classes
 
             if (values != null && values.Count > 0)
             {
-                Console.WriteLine("DATA FOUND");
+                //Console.WriteLine("DATA FOUND");
                 return values;
                 /*
                 var json_arq = Newtonsoft.Json.JsonConvert.SerializeObject(values);

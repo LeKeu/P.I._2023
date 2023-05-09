@@ -13,6 +13,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
 namespace projeto_integrado.Classes
 {
@@ -109,7 +110,7 @@ namespace projeto_integrado.Classes
             return valores;
         }
 
-        public static List<string> ReadTableRow(string nome_tabela, string nome_chave, string valor)
+        public static void UpdateValueJson(string nome_tabela, string nome_chave, string valor, List<string> dados)
         {
             /*
              Função que recebe o nome da tabela, o nome da chave (coluna) e o nome do valor que deseja ser pego todos os valores
@@ -117,20 +118,35 @@ namespace projeto_integrado.Classes
             */
             var arq_json = Read_from_json();
             List<string> valores = new List<string>();
+            List<string> chaves = new List<string>();
 
             foreach (var coisa in arq_json)
             {
-                if (coisa.GetValue("Tabela").ToString() == nome_tabela && coisa.GetValue("Nome").ToString() == valor)
+                if (coisa.GetValue("Tabela").ToString() == nome_tabela && coisa.GetValue("CPF").ToString() == valor)
                 {
-                    //valores.Add(coisa);
-                    Console.WriteLine(coisa);
-                    //Console.WriteLine(coisa.Count);
-                    //Console.WriteLine(coisa[0]);
-                    Console.WriteLine(coisa.GetValue("Nome").ToString());
+                    JObject jsonObj = JObject.Parse(coisa.ToString());
+                    Dictionary<string, string> dictObj = jsonObj.ToObject<Dictionary<string, string>>();
+
+                    dictObj.Remove("Tabela");
+
+                    foreach (var chave in dictObj.Keys)
+                    {
+                        Console.WriteLine("chave" + chave);
+                        chaves.Add(chave);
+                        
+                    }
+                    for(int i = 0; i < dictObj.Count; i++)
+                    {
+                        Console.WriteLine("chaves[i] " + chaves[i] + "| dados[i] " + dados[i]);
+                        //Console.WriteLine("dados[i]" + dados[i]);
+                        //Console.WriteLine("chaves[i]" + chaves[i]);
+                        //arq_json[chaves[i]] = dados[i];
+                    }
+                    //Console.WriteLine("Nome que eu quero --> " + coisa.GetValue("Nome").ToString());
                 }
             }
 
-            return valores;
+            //return valores;
         }
         // ReadTableColumnName
         public static IList<IList<object>> ColumnName(string nome_tabela)

@@ -36,7 +36,7 @@ namespace projeto_integrado.Classes
             if (is_connected)
             {
                 var arq_json_lido = json_funcs.Read_from_json();
-                conexao_api.AddRow(arq_json_lido);
+                //conexao_api.AddRow(arq_json_lido);
             }
         }
     }

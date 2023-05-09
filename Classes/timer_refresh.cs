@@ -42,7 +42,7 @@ namespace projeto_integrado.Classes
                     datagridview.Columns[(string)coluna[i]].Visible = true;
                 }
             }
-            Console.WriteLine("QUANTIDADE DE LINHAS "+datagridview.Rows.Count + "NOME TABELA " + nome_tabela);
+            //Console.WriteLine("QUANTIDADE DE LINHAS "+datagridview.Rows.Count + "NOME TABELA " + nome_tabela);
         }
     }
 
