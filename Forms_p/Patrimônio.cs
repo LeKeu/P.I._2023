@@ -74,6 +74,8 @@ namespace projeto_integrado.Forms_p
             int indexRow = e.RowIndex;
             DataGridViewRow row = datagridview_patrimonio_p.Rows[indexRow];
 
+            Console.WriteLine("eu odeio isso");
+
             var forminputeditarpatrimonio = new Patrimonio_inputs_editar();
             forminputeditarpatrimonio.input_editar_patrimonio_numpat_p.Text = row.Cells[30].Value.ToString();
             forminputeditarpatrimonio.input_editar_patrimonio_numserie_p.Text = row.Cells[31].Value.ToString();
