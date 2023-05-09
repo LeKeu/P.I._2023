@@ -16,6 +16,7 @@ namespace projeto_integrado.Forms
 {
     public partial class Membros : Form
     {
+        public static string id_membro;
         public Membros()
         {
             InitializeComponent();
@@ -75,26 +76,33 @@ namespace projeto_integrado.Forms
             int indexRow = e.RowIndex;
             DataGridViewRow row = datagridview_membros_m.Rows[indexRow];
 
+            id_membro = row.Cells[5].Value.ToString();
+
+            for (int i = 0; i < row.Cells.Count; i++)
+            {
+                Console.WriteLine(i + "lolo --> " + row.Cells[i].Value);
+            }
+
             var forminputeditarmembros = new membros_inputs_editar();
-            forminputeditarmembros.input_editar_membro_nome_m.Text = row.Cells[2].Value.ToString();
-            forminputeditarmembros.input_editar_membro_matricula_m.Text = row.Cells[1].Value.ToString();
-            //forminputeditarmembros.dateTimePicker_editar_membro_datanasc_m.Text = row.Cells[3].Value.ToString();
-            forminputeditarmembros.input_editar_membro_cpf_m.Text = row.Cells[4].Value.ToString();
-            forminputeditarmembros.input_editar_membro_rg_m.Text = row.Cells[5].Value.ToString();
-            forminputeditarmembros.input_editar_membro_celular_m.Text = row.Cells[6].Value.ToString();
-            forminputeditarmembros.input_editar_membro_email_m.Text = row.Cells[7].Value.ToString();
-            forminputeditarmembros.input_editar_membro_filiacao_m.Text = row.Cells[8].Value.ToString();
-            forminputeditarmembros.input_editar_membro_profissao_m.Text = row.Cells[10].Value.ToString();
-            forminputeditarmembros.input_editar_membro_sexo_m.Text = row.Cells[16].Value.ToString();
-            forminputeditarmembros.input_editar_membro_enderresidencial_m.Text = row.Cells[9].Value.ToString();
-            forminputeditarmembros.input_editar_membro_endercomercial_m.Text = row.Cells[11].Value.ToString();
-            forminputeditarmembros.input_editar_membro_estadocivil_m.Text = row.Cells[12].Value.ToString();
-            forminputeditarmembros.input_editar_membro_conjuge_m.Text = row.Cells[13].Value.ToString();
-            forminputeditarmembros.input_editar_membro_localinclusao_m.Text = row.Cells[14].Value.ToString();
+            forminputeditarmembros.input_editar_membro_nome_m.Text = row.Cells[3].Value.ToString();
+            forminputeditarmembros.input_editar_membro_matricula_m.Text = row.Cells[2].Value.ToString();
+            //forminputeditarmembros.dateTimePicker_editar_membro_datanasc_m.Text = row.Cells[4].Value.ToString();
+            forminputeditarmembros.input_editar_membro_cpf_m.Text = row.Cells[5].Value.ToString();
+            forminputeditarmembros.input_editar_membro_rg_m.Text = row.Cells[6].Value.ToString();
+            forminputeditarmembros.input_editar_membro_celular_m.Text = row.Cells[7].Value.ToString();
+            forminputeditarmembros.input_editar_membro_email_m.Text = row.Cells[8].Value.ToString();
+            forminputeditarmembros.input_editar_membro_filiacao_m.Text = row.Cells[9].Value.ToString();
+            forminputeditarmembros.input_editar_membro_profissao_m.Text = row.Cells[11].Value.ToString();
+            forminputeditarmembros.input_editar_membro_sexo_m.Text = row.Cells[17].Value.ToString();
+            forminputeditarmembros.input_editar_membro_enderresidencial_m.Text = row.Cells[10].Value.ToString();
+            forminputeditarmembros.input_editar_membro_endercomercial_m.Text = row.Cells[12].Value.ToString();
+            forminputeditarmembros.input_editar_membro_estadocivil_m.Text = row.Cells[13].Value.ToString();
+            forminputeditarmembros.input_editar_membro_conjuge_m.Text = row.Cells[14].Value.ToString();
+            forminputeditarmembros.input_editar_membro_localinclusao_m.Text = row.Cells[15].Value.ToString();
             //forminputeditarmembros.dateTimePicker_editar_membro_datainclusao_m.Text = row.Cells[15].Value.ToString();
-            forminputeditarmembros.input_editar_membro_status_m.Text = row.Cells[17].Value.ToString();
-            forminputeditarmembros.input_editar_membro_coordenadora_m.Text = row.Cells[18].Value.ToString();
-            forminputeditarmembros.input_editar_membro_datadesaida_m.Text = row.Cells[19].Value.ToString();
+            //forminputeditarmembros.input_editar_membro_status_m.Text = row.Cells[18].Value.ToString();
+            forminputeditarmembros.input_editar_membro_coordenadora_m.Text = row.Cells[19].Value.ToString();
+            forminputeditarmembros.input_editar_membro_datadesaida_m.Text = row.Cells[20].Value.ToString();
             //forminputeditarmembros.img_editar_membro.Image = System.Drawing.Image.FromStream(new MemoryStream(Convert.FromBase64String(row.Cells[25].Value.ToString())));
             //Console.WriteLine("25--> "+row.Cells[25].Value.ToString());
             forminputeditarmembros.Show();

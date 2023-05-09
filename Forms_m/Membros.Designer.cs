@@ -89,7 +89,7 @@
             // 
             // btn_invisivel_membros_m
             // 
-            this.btn_invisivel_membros_m.Location = new System.Drawing.Point(428, 435);
+            this.btn_invisivel_membros_m.Location = new System.Drawing.Point(411, 437);
             this.btn_invisivel_membros_m.Name = "btn_invisivel_membros_m";
             this.btn_invisivel_membros_m.Size = new System.Drawing.Size(75, 23);
             this.btn_invisivel_membros_m.TabIndex = 10;

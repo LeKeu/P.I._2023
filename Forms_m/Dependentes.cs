@@ -18,17 +18,17 @@ namespace projeto_integrado.Forms
         public Dependentes()
         {
             InitializeComponent();
-            //datagridview_dependentes_m.DataSource = json_funcs.Read_from_json();
         }
 
         protected override void OnShown(EventArgs e)
         {
             base.OnShown(e);
-            //btn_invisivel_dependentes_m.PerformClick();
+            btn_invisivel_dependentes_m.PerformClick();
         }
 
         private void Dependentes_Load(object sender, EventArgs e)
         {
+            timer_dependente_m.Start();
             CarregarTema();
         }
 
@@ -59,38 +59,12 @@ namespace projeto_integrado.Forms
 
         private void btn_invisivel_dependentes_m_Click(object sender, EventArgs e)
         {
-            datagridview_dependentes_m.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
-            datagridview_dependentes_m.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
+            /*
+         Parte que tira as colunas de outras tables
+         */
+            datagridview_dependentes_m.DataSource = json_funcs.Read_from_json_datagridview();
+            timer_refresh.refreshReg(datagridview_dependentes_m, "Dependente", "H");
 
-            var values_colunas = json_funcs.ColumnName("Dependente");
-
-            for (int i = 0; i < datagridview_dependentes_m.Rows.Count - 1; i++)
-            {
-
-                var row = datagridview_dependentes_m.Rows[i];
-
-                if (row.Cells[0].Value.ToString() != "Dependente")
-                {
-                    datagridview_dependentes_m.CurrentCell = null;
-                    row.Visible = false;
-                    row.Selected = false;
-                }
-            }
-
-            for (int i = 0; i < datagridview_dependentes_m.Columns.Count; i++)
-            {
-                datagridview_dependentes_m.Columns[i].Visible = false;
-            }
-
-            foreach (var coluna in values_colunas)
-            {
-                for (int i = 0; i < coluna.Count; i++)
-                {
-                    //adicionando no dict a chave com seu valor
-                    datagridview_dependentes_m.Columns[(string)coluna[i]].Visible = true;
-
-                }
-            }
         }
 
         private void datagridview_dependentes_m_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -105,6 +79,13 @@ namespace projeto_integrado.Forms
             forminputeditardependentes.input_editar_dependente_parentesco_m.Text = row.Cells[7].Value.ToString();
             forminputeditardependentes.input_editar_dependente_nomemembrovinculado_m.Text = row.Cells[1].Value.ToString();
             forminputeditardependentes.Show();
+        }
+
+        private void timer_dependente_m_Tick(object sender, EventArgs e)
+        {
+            datagridview_dependentes_m.DataSource = json_funcs.Read_from_json_datagridview();
+            timer_refresh.refreshReg(datagridview_dependentes_m, "Dependente", "H");
+            timer_dependente_m.Start();
         }
     }
 }

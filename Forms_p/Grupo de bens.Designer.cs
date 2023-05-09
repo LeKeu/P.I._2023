@@ -28,10 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btn_deletar_grupo_de_bens_p = new System.Windows.Forms.Button();
             this.btn_editar_grupo_de_bens_p = new System.Windows.Forms.Button();
             this.btn_adicionar_grupo_de_bens_p = new System.Windows.Forms.Button();
             this.datagridview_grupo_de_bens_p = new System.Windows.Forms.DataGridView();
+            this.btn_invisivel_patriGrBens_p = new System.Windows.Forms.Button();
+            this.timer_patriGrpBens_p = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.datagridview_grupo_de_bens_p)).BeginInit();
             this.SuspendLayout();
             // 
@@ -82,11 +85,26 @@
             this.datagridview_grupo_de_bens_p.Size = new System.Drawing.Size(642, 369);
             this.datagridview_grupo_de_bens_p.TabIndex = 23;
             // 
+            // btn_invisivel_patriGrBens_p
+            // 
+            this.btn_invisivel_patriGrBens_p.Location = new System.Drawing.Point(269, 435);
+            this.btn_invisivel_patriGrBens_p.Name = "btn_invisivel_patriGrBens_p";
+            this.btn_invisivel_patriGrBens_p.Size = new System.Drawing.Size(75, 23);
+            this.btn_invisivel_patriGrBens_p.TabIndex = 27;
+            this.btn_invisivel_patriGrBens_p.Text = "button1";
+            this.btn_invisivel_patriGrBens_p.UseVisualStyleBackColor = true;
+            this.btn_invisivel_patriGrBens_p.Click += new System.EventHandler(this.btn_invisivel_patriGrBens_p_Click);
+            // 
+            // timer_patriGrpBens_p
+            // 
+            this.timer_patriGrpBens_p.Interval = 5000;
+            // 
             // Grupo_de_bens
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(855, 498);
+            this.Controls.Add(this.btn_invisivel_patriGrBens_p);
             this.Controls.Add(this.btn_deletar_grupo_de_bens_p);
             this.Controls.Add(this.btn_editar_grupo_de_bens_p);
             this.Controls.Add(this.btn_adicionar_grupo_de_bens_p);
@@ -105,5 +123,7 @@
         private System.Windows.Forms.Button btn_editar_grupo_de_bens_p;
         private System.Windows.Forms.Button btn_adicionar_grupo_de_bens_p;
         private System.Windows.Forms.DataGridView datagridview_grupo_de_bens_p;
+        private System.Windows.Forms.Button btn_invisivel_patriGrBens_p;
+        private System.Windows.Forms.Timer timer_patriGrpBens_p;
     }
 }
