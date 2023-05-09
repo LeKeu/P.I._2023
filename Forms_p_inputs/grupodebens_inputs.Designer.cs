@@ -130,11 +130,11 @@
         #endregion
 
         private System.Windows.Forms.Button btn_grupobens_enviar_p;
-        private System.Windows.Forms.TextBox input_grupobens_identificador_p;
         private System.Windows.Forms.Label lbl_grupobens_identificador_p;
-        private System.Windows.Forms.TextBox input_grupobens_nome_p;
         private System.Windows.Forms.Label lbl_grupobens_nome_p;
         private System.Windows.Forms.Label lbl_grupobens_titulo_inputs_p;
-        private System.Windows.Forms.CheckBox checkBox_grupobens_ativo_p;
+        public System.Windows.Forms.TextBox input_grupobens_identificador_p;
+        public System.Windows.Forms.TextBox input_grupobens_nome_p;
+        public System.Windows.Forms.CheckBox checkBox_grupobens_ativo_p;
     }
 }

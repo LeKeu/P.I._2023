@@ -59,6 +59,7 @@
             // 
             // dateTimePicker_editar_produto_datafimgarantia_p
             // 
+            this.dateTimePicker_editar_produto_datafimgarantia_p.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker_editar_produto_datafimgarantia_p.Location = new System.Drawing.Point(96, 228);
             this.dateTimePicker_editar_produto_datafimgarantia_p.Name = "dateTimePicker_editar_produto_datafimgarantia_p";
             this.dateTimePicker_editar_produto_datafimgarantia_p.Size = new System.Drawing.Size(284, 22);

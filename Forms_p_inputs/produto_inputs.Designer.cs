@@ -197,6 +197,7 @@
             // 
             // dateTimePicker_produto_ativo_p
             // 
+            this.dateTimePicker_produto_ativo_p.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker_produto_ativo_p.Location = new System.Drawing.Point(92, 214);
             this.dateTimePicker_produto_ativo_p.Name = "dateTimePicker_produto_ativo_p";
             this.dateTimePicker_produto_ativo_p.Size = new System.Drawing.Size(284, 22);

@@ -107,9 +107,9 @@
         #endregion
 
         private System.Windows.Forms.Button btn_setor_enviar_p;
-        private System.Windows.Forms.TextBox input_setor_nome_p;
         private System.Windows.Forms.Label lbl_setor_nome_p;
         private System.Windows.Forms.Label lbl_setor_titulo_inputs_p;
-        private System.Windows.Forms.CheckBox checkBox_setor_ativo_p;
+        public System.Windows.Forms.TextBox input_setor_nome_p;
+        public System.Windows.Forms.CheckBox checkBox_setor_ativo_p;
     }
 }

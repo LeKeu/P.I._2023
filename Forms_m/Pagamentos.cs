@@ -1,5 +1,7 @@
 ﻿using projeto_integrado.Classes;
 using projeto_integrado.Forms_m_inputs;
+using projeto_integrado.Forms_m_inputs_editar;
+using projeto_integrado.Forms_p_inputs_editar;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -66,6 +68,36 @@ namespace projeto_integrado.Forms
             datagridview_pagamentos_m.DataSource = json_funcs.Read_from_json_datagridview();
             timer_refresh.refreshReg(datagridview_pagamentos_m, "ListaPagamento", "O");
             timer_listaPag_m.Start();
+        }
+
+        private void datagridview_pagamentos_m_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int indexRow = e.RowIndex;
+            DataGridViewRow row = datagridview_pagamentos_m.Rows[indexRow];
+
+            var forminputeditarpagamentos = new pagamentos_inputs_editar();
+
+            for (int i = 0; i < row.Cells.Count; i++)
+            {
+                Console.WriteLine(i + "lolo --> " + row.Cells[i].Value);
+            }
+
+            forminputeditarpagamentos.input_editar_pagamento_nome_m.Text = row.Cells[3].Value.ToString();
+            forminputeditarpagamentos.checkBox_editar_pagamento_janeiro_m.Text = row.Cells[31].Value.ToString();
+            forminputeditarpagamentos.checkBox_editar_pagamento_fevereiro_m.Text = row.Cells[32].Value.ToString();
+            forminputeditarpagamentos.checkBox_editar_pagamento_marco_m.Text = row.Cells[33].Value.ToString();
+            forminputeditarpagamentos.checkBox_editar_pagamento_abril_m.Text = row.Cells[34].Value.ToString();
+            forminputeditarpagamentos.checkBox_editar_pagamento_maio_m.Text = row.Cells[35].Value.ToString();
+            forminputeditarpagamentos.checkBox_editar_pagamento_junho_m.Text = row.Cells[36].Value.ToString();
+            forminputeditarpagamentos.checkBox_editar_pagamento_julho_m.Text = row.Cells[37].Value.ToString();
+            forminputeditarpagamentos.checkBox_editar_pagamento_agosto_m.Text = row.Cells[38].Value.ToString();
+            forminputeditarpagamentos.checkBox_editar_pagamento_setembro_m.Text = row.Cells[39].Value.ToString();
+            forminputeditarpagamentos.checkBox_editar_pagamento_outubro_m.Text = row.Cells[40].Value.ToString();
+            forminputeditarpagamentos.checkBox_editar_pagamento_novembro_m.Text = row.Cells[41].Value.ToString();
+            forminputeditarpagamentos.checkBox_editar_pagamento_dezembro_m.Text = row.Cells[42].Value.ToString();
+            //forminputeditarpagamentos.img_editar_membro.Image = System.Drawing.Image.FromStream(new MemoryStream(Convert.FromBase64String(row.Cells[25].Value.ToString())));
+            //Console.WriteLine("25--> "+row.Cells[25].Value.ToString());
+            forminputeditarpagamentos.Show();
         }
     }
 }

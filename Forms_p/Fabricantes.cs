@@ -1,5 +1,6 @@
 ﻿using projeto_integrado.Classes;
 using projeto_integrado.Forms_p_inputs;
+using projeto_integrado.Forms_p_inputs_editar;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -67,6 +68,24 @@ namespace projeto_integrado.Forms_p
             timer_refresh.refreshReg(datagridview_fabricantes_p, "PatrimonioFabricante", "C");
             timer_patrFabr_p.Start();
 
+        }
+
+        private void datagridview_fabricantes_p_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int indexRow = e.RowIndex;
+            DataGridViewRow row = datagridview_fabricantes_p.Rows[indexRow];
+
+            var forminputeditarfabricantes = new fabricante_inputs_editar();
+
+            for (int i = 0; i < row.Cells.Count; i++)
+            {
+                Console.WriteLine(i + "lolo --> " + row.Cells[i].Value);
+            }
+
+            forminputeditarfabricantes.input_editar_fabricante_nome_p.Text = row.Cells[59].Value.ToString();
+            //forminputeditarfabricantes.checkBox_editar_fabricante_ativo_p.Text = row.Cells[60].Value.ToString();
+            //Console.WriteLine("25--> "+row.Cells[25].Value.ToString());
+            forminputeditarfabricantes.Show();
         }
     }
 }

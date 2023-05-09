@@ -1,5 +1,6 @@
 ﻿using projeto_integrado.Classes;
 using projeto_integrado.Forms_p_inputs;
+using projeto_integrado.Forms_p_inputs_editar;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -66,6 +67,24 @@ namespace projeto_integrado.Forms_p
             datagridview_setor_p.DataSource = json_funcs.Read_from_json_datagridview();
             timer_refresh.refreshReg(datagridview_setor_p, "PatrimonioSetor", "C");
             timer_patrSetor_p.Start();
+        }
+
+        private void datagridview_setor_p_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int indexRow = e.RowIndex;
+            DataGridViewRow row = datagridview_setor_p.Rows[indexRow];
+
+            var forminputeditarsetor = new setor_inputs_editar();
+
+            for (int i = 0; i < row.Cells.Count; i++)
+            {
+                Console.WriteLine(i + "lolo --> " + row.Cells[i].Value);
+            }
+
+            forminputeditarsetor.input_editar_setor_nome_p.Text = row.Cells[71].Value.ToString();
+            forminputeditarsetor.checkBox_editar_setor_ativo_p.Text = row.Cells[60].Value.ToString();
+            //Console.WriteLine("25--> "+row.Cells[25].Value.ToString());
+            forminputeditarsetor.Show();
         }
     }
 }

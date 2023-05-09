@@ -1,5 +1,6 @@
 ﻿using projeto_integrado.Classes;
 using projeto_integrado.Forms_p_inputs;
+using projeto_integrado.Forms_p_inputs_editar;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -66,6 +67,25 @@ namespace projeto_integrado.Forms_p
             datagridview_fornecedor_p.DataSource = json_funcs.Read_from_json_datagridview();
             timer_refresh.refreshReg(datagridview_fornecedor_p, "PatrimonioFornecedor", "D");
             timer_patriForn_p.Start();
+        }
+
+        private void datagridview_fornecedor_p_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int indexRow = e.RowIndex;
+            DataGridViewRow row = datagridview_fornecedor_p.Rows[indexRow];
+
+            var forminputeditarfornecedor = new fornecedor_inputs_editar();
+
+            for (int i = 0; i < row.Cells.Count; i++)
+            {
+                Console.WriteLine(i + "lolo --> " + row.Cells[i].Value);
+            }
+
+            forminputeditarfornecedor.input_editar_fornecedor_nome_p.Text = row.Cells[72].Value.ToString();
+            forminputeditarfornecedor.input_editar_fornecedor_cnpj_p.Text = row.Cells[73].Value.ToString();
+            //forminputeditarfornecedor.checkBox_editar_fornecedor_ativo_p.Checked = row.Cells[60].Value;
+            //Console.WriteLine("25--> "+row.Cells[25].Value.ToString());
+            forminputeditarfornecedor.Show();
         }
     }
 }

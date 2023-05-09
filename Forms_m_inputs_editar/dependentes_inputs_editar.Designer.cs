@@ -65,6 +65,7 @@
             // 
             // dateTimePicker_editar_dependente_datanasc_m
             // 
+            this.dateTimePicker_editar_dependente_datanasc_m.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker_editar_dependente_datanasc_m.Location = new System.Drawing.Point(96, 164);
             this.dateTimePicker_editar_dependente_datanasc_m.Name = "dateTimePicker_editar_dependente_datanasc_m";
             this.dateTimePicker_editar_dependente_datanasc_m.Size = new System.Drawing.Size(284, 22);
