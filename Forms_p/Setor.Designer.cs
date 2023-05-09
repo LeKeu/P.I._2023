@@ -28,10 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btn_deletar_setor_p = new System.Windows.Forms.Button();
             this.btn_editar_setor_p = new System.Windows.Forms.Button();
             this.btn_adicionar_setor_p = new System.Windows.Forms.Button();
             this.datagridview_setor_p = new System.Windows.Forms.DataGridView();
+            this.btn_invisivel_patrSetor_p = new System.Windows.Forms.Button();
+            this.timer_patrSetor_p = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.datagridview_setor_p)).BeginInit();
             this.SuspendLayout();
             // 
@@ -82,11 +85,27 @@
             this.datagridview_setor_p.Size = new System.Drawing.Size(642, 369);
             this.datagridview_setor_p.TabIndex = 23;
             // 
+            // btn_invisivel_patrSetor_p
+            // 
+            this.btn_invisivel_patrSetor_p.Location = new System.Drawing.Point(311, 441);
+            this.btn_invisivel_patrSetor_p.Name = "btn_invisivel_patrSetor_p";
+            this.btn_invisivel_patrSetor_p.Size = new System.Drawing.Size(75, 23);
+            this.btn_invisivel_patrSetor_p.TabIndex = 27;
+            this.btn_invisivel_patrSetor_p.Text = "button1";
+            this.btn_invisivel_patrSetor_p.UseVisualStyleBackColor = true;
+            this.btn_invisivel_patrSetor_p.Click += new System.EventHandler(this.btn_invisivel_patrSetor_p_Click);
+            // 
+            // timer_patrSetor_p
+            // 
+            this.timer_patrSetor_p.Interval = 5000;
+            this.timer_patrSetor_p.Tick += new System.EventHandler(this.timer_patrSetor_p_Tick);
+            // 
             // Setor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(855, 498);
+            this.Controls.Add(this.btn_invisivel_patrSetor_p);
             this.Controls.Add(this.btn_deletar_setor_p);
             this.Controls.Add(this.btn_editar_setor_p);
             this.Controls.Add(this.btn_adicionar_setor_p);
@@ -105,5 +124,7 @@
         private System.Windows.Forms.Button btn_editar_setor_p;
         private System.Windows.Forms.Button btn_adicionar_setor_p;
         private System.Windows.Forms.DataGridView datagridview_setor_p;
+        private System.Windows.Forms.Button btn_invisivel_patrSetor_p;
+        private System.Windows.Forms.Timer timer_patrSetor_p;
     }
 }

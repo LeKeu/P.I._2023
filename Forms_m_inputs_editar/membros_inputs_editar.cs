@@ -1,4 +1,5 @@
 ﻿using projeto_integrado.Classes;
+using projeto_integrado.Forms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -26,6 +27,18 @@ namespace projeto_integrado.Forms_m_inputs_editar
                                      MessageBoxButtons.YesNo);
             if (confirmResult == DialogResult.Yes)
             {
+                var Membros = new Membros();
+                string id_membro = Membros.id_membro;
+
+                Console.WriteLine("NOME DO MEMBRO --> "+id_membro);
+
+                var teste = json_funcs.ReadTableRow("Membro", "Nome", id_membro);
+                Console.WriteLine("teste count "+teste.Count);
+                foreach(var coisa in teste)
+                {
+                    //Console.WriteLine("bu --> "+coisa.ToString());
+                }
+
                 //MemoryStream ms = new MemoryStream();
                 //Bitmap bmping = new Bitmap(img_editar_membro.Image);
                 //bmping.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);

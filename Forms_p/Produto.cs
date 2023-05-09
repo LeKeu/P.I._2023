@@ -76,6 +76,12 @@ namespace projeto_integrado.Forms_p
             DataGridViewRow row = datagridview_produto_p.Rows[indexRow];
 
             var forminputeditarproduto = new produto_inputs_editar();
+
+            for (int i = 0; i < row.Cells.Count; i++)
+            {
+                Console.WriteLine(i + "lolo --> " + row.Cells[i].Value);
+            }
+
             forminputeditarproduto.input_editar_produto_depreciacaoanual_p.Text = row.Cells[2].Value.ToString();
             forminputeditarproduto.input_editar_produto_codproduto_p.Text = row.Cells[5].Value.ToString();
             forminputeditarproduto.input_editar_produto_modelo_p.Text = row.Cells[7].Value.ToString();

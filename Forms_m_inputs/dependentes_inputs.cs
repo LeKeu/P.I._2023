@@ -26,7 +26,7 @@ namespace projeto_integrado.Forms_m_inputs
             if (confirmResult == DialogResult.Yes)
             {
                 //IMPORTANTE --> não adicionei o "celular" aqui!!!
-                List<string> dados = new List<string>() { "ID-?", "ID-?DEP", input_dependente_nome_m.Text, "Foto", input_dependente_sexo_m.Text, dateTimePicker_dependente_datanasc_m.Text, input_dependente_parentesco_m.Text };
+                List<string> dados = new List<string>() { "ID-?", input_dependente_nomemembrovinculado_m.Text, "ID-?DEP", input_dependente_nome_m.Text, "Foto", input_dependente_sexo_m.Text, dateTimePicker_dependente_datanasc_m.Text, input_dependente_parentesco_m.Text };
                 string nome_tabela = "Dependente";
 
                 //func p gravar os dados no json

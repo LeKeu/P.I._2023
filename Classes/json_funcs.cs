@@ -31,7 +31,7 @@ namespace projeto_integrado.Classes
         public static void Convert_to_json(List<string> dados, string nome_tabela, string ultima_coluna)
         {
             // path do arquivo json, onde será guardado as informações
-            string arq_path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\JSONTESTE.json";
+            string arq_path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\JSONTESTE02.json";
             // ler todos os dados que o arq contém
             var jsonData = System.IO.File.ReadAllText(arq_path);
             // des-serializar o arquivo e guardar em uma lista
@@ -69,7 +69,7 @@ namespace projeto_integrado.Classes
 
         public static DataTable Read_from_json_datagridview()  // lendo do arq json criado
         {
-            string arq_path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\JSONTESTE.json";  // pegar caminho automatico!
+            string arq_path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\JSONTESTE02.json";  // pegar caminho automatico!
             List<string> dict_dados_leitura = new List<string>();
 
             dynamic jsonArq = JsonConvert.DeserializeObject(File.ReadAllText(arq_path), (typeof(DataTable)));
@@ -79,7 +79,7 @@ namespace projeto_integrado.Classes
 
         public static dynamic Read_from_json()  // lendo do arq json criado
         {
-            string arq_path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\JSONTESTE.json";  // pegar caminho automatico!
+            string arq_path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\JSONTESTE02.json";  // pegar caminho automatico!
             List<string> dict_dados_leitura = new List<string>();
 
             dynamic jsonArq = JsonConvert.DeserializeObject(File.ReadAllText(arq_path));
@@ -103,6 +103,30 @@ namespace projeto_integrado.Classes
                 if (coisa.GetValue("Tabela").ToString() == nome_tabela)
                 {
                     valores.Add(coisa.GetValue(nome_chave).ToString());
+                }
+            }
+
+            return valores;
+        }
+
+        public static List<string> ReadTableRow(string nome_tabela, string nome_chave, string valor)
+        {
+            /*
+             Função que recebe o nome da tabela, o nome da chave (coluna) e o nome do valor que deseja ser pego todos os valores
+             No caso, por exemplo, quero a linha que contém o "Nome" "Fulano" na tabela "Membro".
+            */
+            var arq_json = Read_from_json();
+            List<string> valores = new List<string>();
+
+            foreach (var coisa in arq_json)
+            {
+                if (coisa.GetValue("Tabela").ToString() == nome_tabela && coisa.GetValue("Nome").ToString() == valor)
+                {
+                    //valores.Add(coisa);
+                    Console.WriteLine(coisa);
+                    //Console.WriteLine(coisa.Count);
+                    //Console.WriteLine(coisa[0]);
+                    Console.WriteLine(coisa.GetValue("Nome").ToString());
                 }
             }
 

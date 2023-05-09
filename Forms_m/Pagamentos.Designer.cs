@@ -28,10 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btn_deletar_pagamentos_m = new System.Windows.Forms.Button();
             this.btn_editar_pagamentos_m = new System.Windows.Forms.Button();
             this.btn_adicionar_pagamentos_m = new System.Windows.Forms.Button();
             this.datagridview_pagamentos_m = new System.Windows.Forms.DataGridView();
+            this.btn_invisivel_memListPag_m = new System.Windows.Forms.Button();
+            this.timer_listaPag_m = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.datagridview_pagamentos_m)).BeginInit();
             this.SuspendLayout();
             // 
@@ -82,11 +85,27 @@
             this.datagridview_pagamentos_m.Size = new System.Drawing.Size(642, 369);
             this.datagridview_pagamentos_m.TabIndex = 16;
             // 
+            // btn_invisivel_memListPag_m
+            // 
+            this.btn_invisivel_memListPag_m.Location = new System.Drawing.Point(272, 426);
+            this.btn_invisivel_memListPag_m.Name = "btn_invisivel_memListPag_m";
+            this.btn_invisivel_memListPag_m.Size = new System.Drawing.Size(75, 23);
+            this.btn_invisivel_memListPag_m.TabIndex = 20;
+            this.btn_invisivel_memListPag_m.Text = "button1";
+            this.btn_invisivel_memListPag_m.UseVisualStyleBackColor = true;
+            this.btn_invisivel_memListPag_m.Click += new System.EventHandler(this.btn_invisivel_memListPag_m_Click);
+            // 
+            // timer_listaPag_m
+            // 
+            this.timer_listaPag_m.Interval = 5000;
+            this.timer_listaPag_m.Tick += new System.EventHandler(this.timer_listaPag_m_Tick);
+            // 
             // Pagamentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(855, 498);
+            this.Controls.Add(this.btn_invisivel_memListPag_m);
             this.Controls.Add(this.btn_deletar_pagamentos_m);
             this.Controls.Add(this.btn_editar_pagamentos_m);
             this.Controls.Add(this.btn_adicionar_pagamentos_m);
@@ -105,5 +124,7 @@
         private System.Windows.Forms.Button btn_editar_pagamentos_m;
         private System.Windows.Forms.Button btn_adicionar_pagamentos_m;
         private System.Windows.Forms.DataGridView datagridview_pagamentos_m;
+        private System.Windows.Forms.Button btn_invisivel_memListPag_m;
+        private System.Windows.Forms.Timer timer_listaPag_m;
     }
 }
