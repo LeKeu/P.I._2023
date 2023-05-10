@@ -95,6 +95,7 @@
             this.upload_img_membro.TabIndex = 132;
             this.upload_img_membro.Text = "Upload";
             this.upload_img_membro.UseVisualStyleBackColor = true;
+            this.upload_img_membro.Click += new System.EventHandler(this.upload_img_membro_Click_1);
             // 
             // img_membro
             // 
@@ -153,6 +154,7 @@
             this.btn_membro_enviar_m.TabIndex = 126;
             this.btn_membro_enviar_m.Text = "Enviar";
             this.btn_membro_enviar_m.UseVisualStyleBackColor = true;
+            this.btn_membro_enviar_m.Click += new System.EventHandler(this.btn_membro_enviar_m_Click_1);
             // 
             // input_membro_coordenadora_m
             // 

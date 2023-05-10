@@ -7,6 +7,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Diagnostics;
+using System.Drawing.Drawing2D;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -68,6 +69,59 @@ namespace projeto_integrado.Classes
 
         }
 
+        public static void Update_Convert_to_json(List<string> dados)
+        {
+            string arq_path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\JSONTESTE02.json";
+            
+            System.IO.File.WriteAllText(arq_path, "");
+            List<object> teste = new List<object>();
+            Dictionary<string, string> dict_dados = new Dictionary<string, string>();
+
+            foreach (var chave in dados)
+            {
+                dict_dados = JsonConvert.DeserializeObject<Dictionary<string, string>>(chave);
+                teste.Add(dict_dados);
+                var json_arq = JsonConvert.SerializeObject(teste);
+                System.IO.File.WriteAllText(arq_path, json_arq);
+            }
+        }
+
+
+        public static List<string> UpdateValueJson(string nome_tabela, string nome_chave, string valor, List<string> dados)
+        {
+            /*
+             Função usada para retornar uma nova lista de arquivo json, já atualizada com a nova mudança.
+            */
+            var arq_json = Read_from_json();
+            List<string> valores = new List<string>();
+            List<string> chaves = new List<string>();
+            
+            foreach (var coisa in arq_json)
+            {
+                if (coisa.GetValue("Tabela").ToString() == nome_tabela && coisa.GetValue("CPF").ToString() == valor)
+                {
+                    JObject jsonObj = JObject.Parse(coisa.ToString());
+                    Dictionary<string, string> dictObj = jsonObj.ToObject<Dictionary<string, string>>();
+
+                    dictObj.Remove("Tabela");
+                    
+                    foreach (var chave in dictObj.Keys)
+                    {
+                        chaves.Add(chave);
+                    }
+                    
+                    for (int i = 1; i < dictObj.Count; i++)
+                    {
+                        coisa[chaves[i]] = dados[i];
+                    }
+                    
+                }
+                valores.Add(coisa.ToString());
+            }
+
+            return valores;
+        }
+
         public static DataTable Read_from_json_datagridview()  // lendo do arq json criado
         {
             string arq_path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\JSONTESTE02.json";  // pegar caminho automatico!
@@ -110,45 +164,6 @@ namespace projeto_integrado.Classes
             return valores;
         }
 
-        public static void UpdateValueJson(string nome_tabela, string nome_chave, string valor, List<string> dados)
-        {
-            /*
-             Função que recebe o nome da tabela, o nome da chave (coluna) e o nome do valor que deseja ser pego todos os valores
-             No caso, por exemplo, quero a linha que contém o "Nome" "Fulano" na tabela "Membro".
-            */
-            var arq_json = Read_from_json();
-            List<string> valores = new List<string>();
-            List<string> chaves = new List<string>();
-
-            foreach (var coisa in arq_json)
-            {
-                if (coisa.GetValue("Tabela").ToString() == nome_tabela && coisa.GetValue("CPF").ToString() == valor)
-                {
-                    JObject jsonObj = JObject.Parse(coisa.ToString());
-                    Dictionary<string, string> dictObj = jsonObj.ToObject<Dictionary<string, string>>();
-
-                    dictObj.Remove("Tabela");
-
-                    foreach (var chave in dictObj.Keys)
-                    {
-                        Console.WriteLine("chave" + chave);
-                        chaves.Add(chave);
-                        
-                    }
-                    for(int i = 0; i < dictObj.Count; i++)
-                    {
-                        Console.WriteLine("chaves[i] " + chaves[i] + "| dados[i] " + dados[i]);
-                        //Console.WriteLine("dados[i]" + dados[i]);
-                        //Console.WriteLine("chaves[i]" + chaves[i]);
-                        //arq_json[chaves[i]] = dados[i];
-                    }
-                    //Console.WriteLine("Nome que eu quero --> " + coisa.GetValue("Nome").ToString());
-                }
-            }
-
-            //return valores;
-        }
-        // ReadTableColumnName
         public static IList<IList<object>> ColumnName(string nome_tabela)
         {
             switch (nome_tabela)
@@ -201,7 +216,6 @@ namespace projeto_integrado.Classes
                 default:
                     return null;
             }
-            //var teste = timer_refresh.refreshReg()
         }
     }
 }
