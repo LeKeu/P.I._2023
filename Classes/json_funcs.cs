@@ -32,14 +32,22 @@ namespace projeto_integrado.Classes
 
         public static void Convert_to_json(List<string> dados, string nome_tabela, string ultima_coluna)
         {
-            // path do arquivo json, onde será guardado as informações
+            /*
+            Converte os dados recebidos para o arq json. Já que os dados veem direto dos inputs, é necessário 
+            um parametro nome_tabela para, ao inserir no arq json junto com os novos registros, mais tarde conseguir
+            identificar de qual tabela/página é cada registro.
+            Em que o arq_path é o caminho onde o meu arquivo json está guardado
+            jsonData lê todos os dados do meu arquivo
+            dados_salvos des-serializa o arquivo jsonData e guarda em uma lista
+            dict_dados é um dicionário criado para conter os dados de inputs em suas respectivas colunas
+            */
+
             string arq_path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\JSONTESTE02.json";
-            // ler todos os dados que o arq contém
+            
             var jsonData = System.IO.File.ReadAllText(arq_path);
-            // des-serializar o arquivo e guardar em uma lista
+            
             var dados_salvos = JsonConvert.DeserializeObject<List<object>>(jsonData);
 
-            // dicionário para conter os dados recebidos dos inputs em suas respectivas colunas
             Dictionary<string, string> dict_dados = new Dictionary<string, string>();
 
             // retornando o nome das colunas da tabela específica
@@ -53,7 +61,6 @@ namespace projeto_integrado.Classes
                     dict_dados.Add((string)row[i], dados[i]);
                 }
             }
-
 
             // adicionar, no arq des-serializado os dados recentes
             dados_salvos.Add(dict_dados);
@@ -71,6 +78,11 @@ namespace projeto_integrado.Classes
 
         public static void Update_Convert_to_json(List<string> dados)
         {
+            /*
+            Mesmo raciocínio da função acima, mas o arq json é zerado. 
+            Como todos os registros, já modificados com a nova edição, estão sendo recebidos pelo
+            parâmetro dados, é sinserindo todos novamente
+             */
             string arq_path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\JSONTESTE02.json";
             
             System.IO.File.WriteAllText(arq_path, "");
@@ -122,8 +134,11 @@ namespace projeto_integrado.Classes
             return valores;
         }
 
-        public static DataTable Read_from_json_datagridview()  // lendo do arq json criado
+        public static DataTable Read_from_json_datagridview() 
         {
+            /*
+            Função de auxílio usada para retornar o arq json em formato de DataTable, para os datagridview 
+            */
             string arq_path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\JSONTESTE02.json";  // pegar caminho automatico!
             List<string> dict_dados_leitura = new List<string>();
 
@@ -132,8 +147,12 @@ namespace projeto_integrado.Classes
             return jsonArq;
         }
 
-        public static dynamic Read_from_json()  // lendo do arq json criado
+        public static dynamic Read_from_json()
         {
+            /*
+             Função que retorna o arq json lido, procurando ele por seu path e des-serializando o mesmo, o retornando em
+            dynamic para melhor acesso como objeto json
+             */
             string arq_path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\JSONTESTE02.json";  // pegar caminho automatico!
             List<string> dict_dados_leitura = new List<string>();
 
@@ -166,6 +185,10 @@ namespace projeto_integrado.Classes
 
         public static IList<IList<object>> ColumnName(string nome_tabela)
         {
+            /*
+             Retorna o nome de cada coluna existente na planilha.
+            Função utilizada para a inserção dos dados no arq json, podendo identificar cada dado em sua coluna.
+             */
             switch (nome_tabela)
             {
                 case "Membro":

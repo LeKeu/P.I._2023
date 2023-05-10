@@ -25,7 +25,7 @@ namespace projeto_integrado.Classes
         public static void Init()
         {
             colunas_paginas.Add("Membro", "Y");
-            colunas_paginas.Add("Dependente", "G");
+            colunas_paginas.Add("Dependente", "H");
             colunas_paginas.Add("ListaPagamento", "O");
             colunas_paginas.Add("Patrimonio", "P");
             colunas_paginas.Add("PatrimonioFabricante", "C");
@@ -116,9 +116,20 @@ namespace projeto_integrado.Classes
 
         public static void AddRow(dynamic ob_lista)
         {
+            
             var valueRange = new ValueRange();
             //Console.WriteLine(ob_lista[0].GetType());
 
+            foreach (var coisa in colunas_paginas)
+            {
+                string range_ini = $"{coisa.Key}!A2:{coisa.Value}";
+
+                ClearValuesRequest requestBody = new ClearValuesRequest();
+                SpreadsheetsResource.ValuesResource.ClearRequest request = service.Spreadsheets.Values.Clear(requestBody, SpreadsheetId, range_ini);
+                ClearValuesResponse response = request.Execute();
+
+                service.Spreadsheets.Values.Clear(requestBody, SpreadsheetId, range_ini);
+            }
 
             for (int i = 0; i < ob_lista.Count; i++)
             {
@@ -131,18 +142,12 @@ namespace projeto_integrado.Classes
                     if (property.Name == "Tabela")
                     {
                         string tabela_name = property.Name;
-
                         range = $"{property.Value}!A:{colunas_paginas[property.Value.ToString()]}";
-                        //Console.WriteLine(range);
+
+
                         teste = ReadSheet(property.Value.ToString(), colunas_paginas[property.Value.ToString()]);
-                        Console.WriteLine("YASSS" + teste[0]);
-                        /*
-                        foreach (var coisa in teste)
-                        {
-                            //Console.WriteLine(string.Join("-", coisa[0]));
-                            Console.WriteLine("YASSS"+coisa[0]);
-                        }
-                        */
+                        //Console.WriteLine("YASSS" + teste[0]);
+                        
                     }
                     else
                     {
