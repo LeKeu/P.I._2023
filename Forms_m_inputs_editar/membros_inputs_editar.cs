@@ -1,4 +1,5 @@
-﻿using projeto_integrado.Classes;
+﻿using Microsoft.Win32;
+using projeto_integrado.Classes;
 using projeto_integrado.Forms;
 using System;
 using System.Collections.Generic;
@@ -22,6 +23,16 @@ namespace projeto_integrado.Forms_m_inputs_editar
 
         private void btn_editar_membro_editar_m_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void upload_img_editar_membro_editar_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btn_editar_membro_enviar_m_Click(object sender, EventArgs e)
+        {
             var confirmResult = MessageBox.Show("Tem certeza que deseja editar essas informações?",
                                      "Confirmar",
                                      MessageBoxButtons.YesNo);
@@ -40,19 +51,16 @@ namespace projeto_integrado.Forms_m_inputs_editar
                 //Console.WriteLine("NOME DO MEMBRO --> "+id_membro);
                 List<string> dados = new List<string>() { "ID-?", input_editar_membro_matricula_m.Text, input_editar_membro_nome_m.Text, dateTimePicker_editar_membro_datanasc_m.Text, input_editar_membro_cpf_m.Text, input_editar_membro_rg_m.Text, input_editar_membro_celular_m.Text, input_editar_membro_email_m.Text, input_editar_membro_filiacao_m.Text, input_editar_membro_enderresidencial_m.Text, input_editar_membro_profissao_m.Text, input_editar_membro_endercomercial_m.Text, input_editar_membro_estadocivil_m.Text, input_editar_membro_conjuge_m.Text, input_editar_membro_localinclusao_m.Text, dateTimePicker_editar_membro_datainclusao_m.Text, input_editar_membro_sexo_m.Text, input_editar_membro_status_m.Text, "corrdenadora", "datasaida", "assmembro", "asscorrdsocial", "asscorrdadm", "asscoordfinanc", Convert.ToBase64String(photoData) };
 
-                //json_funcs.UpdateValueJson("Membro", "Nome", id_membro, dados);
+                var teste = json_funcs.UpdateValueJson("Membro", "Nome", id_membro, dados);
                 //Console.WriteLine("teste count "+teste.Count);
-                
+                /*
+                foreach(var registro in teste)
+                {
+                    json_funcs.Update_Convert_to_json(teste);
+                }
+                */
+                json_funcs.Update_Convert_to_json(teste);
 
-                //MemoryStream ms = new MemoryStream();
-                //Bitmap bmping = new Bitmap(img_editar_membro.Image);
-                //bmping.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
-                //byte[] photoData = new byte[ms.Length];
-                //ms.Position = 0;
-                //ms.Read(photoData, 0, photoData.Length);
-
-                //List<string> dados = new List<string>() { "ID-?", input_membro_matricula_m.Text, input_membro_nome_m.Text, dateTimePicker_membro_datanasc_m.Text, input_membro_cpf_m.Text, input_membro_rg_m.Text, input_membro_celular_m.Text, input_membro_email_m.Text, input_membro_filiacao_m.Text, input_membro_enderresidencial_m.Text, input_membro_profissao_m.Text, input_membro_endercomercial_m.Text, input_membro_estadocivil_m.Text, input_membro_conjuge_m.Text, input_membro_localinclusao_m.Text, dateTimePicker_membro_datainclusao_m.Text, input_membro_sexo_m.Text, input_membro_status_m.Text, "corrdenadora", "datasaida", "assmembro", "asscorrdsocial", "asscorrdadm", "asscoordfinanc", "fotomembro" };
-                //string nome_tabela = "Membro";
 
                 //func p gravar os dados no json
                 //json_funcs.Convert_to_json(dados, nome_tabela, "Y");
@@ -69,7 +77,7 @@ namespace projeto_integrado.Forms_m_inputs_editar
             }
         }
 
-        private void upload_img_editar_membro_editar_Click(object sender, EventArgs e)
+        private void upload_editar_img_membro_Click(object sender, EventArgs e)
         {
             String imageLoc = "";
             try

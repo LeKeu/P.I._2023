@@ -420,6 +420,7 @@
             this.btn_editar_membro_enviar_m.TabIndex = 83;
             this.btn_editar_membro_enviar_m.Text = "Editar";
             this.btn_editar_membro_enviar_m.UseVisualStyleBackColor = true;
+            this.btn_editar_membro_enviar_m.Click += new System.EventHandler(this.btn_editar_membro_enviar_m_Click);
             // 
             // dateTimePicker_editar_membro_datanasc_m
             // 
@@ -478,6 +479,7 @@
             this.upload_editar_img_membro.TabIndex = 89;
             this.upload_editar_img_membro.Text = "Upload";
             this.upload_editar_img_membro.UseVisualStyleBackColor = true;
+            this.upload_editar_img_membro.Click += new System.EventHandler(this.upload_editar_img_membro_Click);
             // 
             // lbl_editar_membro_foto_m
             // 

@@ -76,11 +76,11 @@ namespace projeto_integrado.Forms
             int indexRow = e.RowIndex;
             DataGridViewRow row = datagridview_membros_m.Rows[indexRow];
 
-            id_membro = row.Cells[5].Value.ToString();
+            id_membro = row.Cells[5].Value.ToString();  // pegando o CPF
 
             for (int i = 0; i < row.Cells.Count; i++)
             {
-                Console.WriteLine(i + "lolo --> " + row.Cells[i].Value);
+                //Console.WriteLine(i + "lolo --> " + row.Cells[i].Value);
             }
 
             var forminputeditarmembros = new membros_inputs_editar();
