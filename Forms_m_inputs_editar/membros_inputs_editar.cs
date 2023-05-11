@@ -97,11 +97,6 @@ namespace projeto_integrado.Forms_m_inputs_editar
                 json_funcs.Update_Convert_to_json(novo_json);
                 this.Close();
             }
-            else
-            {
-
-            }
-            
         }
     }
 }
