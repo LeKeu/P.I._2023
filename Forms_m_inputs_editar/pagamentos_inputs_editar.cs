@@ -47,5 +47,22 @@ namespace projeto_integrado.Forms_m_inputs_editar
 
             }
         }
+
+        private void btn_pagamentos_deletar_m_Click(object sender, EventArgs e)
+        {
+            var confirmResult = MessageBox.Show("Tem certeza que deseja DELETAR essas informações?",
+                                     "Confirmar",
+                                     MessageBoxButtons.YesNo);
+            if (confirmResult == DialogResult.Yes)
+            {
+                var Pagamentos = new Pagamentos();
+                string id_pag = Pagamentos.id_pag;
+
+                var novo_json = json_funcs.DeleteValueJson("ListaPagamento", "Nome", id_pag);
+
+                json_funcs.Update_Convert_to_json(novo_json);
+                this.Close();
+            }
+        }
     }
 }

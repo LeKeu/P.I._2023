@@ -44,6 +44,7 @@
             this.lbl_membro_foto_m = new System.Windows.Forms.Label();
             this.upload_img_editar_dependente = new System.Windows.Forms.Button();
             this.img_editar_dependente = new System.Windows.Forms.PictureBox();
+            this.btn_dependente_deletar_m = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.img_editar_dependente)).BeginInit();
             this.SuspendLayout();
             // 
@@ -80,7 +81,7 @@
             // 
             this.btn_editar_dependente_editar_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_editar_dependente_editar_m.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_editar_dependente_editar_m.Location = new System.Drawing.Point(343, 273);
+            this.btn_editar_dependente_editar_m.Location = new System.Drawing.Point(254, 268);
             this.btn_editar_dependente_editar_m.Name = "btn_editar_dependente_editar_m";
             this.btn_editar_dependente_editar_m.Size = new System.Drawing.Size(109, 33);
             this.btn_editar_dependente_editar_m.TabIndex = 90;
@@ -198,11 +199,24 @@
             this.img_editar_dependente.TabIndex = 134;
             this.img_editar_dependente.TabStop = false;
             // 
+            // btn_dependente_deletar_m
+            // 
+            this.btn_dependente_deletar_m.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_dependente_deletar_m.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_dependente_deletar_m.Location = new System.Drawing.Point(429, 268);
+            this.btn_dependente_deletar_m.Name = "btn_dependente_deletar_m";
+            this.btn_dependente_deletar_m.Size = new System.Drawing.Size(109, 33);
+            this.btn_dependente_deletar_m.TabIndex = 137;
+            this.btn_dependente_deletar_m.Text = "Deletar";
+            this.btn_dependente_deletar_m.UseVisualStyleBackColor = true;
+            this.btn_dependente_deletar_m.Click += new System.EventHandler(this.btn_dependente_deletar_m_Click);
+            // 
             // dependentes_inputs_editar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 334);
+            this.Controls.Add(this.btn_dependente_deletar_m);
             this.Controls.Add(this.lbl_membro_foto_m);
             this.Controls.Add(this.upload_img_editar_dependente);
             this.Controls.Add(this.img_editar_dependente);
@@ -243,5 +257,6 @@
         private System.Windows.Forms.Label lbl_membro_foto_m;
         private System.Windows.Forms.Button upload_img_editar_dependente;
         public System.Windows.Forms.PictureBox img_editar_dependente;
+        private System.Windows.Forms.Button btn_dependente_deletar_m;
     }
 }
