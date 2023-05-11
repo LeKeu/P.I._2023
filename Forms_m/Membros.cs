@@ -80,7 +80,7 @@ namespace projeto_integrado.Forms
 
             for (int i = 0; i < row.Cells.Count; i++)
             {
-                //Console.WriteLine(i + "lolo --> " + row.Cells[i].Value);
+                Console.WriteLine(i + "lolo --> " + row.Cells[i].Value);
             }
 
             var forminputeditarmembros = new membros_inputs_editar();

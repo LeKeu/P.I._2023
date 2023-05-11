@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,8 +26,14 @@ namespace projeto_integrado.Forms_m_inputs
                                      MessageBoxButtons.YesNo);
             if (confirmResult == DialogResult.Yes)
             {
+                MemoryStream ms = new MemoryStream();
+                Bitmap bmping = new Bitmap(img_dependente.Image);
+                bmping.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+                byte[] photoData = new byte[ms.Length];
+                ms.Position = 0;
+                ms.Read(photoData, 0, photoData.Length);
                 //IMPORTANTE --> não adicionei o "celular" aqui!!!
-                List<string> dados = new List<string>() { "ID-?", input_dependente_nomemembrovinculado_m.Text, "ID-?DEP", input_dependente_nome_m.Text, "Foto", input_dependente_sexo_m.Text, dateTimePicker_dependente_datanasc_m.Text, input_dependente_parentesco_m.Text };
+                List<string> dados = new List<string>() { "ID-?", input_dependente_nomemembrovinculado_m.Text, "ID-?DEP", input_dependente_nome_m.Text, Convert.ToBase64String(photoData), input_dependente_sexo_m.Text, dateTimePicker_dependente_datanasc_m.Text, input_dependente_parentesco_m.Text };
                 string nome_tabela = "Dependente";
 
                 //func p gravar os dados no json
@@ -53,6 +60,26 @@ namespace projeto_integrado.Forms_m_inputs
             string[] arrayt = valores.ToArray();
 
             input_dependente_nomemembrovinculado_m.AutoCompleteCustomSource.AddRange(arrayt);
+        }
+
+        private void upload_img_dependente_Click(object sender, EventArgs e)
+        {
+            String imageLoc = "";
+            try
+            {
+                OpenFileDialog dialog = new OpenFileDialog();
+                dialog.Filter = "jpg files(.*jpg)|*.jpg| PNG files(.*png)|*.png| All Files(*.*)|*.*";
+
+                if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    imageLoc = dialog.FileName;
+                    img_dependente.ImageLocation = imageLoc;
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Ocorreu um erro", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
