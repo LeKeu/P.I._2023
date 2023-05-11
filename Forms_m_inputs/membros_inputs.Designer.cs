@@ -72,6 +72,7 @@
             this.input_membro_nome_m = new System.Windows.Forms.TextBox();
             this.lbl_membro_nome_m = new System.Windows.Forms.Label();
             this.lbl_membro_titulo_inputs_m = new System.Windows.Forms.Label();
+            this.btn_membro_deletar_m = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.img_membro)).BeginInit();
             this.SuspendLayout();
             // 
@@ -148,7 +149,7 @@
             // 
             this.btn_membro_enviar_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_membro_enviar_m.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_membro_enviar_m.Location = new System.Drawing.Point(365, 718);
+            this.btn_membro_enviar_m.Location = new System.Drawing.Point(284, 720);
             this.btn_membro_enviar_m.Name = "btn_membro_enviar_m";
             this.btn_membro_enviar_m.Size = new System.Drawing.Size(109, 33);
             this.btn_membro_enviar_m.TabIndex = 126;
@@ -496,6 +497,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1336, 775);
+            this.Controls.Add(this.btn_membro_deletar_m);
             this.Controls.Add(this.lbl_membro_foto_m);
             this.Controls.Add(this.upload_img_membro);
             this.Controls.Add(this.img_membro);
@@ -592,5 +594,6 @@
         public System.Windows.Forms.TextBox input_membro_nome_m;
         private System.Windows.Forms.Label lbl_membro_nome_m;
         private System.Windows.Forms.Label lbl_membro_titulo_inputs_m;
+        private System.Windows.Forms.Button btn_membro_deletar_m;
     }
 }

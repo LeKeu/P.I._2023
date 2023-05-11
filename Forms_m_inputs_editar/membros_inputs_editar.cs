@@ -81,5 +81,27 @@ namespace projeto_integrado.Forms_m_inputs_editar
                 MessageBox.Show("Ocorreu um erro", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void btn_deletar_membro_m_Click(object sender, EventArgs e)
+        {
+            var confirmResult = MessageBox.Show("Tem certeza que deseja DELETAR essas informações?",
+                                     "Confirmar",
+                                     MessageBoxButtons.YesNo);
+            if (confirmResult == DialogResult.Yes)
+            {
+                var Membros = new Membros();
+                string id_membro = Membros.id_membro;
+
+                var novo_json = json_funcs.DeleteValueJson("Membro", "CPF", id_membro);
+
+                json_funcs.Update_Convert_to_json(novo_json);
+                this.Close();
+            }
+            else
+            {
+
+            }
+            
+        }
     }
 }

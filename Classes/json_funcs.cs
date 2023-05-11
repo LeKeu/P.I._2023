@@ -138,6 +138,28 @@ namespace projeto_integrado.Classes
             return valores;
         }
 
+        public static List<string> DeleteValueJson(string nome_tabela, string nome_chave, string valor)
+        {
+            /*
+             Função usada para retornar uma nova lista de arquivo json, já atualizada com a nova mudança (registro deletado).
+            */
+            var arq_json = Read_from_json();
+            List<string> valores = new List<string>();
+
+            foreach (var coisa in arq_json)
+            {
+                if (coisa.GetValue("Tabela").ToString() == nome_tabela && coisa.GetValue(nome_chave).ToString() == valor)
+                {
+                    Console.WriteLine("olha auqi essa linha na func json_func");
+                }
+                else
+                {
+                    valores.Add(coisa.ToString());
+                }
+            }
+            return valores;
+        }
+
         public static DataTable Read_from_json_datagridview() 
         {
             /*
