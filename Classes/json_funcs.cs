@@ -22,7 +22,7 @@ namespace projeto_integrado.Classes
     {
         static List<object> memb_col = new List<object>() { "IdMembro", "Matricula", "Nome", "DataNasc", "CPF", "RG", "Celular", "Email", "Filiacao", "EnderResidencial", "Profissao", "EnderComercial", "EstadoCivil", "Conjuge", "LocInclusao", "DataInclusao", "Sexo", "Status", "Coordenadora", "DataSaida", "AssMembro", "AssCoordSocial", "AssCoordAdm", "AssCoordFinanceira", "FotoMembro" };
         static List<object> dep_col = new List<object>() { "IdMembro", "NomeMembro", "IdDependente", "Nome", "FotoDependente", "Sexo", "DataNasc", "Parentesco" };
-        static List<object> listaPag_col = new List<object>() { "IdMembro", "Nome", "Pagamento", "Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez" };
+        static List<object> listaPag_col = new List<object>() { "IdMembro", "Nome", "Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez" };
         static List<object> patrim_col = new List<object>() { "IdPatrimonio", "NumeroPat", "NumeroSerie", "NotaFiscal", "DataCompra", "FimGarantia", "ValorBem", "EstadoConservacao", "ValorAtual", "IdPatrimonioSetor", "IdPatrimonioProduto", "IdMembroResponsavel", "IdPatrimonioFornecedor", "Observacao", "Status", "OrdemCompra" };
         static List<object> patriFabr_col = new List<object>() { "IdPatrimonioFabricante", "NomeFabricante", "Ativo" };
         static List<object> patriGrBens_col = new List<object>() { "IdPatrimonioGrupoBens", "NomeGrupoBens", "IdentificadorGrupoBens", "Ativo" };

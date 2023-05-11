@@ -61,6 +61,8 @@
             // input_pagamento_nome_m
             // 
             this.input_pagamento_nome_m.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.input_pagamento_nome_m.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.input_pagamento_nome_m.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.input_pagamento_nome_m.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.input_pagamento_nome_m.Location = new System.Drawing.Point(259, 105);
             this.input_pagamento_nome_m.Name = "input_pagamento_nome_m";
@@ -244,6 +246,7 @@
             this.Controls.Add(this.lbl_pagamento_titulo_inputs_m);
             this.Name = "pagamentos_inputs";
             this.Text = "pagamentos_inputs";
+            this.Load += new System.EventHandler(this.pagamentos_inputs_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

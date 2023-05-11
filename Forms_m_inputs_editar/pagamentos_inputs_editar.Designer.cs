@@ -188,6 +188,7 @@
             this.btn_editar_pagamentos_enviar_m.TabIndex = 60;
             this.btn_editar_pagamentos_enviar_m.Text = "Editar";
             this.btn_editar_pagamentos_enviar_m.UseVisualStyleBackColor = true;
+            this.btn_editar_pagamentos_enviar_m.Click += new System.EventHandler(this.btn_editar_pagamentos_enviar_m_Click);
             // 
             // input_editar_pagamento_nome_m
             // 
