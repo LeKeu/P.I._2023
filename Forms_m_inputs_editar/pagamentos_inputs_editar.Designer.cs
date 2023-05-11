@@ -44,6 +44,7 @@
             this.input_editar_pagamento_nome_m = new System.Windows.Forms.TextBox();
             this.lbl_editar_pagamento_nome_m = new System.Windows.Forms.Label();
             this.lbl_editar_pagamento_titulo_inputs_m = new System.Windows.Forms.Label();
+            this.btn_pagamentos_deletar_m = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // checkBox_editar_pagamento_dezembro_m
@@ -182,7 +183,7 @@
             // 
             this.btn_editar_pagamentos_enviar_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_editar_pagamentos_enviar_m.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_editar_pagamentos_enviar_m.Location = new System.Drawing.Point(341, 274);
+            this.btn_editar_pagamentos_enviar_m.Location = new System.Drawing.Point(252, 274);
             this.btn_editar_pagamentos_enviar_m.Name = "btn_editar_pagamentos_enviar_m";
             this.btn_editar_pagamentos_enviar_m.Size = new System.Drawing.Size(109, 33);
             this.btn_editar_pagamentos_enviar_m.TabIndex = 60;
@@ -221,11 +222,24 @@
             this.lbl_editar_pagamento_titulo_inputs_m.TabIndex = 57;
             this.lbl_editar_pagamento_titulo_inputs_m.Text = "Pagamentos";
             // 
+            // btn_pagamentos_deletar_m
+            // 
+            this.btn_pagamentos_deletar_m.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_pagamentos_deletar_m.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_pagamentos_deletar_m.Location = new System.Drawing.Point(427, 274);
+            this.btn_pagamentos_deletar_m.Name = "btn_pagamentos_deletar_m";
+            this.btn_pagamentos_deletar_m.Size = new System.Drawing.Size(109, 33);
+            this.btn_pagamentos_deletar_m.TabIndex = 73;
+            this.btn_pagamentos_deletar_m.Text = "Deletar";
+            this.btn_pagamentos_deletar_m.UseVisualStyleBackColor = true;
+            this.btn_pagamentos_deletar_m.Click += new System.EventHandler(this.btn_pagamentos_deletar_m_Click);
+            // 
             // pagamentos_inputs_editar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 342);
+            this.Controls.Add(this.btn_pagamentos_deletar_m);
             this.Controls.Add(this.checkBox_editar_pagamento_dezembro_m);
             this.Controls.Add(this.checkBox_editar_pagamento_novembro_m);
             this.Controls.Add(this.checkBox_editar_pagamento_outubro_m);
@@ -267,5 +281,6 @@
         public System.Windows.Forms.TextBox input_editar_pagamento_nome_m;
         private System.Windows.Forms.Label lbl_editar_pagamento_nome_m;
         private System.Windows.Forms.Label lbl_editar_pagamento_titulo_inputs_m;
+        private System.Windows.Forms.Button btn_pagamentos_deletar_m;
     }
 }
