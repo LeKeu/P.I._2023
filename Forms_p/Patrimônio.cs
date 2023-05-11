@@ -17,6 +17,7 @@ namespace projeto_integrado.Forms_p
 {
     public partial class Patrimônio : Form
     {
+        public static string id_pat;
         public Patrimônio()
         {
             InitializeComponent();
@@ -74,11 +75,11 @@ namespace projeto_integrado.Forms_p
             int indexRow = e.RowIndex;
             DataGridViewRow row = datagridview_patrimonio_p.Rows[indexRow];
 
-            Console.WriteLine("eu odeio isso");
+            id_pat = row.Cells[44].Value.ToString();
 
             for (int i = 0; i < row.Cells.Count; i++)
             {
-                Console.WriteLine(i + "lolo --> " + row.Cells[i].Value);
+                //Console.WriteLine(i + "lolo --> " + row.Cells[i].Value);
             }
 
             var forminputeditarpatrimonio = new Patrimonio_inputs_editar();
@@ -96,18 +97,5 @@ namespace projeto_integrado.Forms_p
             forminputeditarpatrimonio.Show();
         }
 
-        /*
-        public static T ConvertFromDBVal<T>(object obj)
-        {
-            if (obj == null || obj == DBNull.Value)
-            {
-                return default(T); // returns the default value for the type
-            }
-            else
-            {
-                return (T)obj;
-            }
-        }
-        */
     }
 }
