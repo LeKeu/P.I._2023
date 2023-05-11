@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dependentes_inputs));
             this.btn_dependente_enviar_m = new System.Windows.Forms.Button();
             this.input_dependente_parentesco_m = new System.Windows.Forms.TextBox();
             this.lbl_dependente_parentesco_m = new System.Windows.Forms.Label();
@@ -40,6 +41,9 @@
             this.dateTimePicker_dependente_datanasc_m = new System.Windows.Forms.DateTimePicker();
             this.input_dependente_nomemembrovinculado_m = new System.Windows.Forms.TextBox();
             this.lbl_dependente_nomemembrovinculado_m = new System.Windows.Forms.Label();
+            this.upload_img_dependente = new System.Windows.Forms.Button();
+            this.img_dependente = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.img_dependente)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_dependente_enviar_m
@@ -162,11 +166,35 @@
             this.lbl_dependente_nomemembrovinculado_m.TabIndex = 78;
             this.lbl_dependente_nomemembrovinculado_m.Text = "Nome do membro vinculado";
             // 
+            // upload_img_dependente
+            // 
+            this.upload_img_dependente.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.upload_img_dependente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.upload_img_dependente.Location = new System.Drawing.Point(682, 294);
+            this.upload_img_dependente.Name = "upload_img_dependente";
+            this.upload_img_dependente.Size = new System.Drawing.Size(109, 33);
+            this.upload_img_dependente.TabIndex = 137;
+            this.upload_img_dependente.Text = "Upload";
+            this.upload_img_dependente.UseVisualStyleBackColor = true;
+            this.upload_img_dependente.Click += new System.EventHandler(this.upload_img_dependente_Click);
+            // 
+            // img_dependente
+            // 
+            this.img_dependente.Image = ((System.Drawing.Image)(resources.GetObject("img_dependente.Image")));
+            this.img_dependente.Location = new System.Drawing.Point(571, 202);
+            this.img_dependente.Name = "img_dependente";
+            this.img_dependente.Size = new System.Drawing.Size(105, 125);
+            this.img_dependente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.img_dependente.TabIndex = 136;
+            this.img_dependente.TabStop = false;
+            // 
             // dependentes_inputs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 334);
+            this.Controls.Add(this.upload_img_dependente);
+            this.Controls.Add(this.img_dependente);
             this.Controls.Add(this.input_dependente_nomemembrovinculado_m);
             this.Controls.Add(this.lbl_dependente_nomemembrovinculado_m);
             this.Controls.Add(this.dateTimePicker_dependente_datanasc_m);
@@ -182,6 +210,7 @@
             this.Name = "dependentes_inputs";
             this.Text = "dependentes_inputs";
             this.Load += new System.EventHandler(this.dependentes_inputs_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.img_dependente)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -201,5 +230,7 @@
         public System.Windows.Forms.TextBox input_dependente_nome_m;
         public System.Windows.Forms.DateTimePicker dateTimePicker_dependente_datanasc_m;
         public System.Windows.Forms.TextBox input_dependente_nomemembrovinculado_m;
+        private System.Windows.Forms.Button upload_img_dependente;
+        public System.Windows.Forms.PictureBox img_dependente;
     }
 }

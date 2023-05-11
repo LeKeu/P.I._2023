@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +16,7 @@ namespace projeto_integrado.Forms
 {
     public partial class Dependentes : Form
     {
+        public static string id_dep;
         public Dependentes()
         {
             InitializeComponent();
@@ -74,8 +76,9 @@ namespace projeto_integrado.Forms
 
             for (int i = 0; i < row.Cells.Count; i++)
             {
-                Console.WriteLine(i + "lolo --> " + row.Cells[i].Value);
+                //Console.WriteLine(i + "lolo --> " + row.Cells[i].Value);
             }
+            id_dep = row.Cells[3].Value.ToString();
 
             var forminputeditardependentes = new dependentes_inputs_editar();
             forminputeditardependentes.input_editar_dependente_nome_m.Text = row.Cells[3].Value.ToString();
@@ -83,6 +86,7 @@ namespace projeto_integrado.Forms
             forminputeditardependentes.dateTimePicker_editar_dependente_datanasc_m.Text = row.Cells[4].Value.ToString();
             forminputeditardependentes.input_editar_dependente_parentesco_m.Text = row.Cells[29].Value.ToString();
             forminputeditardependentes.input_editar_dependente_nomemembrovinculado_m.Text = row.Cells[26].Value.ToString();
+            forminputeditardependentes.img_editar_dependente.Image = System.Drawing.Image.FromStream(new MemoryStream(Convert.FromBase64String(row.Cells[28].Value.ToString())));
             forminputeditardependentes.Show();
         }
 

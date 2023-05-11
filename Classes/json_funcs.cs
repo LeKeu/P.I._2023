@@ -74,6 +74,8 @@ namespace projeto_integrado.Classes
                 Console.Write("Inserir aqui o código para criar o arquivo caso não exista");
             }
 
+            conexao_internet.Run000();
+
         }
 
         public static void Update_Convert_to_json(List<string> dados)
@@ -96,6 +98,8 @@ namespace projeto_integrado.Classes
                 var json_arq = JsonConvert.SerializeObject(teste);
                 System.IO.File.WriteAllText(arq_path, json_arq);
             }
+
+            conexao_internet.Run000();
         }
 
 
@@ -110,7 +114,7 @@ namespace projeto_integrado.Classes
             
             foreach (var coisa in arq_json)
             {
-                if (coisa.GetValue("Tabela").ToString() == nome_tabela && coisa.GetValue("CPF").ToString() == valor)
+                if (coisa.GetValue("Tabela").ToString() == nome_tabela && coisa.GetValue(nome_chave).ToString() == valor)
                 {
                     JObject jsonObj = JObject.Parse(coisa.ToString());
                     Dictionary<string, string> dictObj = jsonObj.ToObject<Dictionary<string, string>>();

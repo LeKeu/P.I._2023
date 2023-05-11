@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dependentes_inputs_editar));
             this.input_editar_dependente_nomemembrovinculado_m = new System.Windows.Forms.TextBox();
             this.lbl_editar_dependente_nomemembrovinculado_m = new System.Windows.Forms.Label();
             this.dateTimePicker_editar_dependente_datanasc_m = new System.Windows.Forms.DateTimePicker();
@@ -40,6 +41,10 @@
             this.input_editar_dependente_nome_m = new System.Windows.Forms.TextBox();
             this.lbl_editar_dependente_nome_m = new System.Windows.Forms.Label();
             this.lbl_editar_dependente_titulo_inputs_m = new System.Windows.Forms.Label();
+            this.lbl_membro_foto_m = new System.Windows.Forms.Label();
+            this.upload_img_editar_dependente = new System.Windows.Forms.Button();
+            this.img_editar_dependente = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.img_editar_dependente)).BeginInit();
             this.SuspendLayout();
             // 
             // input_editar_dependente_nomemembrovinculado_m
@@ -161,11 +166,46 @@
             this.lbl_editar_dependente_titulo_inputs_m.TabIndex = 80;
             this.lbl_editar_dependente_titulo_inputs_m.Text = "Dependentes";
             // 
+            // lbl_membro_foto_m
+            // 
+            this.lbl_membro_foto_m.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_membro_foto_m.AutoSize = true;
+            this.lbl_membro_foto_m.Location = new System.Drawing.Point(348, -266);
+            this.lbl_membro_foto_m.Name = "lbl_membro_foto_m";
+            this.lbl_membro_foto_m.Size = new System.Drawing.Size(34, 16);
+            this.lbl_membro_foto_m.TabIndex = 136;
+            this.lbl_membro_foto_m.Text = "Foto";
+            // 
+            // upload_img_editar_dependente
+            // 
+            this.upload_img_editar_dependente.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.upload_img_editar_dependente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.upload_img_editar_dependente.Location = new System.Drawing.Point(679, 297);
+            this.upload_img_editar_dependente.Name = "upload_img_editar_dependente";
+            this.upload_img_editar_dependente.Size = new System.Drawing.Size(109, 33);
+            this.upload_img_editar_dependente.TabIndex = 135;
+            this.upload_img_editar_dependente.Text = "Upload";
+            this.upload_img_editar_dependente.UseVisualStyleBackColor = true;
+            this.upload_img_editar_dependente.Click += new System.EventHandler(this.upload_img_dependente_Click);
+            // 
+            // img_editar_dependente
+            // 
+            this.img_editar_dependente.Image = ((System.Drawing.Image)(resources.GetObject("img_editar_dependente.Image")));
+            this.img_editar_dependente.Location = new System.Drawing.Point(568, 205);
+            this.img_editar_dependente.Name = "img_editar_dependente";
+            this.img_editar_dependente.Size = new System.Drawing.Size(105, 125);
+            this.img_editar_dependente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.img_editar_dependente.TabIndex = 134;
+            this.img_editar_dependente.TabStop = false;
+            // 
             // dependentes_inputs_editar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 334);
+            this.Controls.Add(this.lbl_membro_foto_m);
+            this.Controls.Add(this.upload_img_editar_dependente);
+            this.Controls.Add(this.img_editar_dependente);
             this.Controls.Add(this.input_editar_dependente_nomemembrovinculado_m);
             this.Controls.Add(this.lbl_editar_dependente_nomemembrovinculado_m);
             this.Controls.Add(this.dateTimePicker_editar_dependente_datanasc_m);
@@ -180,6 +220,7 @@
             this.Controls.Add(this.lbl_editar_dependente_titulo_inputs_m);
             this.Name = "dependentes_inputs_editar";
             this.Text = "dependentes_inputs_editar";
+            ((System.ComponentModel.ISupportInitialize)(this.img_editar_dependente)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -199,5 +240,8 @@
         public System.Windows.Forms.TextBox input_editar_dependente_nome_m;
         private System.Windows.Forms.Label lbl_editar_dependente_nome_m;
         private System.Windows.Forms.Label lbl_editar_dependente_titulo_inputs_m;
+        private System.Windows.Forms.Label lbl_membro_foto_m;
+        private System.Windows.Forms.Button upload_img_editar_dependente;
+        public System.Windows.Forms.PictureBox img_editar_dependente;
     }
 }

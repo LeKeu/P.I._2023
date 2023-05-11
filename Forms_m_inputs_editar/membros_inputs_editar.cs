@@ -48,26 +48,11 @@ namespace projeto_integrado.Forms_m_inputs_editar
                 ms.Position = 0;
                 ms.Read(photoData, 0, photoData.Length);
 
-                //Console.WriteLine("NOME DO MEMBRO --> "+id_membro);
                 List<string> dados = new List<string>() { "ID-?", input_editar_membro_matricula_m.Text, input_editar_membro_nome_m.Text, dateTimePicker_editar_membro_datanasc_m.Text, input_editar_membro_cpf_m.Text, input_editar_membro_rg_m.Text, input_editar_membro_celular_m.Text, input_editar_membro_email_m.Text, input_editar_membro_filiacao_m.Text, input_editar_membro_enderresidencial_m.Text, input_editar_membro_profissao_m.Text, input_editar_membro_endercomercial_m.Text, input_editar_membro_estadocivil_m.Text, input_editar_membro_conjuge_m.Text, input_editar_membro_localinclusao_m.Text, dateTimePicker_editar_membro_datainclusao_m.Text, input_editar_membro_sexo_m.Text, input_editar_membro_status_m.Text, "corrdenadora", "datasaida", "assmembro", "asscorrdsocial", "asscorrdadm", "asscoordfinanc", Convert.ToBase64String(photoData) };
 
-                var teste = json_funcs.UpdateValueJson("Membro", "Nome", id_membro, dados);
-                //Console.WriteLine("teste count "+teste.Count);
-                /*
-                foreach(var registro in teste)
-                {
-                    json_funcs.Update_Convert_to_json(teste);
-                }
-                */
-                json_funcs.Update_Convert_to_json(teste);
-
-
-                //func p gravar os dados no json
-                //json_funcs.Convert_to_json(dados, nome_tabela, "Y");
-
-                //conexao_api.AddRow("Membro", "Y", new List<object>() { input_membro_matricula_m.Text, input_membro_nome_m.Text, dateTimePicker_membro_datanasc_m.Text, input_membro_cpf_m.Text, input_membro_rg_m.Text, input_membro_celular_m.Text, input_membro_email_m.Text, input_membro_filiacao_m.Text, input_membro_enderresidencial_m.Text, input_membro_profissao_m.Text, input_membro_endercomercial_m.Text, input_membro_estadocivil_m.Text, input_membro_conjuge_m.Text, input_membro_localinclusao_m.Text, dateTimePicker_membro_datainclusao_m.Text, input_membro_sexo_m.Text });
-
-
+                var novo_json = json_funcs.UpdateValueJson("Membro", "Nome", id_membro, dados);
+                
+                json_funcs.Update_Convert_to_json(novo_json);
 
                 this.Close();
             }

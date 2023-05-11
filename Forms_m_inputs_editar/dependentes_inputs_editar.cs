@@ -1,9 +1,12 @@
-﻿using projeto_integrado.Classes;
+﻿using Microsoft.Win32;
+using projeto_integrado.Classes;
+using projeto_integrado.Forms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,19 +28,48 @@ namespace projeto_integrado.Forms_m_inputs_editar
                                      MessageBoxButtons.YesNo);
             if (confirmResult == DialogResult.Yes)
             {
-                //List<string> dados = new List<string>() { "ID-?", input_membro_matricula_m.Text, input_membro_nome_m.Text, dateTimePicker_membro_datanasc_m.Text, input_membro_cpf_m.Text, input_membro_rg_m.Text, input_membro_celular_m.Text, input_membro_email_m.Text, input_membro_filiacao_m.Text, input_membro_enderresidencial_m.Text, input_membro_profissao_m.Text, input_membro_endercomercial_m.Text, input_membro_estadocivil_m.Text, input_membro_conjuge_m.Text, input_membro_localinclusao_m.Text, dateTimePicker_membro_datainclusao_m.Text, input_membro_sexo_m.Text, input_membro_status_m.Text, "corrdenadora", "datasaida", "assmembro", "asscorrdsocial", "asscorrdadm", "asscoordfinanc", "fotomembro" };
-                //string nome_tabela = "Membro";
+                
+                var Dependentes = new Dependentes();
+                string id_dep = Dependentes.id_dep;
 
-                //func p gravar os dados no json
-                //json_funcs.Convert_to_json(dados, nome_tabela, "Y");
+                MemoryStream ms = new MemoryStream();
+                Bitmap bmping = new Bitmap(img_editar_dependente.Image);
+                bmping.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+                byte[] photoData = new byte[ms.Length];
+                ms.Position = 0;
+                ms.Read(photoData, 0, photoData.Length);
 
-                //conexao_api.AddRow("Membro", "Y", new List<object>() { input_membro_matricula_m.Text, input_membro_nome_m.Text, dateTimePicker_membro_datanasc_m.Text, input_membro_cpf_m.Text, input_membro_rg_m.Text, input_membro_celular_m.Text, input_membro_email_m.Text, input_membro_filiacao_m.Text, input_membro_enderresidencial_m.Text, input_membro_profissao_m.Text, input_membro_endercomercial_m.Text, input_membro_estadocivil_m.Text, input_membro_conjuge_m.Text, input_membro_localinclusao_m.Text, dateTimePicker_membro_datainclusao_m.Text, input_membro_sexo_m.Text });
+                List<string> dados = new List<string>() { "ID-?", input_editar_dependente_nomemembrovinculado_m.Text, "ID-?DEP", input_editar_dependente_nome_m.Text, Convert.ToBase64String(photoData), input_editar_dependente_sexo_m.Text, dateTimePicker_editar_dependente_datanasc_m.Text, input_editar_dependente_parentesco_m.Text };
 
+                var novo_json = json_funcs.UpdateValueJson("Dependente", "Nome", id_dep, dados);
+
+                json_funcs.Update_Convert_to_json(novo_json);
+                
                 this.Close();
             }
             else
             {
 
+            }
+        }
+
+        private void upload_img_dependente_Click(object sender, EventArgs e)
+        {
+            String imageLoc = "";
+            try
+            {
+                OpenFileDialog dialog = new OpenFileDialog();
+                dialog.Filter = "jpg files(.*jpg)|*.jpg| PNG files(.*png)|*.png| All Files(*.*)|*.*";
+
+                if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    imageLoc = dialog.FileName;
+                    img_editar_dependente.ImageLocation = imageLoc;
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Ocorreu um erro", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
