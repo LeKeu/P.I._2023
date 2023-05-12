@@ -183,7 +183,7 @@
             // 
             this.btn_editar_pagamentos_enviar_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_editar_pagamentos_enviar_m.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_editar_pagamentos_enviar_m.Location = new System.Drawing.Point(252, 274);
+            this.btn_editar_pagamentos_enviar_m.Location = new System.Drawing.Point(273, 274);
             this.btn_editar_pagamentos_enviar_m.Name = "btn_editar_pagamentos_enviar_m";
             this.btn_editar_pagamentos_enviar_m.Size = new System.Drawing.Size(109, 33);
             this.btn_editar_pagamentos_enviar_m.TabIndex = 60;
@@ -212,8 +212,7 @@
             // 
             // lbl_editar_pagamento_titulo_inputs_m
             // 
-            this.lbl_editar_pagamento_titulo_inputs_m.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbl_editar_pagamento_titulo_inputs_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_editar_pagamento_titulo_inputs_m.AutoSize = true;
             this.lbl_editar_pagamento_titulo_inputs_m.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_editar_pagamento_titulo_inputs_m.Location = new System.Drawing.Point(313, 36);
@@ -226,7 +225,7 @@
             // 
             this.btn_pagamentos_deletar_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_pagamentos_deletar_m.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_pagamentos_deletar_m.Location = new System.Drawing.Point(427, 274);
+            this.btn_pagamentos_deletar_m.Location = new System.Drawing.Point(413, 274);
             this.btn_pagamentos_deletar_m.Name = "btn_pagamentos_deletar_m";
             this.btn_pagamentos_deletar_m.Size = new System.Drawing.Size(109, 33);
             this.btn_pagamentos_deletar_m.TabIndex = 73;

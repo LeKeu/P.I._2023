@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.btn_deletar_pagamentos_m = new System.Windows.Forms.Button();
-            this.btn_editar_pagamentos_m = new System.Windows.Forms.Button();
             this.btn_adicionar_pagamentos_m = new System.Windows.Forms.Button();
             this.datagridview_pagamentos_m = new System.Windows.Forms.DataGridView();
             this.btn_invisivel_memListPag_m = new System.Windows.Forms.Button();
@@ -38,33 +36,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.datagridview_pagamentos_m)).BeginInit();
             this.SuspendLayout();
             // 
-            // btn_deletar_pagamentos_m
-            // 
-            this.btn_deletar_pagamentos_m.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btn_deletar_pagamentos_m.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_deletar_pagamentos_m.Location = new System.Drawing.Point(729, 288);
-            this.btn_deletar_pagamentos_m.Name = "btn_deletar_pagamentos_m";
-            this.btn_deletar_pagamentos_m.Size = new System.Drawing.Size(97, 42);
-            this.btn_deletar_pagamentos_m.TabIndex = 19;
-            this.btn_deletar_pagamentos_m.Text = "Deletar";
-            this.btn_deletar_pagamentos_m.UseVisualStyleBackColor = true;
-            // 
-            // btn_editar_pagamentos_m
-            // 
-            this.btn_editar_pagamentos_m.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btn_editar_pagamentos_m.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_editar_pagamentos_m.Location = new System.Drawing.Point(729, 212);
-            this.btn_editar_pagamentos_m.Name = "btn_editar_pagamentos_m";
-            this.btn_editar_pagamentos_m.Size = new System.Drawing.Size(97, 42);
-            this.btn_editar_pagamentos_m.TabIndex = 18;
-            this.btn_editar_pagamentos_m.Text = "Editar";
-            this.btn_editar_pagamentos_m.UseVisualStyleBackColor = true;
-            // 
             // btn_adicionar_pagamentos_m
             // 
-            this.btn_adicionar_pagamentos_m.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btn_adicionar_pagamentos_m.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_adicionar_pagamentos_m.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_adicionar_pagamentos_m.Location = new System.Drawing.Point(729, 138);
+            this.btn_adicionar_pagamentos_m.Location = new System.Drawing.Point(709, 378);
             this.btn_adicionar_pagamentos_m.Name = "btn_adicionar_pagamentos_m";
             this.btn_adicionar_pagamentos_m.Size = new System.Drawing.Size(97, 42);
             this.btn_adicionar_pagamentos_m.TabIndex = 17;
@@ -88,12 +64,14 @@
             // 
             // btn_invisivel_memListPag_m
             // 
+            this.btn_invisivel_memListPag_m.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_invisivel_memListPag_m.Location = new System.Drawing.Point(272, 426);
             this.btn_invisivel_memListPag_m.Name = "btn_invisivel_memListPag_m";
             this.btn_invisivel_memListPag_m.Size = new System.Drawing.Size(75, 23);
             this.btn_invisivel_memListPag_m.TabIndex = 20;
             this.btn_invisivel_memListPag_m.Text = "button1";
             this.btn_invisivel_memListPag_m.UseVisualStyleBackColor = true;
+            this.btn_invisivel_memListPag_m.Visible = false;
             this.btn_invisivel_memListPag_m.Click += new System.EventHandler(this.btn_invisivel_memListPag_m_Click);
             // 
             // timer_listaPag_m
@@ -107,8 +85,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(855, 498);
             this.Controls.Add(this.btn_invisivel_memListPag_m);
-            this.Controls.Add(this.btn_deletar_pagamentos_m);
-            this.Controls.Add(this.btn_editar_pagamentos_m);
             this.Controls.Add(this.btn_adicionar_pagamentos_m);
             this.Controls.Add(this.datagridview_pagamentos_m);
             this.Name = "Pagamentos";
@@ -120,9 +96,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btn_deletar_pagamentos_m;
-        private System.Windows.Forms.Button btn_editar_pagamentos_m;
         private System.Windows.Forms.Button btn_adicionar_pagamentos_m;
         private System.Windows.Forms.DataGridView datagridview_pagamentos_m;
         private System.Windows.Forms.Button btn_invisivel_memListPag_m;

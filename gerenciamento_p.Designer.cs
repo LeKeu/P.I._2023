@@ -29,21 +29,6 @@
         private void InitializeComponent()
         {
             this.painel_principal_p = new System.Windows.Forms.Panel();
-            this.painel_titulo_p = new System.Windows.Forms.Panel();
-            this.btn_minimizar_p = new System.Windows.Forms.Button();
-            this.btn_maximizar_p = new System.Windows.Forms.Button();
-            this.btn_fechar_p = new System.Windows.Forms.Button();
-            this.label_titulo_p = new System.Windows.Forms.Label();
-            this.painel_menu_lateral_p = new System.Windows.Forms.Panel();
-            this.painel_logo_p = new System.Windows.Forms.Panel();
-            this.lbl_projeto_integrado_p = new System.Windows.Forms.Label();
-            this.btn_fechar_forms_filho_p = new System.Windows.Forms.Button();
-            this.btn_grupo_de_bens_p = new System.Windows.Forms.Button();
-            this.btn_setor_p = new System.Windows.Forms.Button();
-            this.btn_fornecedor_p = new System.Windows.Forms.Button();
-            this.btn_fabricantes_p = new System.Windows.Forms.Button();
-            this.btn_produto_p = new System.Windows.Forms.Button();
-            this.btn_principal_p = new System.Windows.Forms.Button();
             this.panel_gerenciarpatrimonio_p = new System.Windows.Forms.Panel();
             this.btn_gerenciarpatrimonio_p = new System.Windows.Forms.Button();
             this.label_gerenciarpatrimonio_p = new System.Windows.Forms.Label();
@@ -52,14 +37,29 @@
             this.btn_gerenciarmembros_p = new System.Windows.Forms.Button();
             this.label_titulo_gerenciarmembros_p = new System.Windows.Forms.Label();
             this.pictureBox_gerenciarmembros_p = new System.Windows.Forms.PictureBox();
+            this.painel_titulo_p = new System.Windows.Forms.Panel();
+            this.btn_minimizar_p = new System.Windows.Forms.Button();
+            this.btn_maximizar_p = new System.Windows.Forms.Button();
+            this.btn_fechar_p = new System.Windows.Forms.Button();
+            this.btn_fechar_forms_filho_p = new System.Windows.Forms.Button();
+            this.label_titulo_p = new System.Windows.Forms.Label();
+            this.painel_menu_lateral_p = new System.Windows.Forms.Panel();
+            this.btn_grupo_de_bens_p = new System.Windows.Forms.Button();
+            this.btn_setor_p = new System.Windows.Forms.Button();
+            this.btn_fornecedor_p = new System.Windows.Forms.Button();
+            this.btn_fabricantes_p = new System.Windows.Forms.Button();
+            this.btn_produto_p = new System.Windows.Forms.Button();
+            this.btn_principal_p = new System.Windows.Forms.Button();
+            this.painel_logo_p = new System.Windows.Forms.Panel();
+            this.lbl_projeto_integrado_p = new System.Windows.Forms.Label();
             this.painel_principal_p.SuspendLayout();
-            this.painel_titulo_p.SuspendLayout();
-            this.painel_menu_lateral_p.SuspendLayout();
-            this.painel_logo_p.SuspendLayout();
             this.panel_gerenciarpatrimonio_p.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_gerenciarpatrimonio_p)).BeginInit();
             this.painel_gerenciarmembros_p.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_gerenciarmembros_p)).BeginInit();
+            this.painel_titulo_p.SuspendLayout();
+            this.painel_menu_lateral_p.SuspendLayout();
+            this.painel_logo_p.SuspendLayout();
             this.SuspendLayout();
             // 
             // painel_principal_p
@@ -71,6 +71,106 @@
             this.painel_principal_p.Name = "painel_principal_p";
             this.painel_principal_p.Size = new System.Drawing.Size(860, 501);
             this.painel_principal_p.TabIndex = 5;
+            // 
+            // panel_gerenciarpatrimonio_p
+            // 
+            this.panel_gerenciarpatrimonio_p.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.panel_gerenciarpatrimonio_p.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
+            this.panel_gerenciarpatrimonio_p.Controls.Add(this.btn_gerenciarpatrimonio_p);
+            this.panel_gerenciarpatrimonio_p.Controls.Add(this.label_gerenciarpatrimonio_p);
+            this.panel_gerenciarpatrimonio_p.Controls.Add(this.pictureBox_gerenciarpatrimonio_p);
+            this.panel_gerenciarpatrimonio_p.Location = new System.Drawing.Point(468, 89);
+            this.panel_gerenciarpatrimonio_p.Name = "panel_gerenciarpatrimonio_p";
+            this.panel_gerenciarpatrimonio_p.Size = new System.Drawing.Size(258, 302);
+            this.panel_gerenciarpatrimonio_p.TabIndex = 9;
+            // 
+            // btn_gerenciarpatrimonio_p
+            // 
+            this.btn_gerenciarpatrimonio_p.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_gerenciarpatrimonio_p.BackColor = System.Drawing.Color.White;
+            this.btn_gerenciarpatrimonio_p.Enabled = false;
+            this.btn_gerenciarpatrimonio_p.FlatAppearance.BorderSize = 0;
+            this.btn_gerenciarpatrimonio_p.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_gerenciarpatrimonio_p.Location = new System.Drawing.Point(81, 197);
+            this.btn_gerenciarpatrimonio_p.Name = "btn_gerenciarpatrimonio_p";
+            this.btn_gerenciarpatrimonio_p.Size = new System.Drawing.Size(101, 32);
+            this.btn_gerenciarpatrimonio_p.TabIndex = 6;
+            this.btn_gerenciarpatrimonio_p.Text = "Gerenciar";
+            this.btn_gerenciarpatrimonio_p.UseVisualStyleBackColor = false;
+            // 
+            // label_gerenciarpatrimonio_p
+            // 
+            this.label_gerenciarpatrimonio_p.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label_gerenciarpatrimonio_p.AutoSize = true;
+            this.label_gerenciarpatrimonio_p.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label_gerenciarpatrimonio_p.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_gerenciarpatrimonio_p.ForeColor = System.Drawing.Color.White;
+            this.label_gerenciarpatrimonio_p.Location = new System.Drawing.Point(58, 128);
+            this.label_gerenciarpatrimonio_p.Name = "label_gerenciarpatrimonio_p";
+            this.label_gerenciarpatrimonio_p.Size = new System.Drawing.Size(143, 31);
+            this.label_gerenciarpatrimonio_p.TabIndex = 5;
+            this.label_gerenciarpatrimonio_p.Text = "Patrimônio";
+            // 
+            // pictureBox_gerenciarpatrimonio_p
+            // 
+            this.pictureBox_gerenciarpatrimonio_p.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox_gerenciarpatrimonio_p.Image = global::projeto_integrado.Properties.Resources.monumento;
+            this.pictureBox_gerenciarpatrimonio_p.Location = new System.Drawing.Point(92, 32);
+            this.pictureBox_gerenciarpatrimonio_p.Name = "pictureBox_gerenciarpatrimonio_p";
+            this.pictureBox_gerenciarpatrimonio_p.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox_gerenciarpatrimonio_p.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox_gerenciarpatrimonio_p.TabIndex = 0;
+            this.pictureBox_gerenciarpatrimonio_p.TabStop = false;
+            // 
+            // painel_gerenciarmembros_p
+            // 
+            this.painel_gerenciarmembros_p.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.painel_gerenciarmembros_p.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
+            this.painel_gerenciarmembros_p.Controls.Add(this.btn_gerenciarmembros_p);
+            this.painel_gerenciarmembros_p.Controls.Add(this.label_titulo_gerenciarmembros_p);
+            this.painel_gerenciarmembros_p.Controls.Add(this.pictureBox_gerenciarmembros_p);
+            this.painel_gerenciarmembros_p.Location = new System.Drawing.Point(144, 89);
+            this.painel_gerenciarmembros_p.Name = "painel_gerenciarmembros_p";
+            this.painel_gerenciarmembros_p.Size = new System.Drawing.Size(258, 302);
+            this.painel_gerenciarmembros_p.TabIndex = 8;
+            // 
+            // btn_gerenciarmembros_p
+            // 
+            this.btn_gerenciarmembros_p.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_gerenciarmembros_p.BackColor = System.Drawing.Color.White;
+            this.btn_gerenciarmembros_p.FlatAppearance.BorderSize = 0;
+            this.btn_gerenciarmembros_p.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_gerenciarmembros_p.Location = new System.Drawing.Point(81, 197);
+            this.btn_gerenciarmembros_p.Name = "btn_gerenciarmembros_p";
+            this.btn_gerenciarmembros_p.Size = new System.Drawing.Size(101, 32);
+            this.btn_gerenciarmembros_p.TabIndex = 6;
+            this.btn_gerenciarmembros_p.Text = "Gerenciar";
+            this.btn_gerenciarmembros_p.UseVisualStyleBackColor = false;
+            this.btn_gerenciarmembros_p.Click += new System.EventHandler(this.btn_gerenciarmembros_p_Click);
+            // 
+            // label_titulo_gerenciarmembros_p
+            // 
+            this.label_titulo_gerenciarmembros_p.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label_titulo_gerenciarmembros_p.AutoSize = true;
+            this.label_titulo_gerenciarmembros_p.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label_titulo_gerenciarmembros_p.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_titulo_gerenciarmembros_p.ForeColor = System.Drawing.Color.White;
+            this.label_titulo_gerenciarmembros_p.Location = new System.Drawing.Point(66, 128);
+            this.label_titulo_gerenciarmembros_p.Name = "label_titulo_gerenciarmembros_p";
+            this.label_titulo_gerenciarmembros_p.Size = new System.Drawing.Size(126, 31);
+            this.label_titulo_gerenciarmembros_p.TabIndex = 5;
+            this.label_titulo_gerenciarmembros_p.Text = "Membros";
+            // 
+            // pictureBox_gerenciarmembros_p
+            // 
+            this.pictureBox_gerenciarmembros_p.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox_gerenciarmembros_p.Image = global::projeto_integrado.Properties.Resources.trabalho_em_equipe;
+            this.pictureBox_gerenciarmembros_p.Location = new System.Drawing.Point(92, 32);
+            this.pictureBox_gerenciarmembros_p.Name = "pictureBox_gerenciarmembros_p";
+            this.pictureBox_gerenciarmembros_p.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox_gerenciarmembros_p.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox_gerenciarmembros_p.TabIndex = 0;
+            this.pictureBox_gerenciarmembros_p.TabStop = false;
             // 
             // painel_titulo_p
             // 
@@ -132,6 +232,19 @@
             this.btn_fechar_p.UseVisualStyleBackColor = true;
             this.btn_fechar_p.Click += new System.EventHandler(this.btn_fechar_p_Click);
             // 
+            // btn_fechar_forms_filho_p
+            // 
+            this.btn_fechar_forms_filho_p.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btn_fechar_forms_filho_p.FlatAppearance.BorderSize = 0;
+            this.btn_fechar_forms_filho_p.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_fechar_forms_filho_p.Image = global::projeto_integrado.Properties.Resources.close__1_;
+            this.btn_fechar_forms_filho_p.Location = new System.Drawing.Point(0, 0);
+            this.btn_fechar_forms_filho_p.Name = "btn_fechar_forms_filho_p";
+            this.btn_fechar_forms_filho_p.Size = new System.Drawing.Size(75, 80);
+            this.btn_fechar_forms_filho_p.TabIndex = 1;
+            this.btn_fechar_forms_filho_p.UseVisualStyleBackColor = true;
+            this.btn_fechar_forms_filho_p.Click += new System.EventHandler(this.btn_fechar_forms_filho_p_Click);
+            // 
             // label_titulo_p
             // 
             this.label_titulo_p.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -159,40 +272,6 @@
             this.painel_menu_lateral_p.Name = "painel_menu_lateral_p";
             this.painel_menu_lateral_p.Size = new System.Drawing.Size(246, 581);
             this.painel_menu_lateral_p.TabIndex = 3;
-            // 
-            // painel_logo_p
-            // 
-            this.painel_logo_p.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
-            this.painel_logo_p.Controls.Add(this.lbl_projeto_integrado_p);
-            this.painel_logo_p.Dock = System.Windows.Forms.DockStyle.Top;
-            this.painel_logo_p.Location = new System.Drawing.Point(0, 0);
-            this.painel_logo_p.Name = "painel_logo_p";
-            this.painel_logo_p.Size = new System.Drawing.Size(246, 80);
-            this.painel_logo_p.TabIndex = 0;
-            // 
-            // lbl_projeto_integrado_p
-            // 
-            this.lbl_projeto_integrado_p.AutoSize = true;
-            this.lbl_projeto_integrado_p.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_projeto_integrado_p.ForeColor = System.Drawing.Color.LightGray;
-            this.lbl_projeto_integrado_p.Location = new System.Drawing.Point(43, 31);
-            this.lbl_projeto_integrado_p.Name = "lbl_projeto_integrado_p";
-            this.lbl_projeto_integrado_p.Size = new System.Drawing.Size(160, 25);
-            this.lbl_projeto_integrado_p.TabIndex = 0;
-            this.lbl_projeto_integrado_p.Text = "Projeto Integrado";
-            // 
-            // btn_fechar_forms_filho_p
-            // 
-            this.btn_fechar_forms_filho_p.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btn_fechar_forms_filho_p.FlatAppearance.BorderSize = 0;
-            this.btn_fechar_forms_filho_p.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_fechar_forms_filho_p.Image = global::projeto_integrado.Properties.Resources.close__1_;
-            this.btn_fechar_forms_filho_p.Location = new System.Drawing.Point(0, 0);
-            this.btn_fechar_forms_filho_p.Name = "btn_fechar_forms_filho_p";
-            this.btn_fechar_forms_filho_p.Size = new System.Drawing.Size(75, 80);
-            this.btn_fechar_forms_filho_p.TabIndex = 1;
-            this.btn_fechar_forms_filho_p.UseVisualStyleBackColor = true;
-            this.btn_fechar_forms_filho_p.Click += new System.EventHandler(this.btn_fechar_forms_filho_p_Click);
             // 
             // btn_grupo_de_bens_p
             // 
@@ -320,101 +399,26 @@
             this.btn_principal_p.UseVisualStyleBackColor = false;
             this.btn_principal_p.Click += new System.EventHandler(this.btn_principal_p_Click);
             // 
-            // panel_gerenciarpatrimonio_p
+            // painel_logo_p
             // 
-            this.panel_gerenciarpatrimonio_p.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.panel_gerenciarpatrimonio_p.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
-            this.panel_gerenciarpatrimonio_p.Controls.Add(this.btn_gerenciarpatrimonio_p);
-            this.panel_gerenciarpatrimonio_p.Controls.Add(this.label_gerenciarpatrimonio_p);
-            this.panel_gerenciarpatrimonio_p.Controls.Add(this.pictureBox_gerenciarpatrimonio_p);
-            this.panel_gerenciarpatrimonio_p.Location = new System.Drawing.Point(463, 99);
-            this.panel_gerenciarpatrimonio_p.Name = "panel_gerenciarpatrimonio_p";
-            this.panel_gerenciarpatrimonio_p.Size = new System.Drawing.Size(258, 302);
-            this.panel_gerenciarpatrimonio_p.TabIndex = 9;
+            this.painel_logo_p.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            this.painel_logo_p.Controls.Add(this.lbl_projeto_integrado_p);
+            this.painel_logo_p.Dock = System.Windows.Forms.DockStyle.Top;
+            this.painel_logo_p.Location = new System.Drawing.Point(0, 0);
+            this.painel_logo_p.Name = "painel_logo_p";
+            this.painel_logo_p.Size = new System.Drawing.Size(246, 80);
+            this.painel_logo_p.TabIndex = 0;
             // 
-            // btn_gerenciarpatrimonio_p
+            // lbl_projeto_integrado_p
             // 
-            this.btn_gerenciarpatrimonio_p.BackColor = System.Drawing.Color.White;
-            this.btn_gerenciarpatrimonio_p.Enabled = false;
-            this.btn_gerenciarpatrimonio_p.FlatAppearance.BorderSize = 0;
-            this.btn_gerenciarpatrimonio_p.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_gerenciarpatrimonio_p.Location = new System.Drawing.Point(81, 197);
-            this.btn_gerenciarpatrimonio_p.Name = "btn_gerenciarpatrimonio_p";
-            this.btn_gerenciarpatrimonio_p.Size = new System.Drawing.Size(101, 32);
-            this.btn_gerenciarpatrimonio_p.TabIndex = 6;
-            this.btn_gerenciarpatrimonio_p.Text = "Gerenciar";
-            this.btn_gerenciarpatrimonio_p.UseVisualStyleBackColor = false;
-            // 
-            // label_gerenciarpatrimonio_p
-            // 
-            this.label_gerenciarpatrimonio_p.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label_gerenciarpatrimonio_p.AutoSize = true;
-            this.label_gerenciarpatrimonio_p.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label_gerenciarpatrimonio_p.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_gerenciarpatrimonio_p.ForeColor = System.Drawing.Color.White;
-            this.label_gerenciarpatrimonio_p.Location = new System.Drawing.Point(58, 128);
-            this.label_gerenciarpatrimonio_p.Name = "label_gerenciarpatrimonio_p";
-            this.label_gerenciarpatrimonio_p.Size = new System.Drawing.Size(143, 31);
-            this.label_gerenciarpatrimonio_p.TabIndex = 5;
-            this.label_gerenciarpatrimonio_p.Text = "Patrimônio";
-            // 
-            // pictureBox_gerenciarpatrimonio_p
-            // 
-            this.pictureBox_gerenciarpatrimonio_p.Image = global::projeto_integrado.Properties.Resources.monumento;
-            this.pictureBox_gerenciarpatrimonio_p.Location = new System.Drawing.Point(92, 32);
-            this.pictureBox_gerenciarpatrimonio_p.Name = "pictureBox_gerenciarpatrimonio_p";
-            this.pictureBox_gerenciarpatrimonio_p.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox_gerenciarpatrimonio_p.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox_gerenciarpatrimonio_p.TabIndex = 0;
-            this.pictureBox_gerenciarpatrimonio_p.TabStop = false;
-            // 
-            // painel_gerenciarmembros_p
-            // 
-            this.painel_gerenciarmembros_p.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.painel_gerenciarmembros_p.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
-            this.painel_gerenciarmembros_p.Controls.Add(this.btn_gerenciarmembros_p);
-            this.painel_gerenciarmembros_p.Controls.Add(this.label_titulo_gerenciarmembros_p);
-            this.painel_gerenciarmembros_p.Controls.Add(this.pictureBox_gerenciarmembros_p);
-            this.painel_gerenciarmembros_p.Location = new System.Drawing.Point(139, 99);
-            this.painel_gerenciarmembros_p.Name = "painel_gerenciarmembros_p";
-            this.painel_gerenciarmembros_p.Size = new System.Drawing.Size(258, 302);
-            this.painel_gerenciarmembros_p.TabIndex = 8;
-            // 
-            // btn_gerenciarmembros_p
-            // 
-            this.btn_gerenciarmembros_p.BackColor = System.Drawing.Color.White;
-            this.btn_gerenciarmembros_p.FlatAppearance.BorderSize = 0;
-            this.btn_gerenciarmembros_p.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_gerenciarmembros_p.Location = new System.Drawing.Point(81, 197);
-            this.btn_gerenciarmembros_p.Name = "btn_gerenciarmembros_p";
-            this.btn_gerenciarmembros_p.Size = new System.Drawing.Size(101, 32);
-            this.btn_gerenciarmembros_p.TabIndex = 6;
-            this.btn_gerenciarmembros_p.Text = "Gerenciar";
-            this.btn_gerenciarmembros_p.UseVisualStyleBackColor = false;
-            this.btn_gerenciarmembros_p.Click += new System.EventHandler(this.btn_gerenciarmembros_p_Click);
-            // 
-            // label_titulo_gerenciarmembros_p
-            // 
-            this.label_titulo_gerenciarmembros_p.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label_titulo_gerenciarmembros_p.AutoSize = true;
-            this.label_titulo_gerenciarmembros_p.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label_titulo_gerenciarmembros_p.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_titulo_gerenciarmembros_p.ForeColor = System.Drawing.Color.White;
-            this.label_titulo_gerenciarmembros_p.Location = new System.Drawing.Point(66, 128);
-            this.label_titulo_gerenciarmembros_p.Name = "label_titulo_gerenciarmembros_p";
-            this.label_titulo_gerenciarmembros_p.Size = new System.Drawing.Size(126, 31);
-            this.label_titulo_gerenciarmembros_p.TabIndex = 5;
-            this.label_titulo_gerenciarmembros_p.Text = "Membros";
-            // 
-            // pictureBox_gerenciarmembros_p
-            // 
-            this.pictureBox_gerenciarmembros_p.Image = global::projeto_integrado.Properties.Resources.trabalho_em_equipe;
-            this.pictureBox_gerenciarmembros_p.Location = new System.Drawing.Point(92, 32);
-            this.pictureBox_gerenciarmembros_p.Name = "pictureBox_gerenciarmembros_p";
-            this.pictureBox_gerenciarmembros_p.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox_gerenciarmembros_p.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox_gerenciarmembros_p.TabIndex = 0;
-            this.pictureBox_gerenciarmembros_p.TabStop = false;
+            this.lbl_projeto_integrado_p.AutoSize = true;
+            this.lbl_projeto_integrado_p.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_projeto_integrado_p.ForeColor = System.Drawing.Color.LightGray;
+            this.lbl_projeto_integrado_p.Location = new System.Drawing.Point(43, 31);
+            this.lbl_projeto_integrado_p.Name = "lbl_projeto_integrado_p";
+            this.lbl_projeto_integrado_p.Size = new System.Drawing.Size(160, 25);
+            this.lbl_projeto_integrado_p.TabIndex = 0;
+            this.lbl_projeto_integrado_p.Text = "Projeto Integrado";
             // 
             // gerenciamento_p
             // 
@@ -427,17 +431,17 @@
             this.Name = "gerenciamento_p";
             this.Text = "gerenciamento_p";
             this.painel_principal_p.ResumeLayout(false);
-            this.painel_titulo_p.ResumeLayout(false);
-            this.painel_titulo_p.PerformLayout();
-            this.painel_menu_lateral_p.ResumeLayout(false);
-            this.painel_logo_p.ResumeLayout(false);
-            this.painel_logo_p.PerformLayout();
             this.panel_gerenciarpatrimonio_p.ResumeLayout(false);
             this.panel_gerenciarpatrimonio_p.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_gerenciarpatrimonio_p)).EndInit();
             this.painel_gerenciarmembros_p.ResumeLayout(false);
             this.painel_gerenciarmembros_p.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_gerenciarmembros_p)).EndInit();
+            this.painel_titulo_p.ResumeLayout(false);
+            this.painel_titulo_p.PerformLayout();
+            this.painel_menu_lateral_p.ResumeLayout(false);
+            this.painel_logo_p.ResumeLayout(false);
+            this.painel_logo_p.PerformLayout();
             this.ResumeLayout(false);
 
         }

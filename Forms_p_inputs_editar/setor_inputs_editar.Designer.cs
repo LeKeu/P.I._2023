@@ -38,6 +38,7 @@
             // 
             // checkBox_editar_setor_ativo_p
             // 
+            this.checkBox_editar_setor_ativo_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBox_editar_setor_ativo_p.AutoSize = true;
             this.checkBox_editar_setor_ativo_p.Location = new System.Drawing.Point(370, 165);
             this.checkBox_editar_setor_ativo_p.Name = "checkBox_editar_setor_ativo_p";
@@ -50,7 +51,7 @@
             // 
             this.btn_editar_setor_enviar_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_editar_setor_enviar_p.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_editar_setor_enviar_p.Location = new System.Drawing.Point(260, 217);
+            this.btn_editar_setor_enviar_p.Location = new System.Drawing.Point(287, 217);
             this.btn_editar_setor_enviar_p.Name = "btn_editar_setor_enviar_p";
             this.btn_editar_setor_enviar_p.Size = new System.Drawing.Size(109, 33);
             this.btn_editar_setor_enviar_p.TabIndex = 111;
@@ -92,7 +93,7 @@
             // 
             this.btn_setor_deletar_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_setor_deletar_p.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_setor_deletar_p.Location = new System.Drawing.Point(435, 217);
+            this.btn_setor_deletar_p.Location = new System.Drawing.Point(416, 217);
             this.btn_setor_deletar_p.Name = "btn_setor_deletar_p";
             this.btn_setor_deletar_p.Size = new System.Drawing.Size(109, 33);
             this.btn_setor_deletar_p.TabIndex = 113;

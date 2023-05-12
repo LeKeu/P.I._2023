@@ -462,6 +462,7 @@
             // 
             // img_editar_membro
             // 
+            this.img_editar_membro.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.img_editar_membro.Image = ((System.Drawing.Image)(resources.GetObject("img_editar_membro.Image")));
             this.img_editar_membro.Location = new System.Drawing.Point(806, 99);
             this.img_editar_membro.Name = "img_editar_membro";

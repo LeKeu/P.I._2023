@@ -40,8 +40,9 @@
             // 
             // checkBox_editar_grupobens_ativo_p
             // 
+            this.checkBox_editar_grupobens_ativo_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBox_editar_grupobens_ativo_p.AutoSize = true;
-            this.checkBox_editar_grupobens_ativo_p.Location = new System.Drawing.Point(365, 237);
+            this.checkBox_editar_grupobens_ativo_p.Location = new System.Drawing.Point(365, 230);
             this.checkBox_editar_grupobens_ativo_p.Name = "checkBox_editar_grupobens_ativo_p";
             this.checkBox_editar_grupobens_ativo_p.Size = new System.Drawing.Size(66, 20);
             this.checkBox_editar_grupobens_ativo_p.TabIndex = 108;
@@ -52,7 +53,7 @@
             // 
             this.btn_editar_grupobens_enviar_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_editar_grupobens_enviar_p.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_editar_grupobens_enviar_p.Location = new System.Drawing.Point(260, 283);
+            this.btn_editar_grupobens_enviar_p.Location = new System.Drawing.Point(285, 283);
             this.btn_editar_grupobens_enviar_p.Name = "btn_editar_grupobens_enviar_p";
             this.btn_editar_grupobens_enviar_p.Size = new System.Drawing.Size(109, 33);
             this.btn_editar_grupobens_enviar_p.TabIndex = 107;
@@ -113,7 +114,7 @@
             // 
             this.btn_grupobens_deletar_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_grupobens_deletar_p.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_grupobens_deletar_p.Location = new System.Drawing.Point(435, 283);
+            this.btn_grupobens_deletar_p.Location = new System.Drawing.Point(414, 283);
             this.btn_grupobens_deletar_p.Name = "btn_grupobens_deletar_p";
             this.btn_grupobens_deletar_p.Size = new System.Drawing.Size(109, 33);
             this.btn_grupobens_deletar_p.TabIndex = 109;

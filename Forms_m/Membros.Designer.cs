@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.btn_deletar_membros_m = new System.Windows.Forms.Button();
-            this.btn_editar_membros_m = new System.Windows.Forms.Button();
             this.btn_adicionar_membros_m = new System.Windows.Forms.Button();
             this.datagridview_membros_m = new System.Windows.Forms.DataGridView();
             this.btn_invisivel_membros_m = new System.Windows.Forms.Button();
@@ -38,33 +36,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.datagridview_membros_m)).BeginInit();
             this.SuspendLayout();
             // 
-            // btn_deletar_membros_m
-            // 
-            this.btn_deletar_membros_m.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btn_deletar_membros_m.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_deletar_membros_m.Location = new System.Drawing.Point(722, 287);
-            this.btn_deletar_membros_m.Name = "btn_deletar_membros_m";
-            this.btn_deletar_membros_m.Size = new System.Drawing.Size(97, 42);
-            this.btn_deletar_membros_m.TabIndex = 9;
-            this.btn_deletar_membros_m.Text = "Deletar";
-            this.btn_deletar_membros_m.UseVisualStyleBackColor = true;
-            // 
-            // btn_editar_membros_m
-            // 
-            this.btn_editar_membros_m.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btn_editar_membros_m.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_editar_membros_m.Location = new System.Drawing.Point(722, 211);
-            this.btn_editar_membros_m.Name = "btn_editar_membros_m";
-            this.btn_editar_membros_m.Size = new System.Drawing.Size(97, 42);
-            this.btn_editar_membros_m.TabIndex = 8;
-            this.btn_editar_membros_m.Text = "Editar";
-            this.btn_editar_membros_m.UseVisualStyleBackColor = true;
-            // 
             // btn_adicionar_membros_m
             // 
-            this.btn_adicionar_membros_m.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btn_adicionar_membros_m.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_adicionar_membros_m.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_adicionar_membros_m.Location = new System.Drawing.Point(722, 137);
+            this.btn_adicionar_membros_m.Location = new System.Drawing.Point(709, 378);
             this.btn_adicionar_membros_m.Name = "btn_adicionar_membros_m";
             this.btn_adicionar_membros_m.Size = new System.Drawing.Size(97, 42);
             this.btn_adicionar_membros_m.TabIndex = 7;
@@ -78,7 +54,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.datagridview_membros_m.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.datagridview_membros_m.Location = new System.Drawing.Point(52, 45);
+            this.datagridview_membros_m.Location = new System.Drawing.Point(57, 51);
             this.datagridview_membros_m.Name = "datagridview_membros_m";
             this.datagridview_membros_m.RowHeadersWidth = 51;
             this.datagridview_membros_m.RowTemplate.Height = 24;
@@ -89,12 +65,14 @@
             // 
             // btn_invisivel_membros_m
             // 
+            this.btn_invisivel_membros_m.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_invisivel_membros_m.Location = new System.Drawing.Point(411, 437);
             this.btn_invisivel_membros_m.Name = "btn_invisivel_membros_m";
             this.btn_invisivel_membros_m.Size = new System.Drawing.Size(75, 23);
             this.btn_invisivel_membros_m.TabIndex = 10;
             this.btn_invisivel_membros_m.Text = "button1";
             this.btn_invisivel_membros_m.UseVisualStyleBackColor = true;
+            this.btn_invisivel_membros_m.Visible = false;
             this.btn_invisivel_membros_m.Click += new System.EventHandler(this.btn_invisivel_membros_m_Click);
             // 
             // timer_membro_m
@@ -108,8 +86,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(855, 498);
             this.Controls.Add(this.btn_invisivel_membros_m);
-            this.Controls.Add(this.btn_deletar_membros_m);
-            this.Controls.Add(this.btn_editar_membros_m);
             this.Controls.Add(this.btn_adicionar_membros_m);
             this.Controls.Add(this.datagridview_membros_m);
             this.Name = "Membros";
@@ -121,9 +97,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btn_deletar_membros_m;
-        private System.Windows.Forms.Button btn_editar_membros_m;
         private System.Windows.Forms.Button btn_adicionar_membros_m;
         private System.Windows.Forms.DataGridView datagridview_membros_m;
         private System.Windows.Forms.Button btn_invisivel_membros_m;

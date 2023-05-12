@@ -48,8 +48,7 @@
             // 
             // lbl_pagamento_titulo_inputs_m
             // 
-            this.lbl_pagamento_titulo_inputs_m.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbl_pagamento_titulo_inputs_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_pagamento_titulo_inputs_m.AutoSize = true;
             this.lbl_pagamento_titulo_inputs_m.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_pagamento_titulo_inputs_m.Location = new System.Drawing.Point(320, 27);
