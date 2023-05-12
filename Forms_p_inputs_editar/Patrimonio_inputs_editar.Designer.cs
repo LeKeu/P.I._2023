@@ -52,6 +52,7 @@
             this.input_editar_patrimonio_numpat_p = new System.Windows.Forms.TextBox();
             this.lbl_editar_patrimonio_numpat_p = new System.Windows.Forms.Label();
             this.lbl_editar_patrimonio_titulo_inputs_p = new System.Windows.Forms.Label();
+            this.btn_patrimonio_deletar_p = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // dateTimePicker_editar_patrimonio_fimgarantia_p
@@ -74,7 +75,7 @@
             // 
             this.btn_editar_patrimonio_enviar_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_editar_patrimonio_enviar_p.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_editar_patrimonio_enviar_p.Location = new System.Drawing.Point(347, 652);
+            this.btn_editar_patrimonio_enviar_p.Location = new System.Drawing.Point(271, 657);
             this.btn_editar_patrimonio_enviar_p.Name = "btn_editar_patrimonio_enviar_p";
             this.btn_editar_patrimonio_enviar_p.Size = new System.Drawing.Size(109, 33);
             this.btn_editar_patrimonio_enviar_p.TabIndex = 100;
@@ -285,11 +286,24 @@
             this.lbl_editar_patrimonio_titulo_inputs_p.TabIndex = 79;
             this.lbl_editar_patrimonio_titulo_inputs_p.Text = "Patrimônio";
             // 
+            // btn_patrimonio_deletar_p
+            // 
+            this.btn_patrimonio_deletar_p.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_patrimonio_deletar_p.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_patrimonio_deletar_p.Location = new System.Drawing.Point(424, 657);
+            this.btn_patrimonio_deletar_p.Name = "btn_patrimonio_deletar_p";
+            this.btn_patrimonio_deletar_p.Size = new System.Drawing.Size(109, 33);
+            this.btn_patrimonio_deletar_p.TabIndex = 103;
+            this.btn_patrimonio_deletar_p.Text = "Deletar";
+            this.btn_patrimonio_deletar_p.UseVisualStyleBackColor = true;
+            this.btn_patrimonio_deletar_p.Click += new System.EventHandler(this.btn_patrimonio_deletar_p_Click);
+            // 
             // Patrimonio_inputs_editar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 725);
+            this.Controls.Add(this.btn_patrimonio_deletar_p);
             this.Controls.Add(this.dateTimePicker_editar_patrimonio_fimgarantia_p);
             this.Controls.Add(this.dateTimePicker_editar_patrimonio_datacompra_p);
             this.Controls.Add(this.btn_editar_patrimonio_enviar_p);
@@ -346,5 +360,6 @@
         public System.Windows.Forms.TextBox input_editar_patrimonio_notafiscal_p;
         public System.Windows.Forms.TextBox input_editar_patrimonio_numserie_p;
         public System.Windows.Forms.TextBox input_editar_patrimonio_numpat_p;
+        private System.Windows.Forms.Button btn_patrimonio_deletar_p;
     }
 }

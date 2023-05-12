@@ -45,5 +45,22 @@ namespace projeto_integrado.Forms_p_inputs_editar
 
             }
         }
+
+        private void btn_produto_deletar_p_Click(object sender, EventArgs e)
+        {
+            var confirmResult = MessageBox.Show("Tem certeza que deseja DELETAR essas informações?",
+                                     "Confirmar",
+                                     MessageBoxButtons.YesNo);
+            if (confirmResult == DialogResult.Yes)
+            {
+                var Produto = new Produto();
+                string id_patpr = Produto.id_patpr;
+
+                var novo_json = json_funcs.DeleteValueJson("PatrimonioProduto", "CodigoProduto", id_patpr);
+
+                json_funcs.Update_Convert_to_json(novo_json);
+                this.Close();
+            }
+        }
     }
 }

@@ -33,6 +33,7 @@
             this.input_editar_fabricante_nome_p = new System.Windows.Forms.TextBox();
             this.lbl_editar_fabricante_nome_p = new System.Windows.Forms.Label();
             this.lbl_editar_fabricante_titulo_inputs_p = new System.Windows.Forms.Label();
+            this.btn_fabricantes_deletar_p = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // checkBox_editar_fabricante_ativo_p
@@ -49,7 +50,7 @@
             // 
             this.btn_editar_fabricantes_enviar_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_editar_fabricantes_enviar_p.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_editar_fabricantes_enviar_p.Location = new System.Drawing.Point(352, 243);
+            this.btn_editar_fabricantes_enviar_p.Location = new System.Drawing.Point(260, 237);
             this.btn_editar_fabricantes_enviar_p.Name = "btn_editar_fabricantes_enviar_p";
             this.btn_editar_fabricantes_enviar_p.Size = new System.Drawing.Size(109, 33);
             this.btn_editar_fabricantes_enviar_p.TabIndex = 105;
@@ -87,11 +88,24 @@
             this.lbl_editar_fabricante_titulo_inputs_p.TabIndex = 102;
             this.lbl_editar_fabricante_titulo_inputs_p.Text = "Fabricantes";
             // 
+            // btn_fabricantes_deletar_p
+            // 
+            this.btn_fabricantes_deletar_p.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_fabricantes_deletar_p.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_fabricantes_deletar_p.Location = new System.Drawing.Point(435, 237);
+            this.btn_fabricantes_deletar_p.Name = "btn_fabricantes_deletar_p";
+            this.btn_fabricantes_deletar_p.Size = new System.Drawing.Size(109, 33);
+            this.btn_fabricantes_deletar_p.TabIndex = 107;
+            this.btn_fabricantes_deletar_p.Text = "Deletar";
+            this.btn_fabricantes_deletar_p.UseVisualStyleBackColor = true;
+            this.btn_fabricantes_deletar_p.Click += new System.EventHandler(this.btn_fabricantes_deletar_p_Click);
+            // 
             // fabricante_inputs_editar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 312);
+            this.Controls.Add(this.btn_fabricantes_deletar_p);
             this.Controls.Add(this.checkBox_editar_fabricante_ativo_p);
             this.Controls.Add(this.btn_editar_fabricantes_enviar_p);
             this.Controls.Add(this.input_editar_fabricante_nome_p);
@@ -110,5 +124,6 @@
         private System.Windows.Forms.Label lbl_editar_fabricante_titulo_inputs_p;
         public System.Windows.Forms.CheckBox checkBox_editar_fabricante_ativo_p;
         public System.Windows.Forms.TextBox input_editar_fabricante_nome_p;
+        private System.Windows.Forms.Button btn_fabricantes_deletar_p;
     }
 }

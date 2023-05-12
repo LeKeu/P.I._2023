@@ -45,5 +45,22 @@ namespace projeto_integrado.Forms_p_inputs_editar
 
             }
         }
+
+        private void btn_fornecedor_deletar_p_Click(object sender, EventArgs e)
+        {
+            var confirmResult = MessageBox.Show("Tem certeza que deseja DELETAR essas informações?",
+                                     "Confirmar",
+                                     MessageBoxButtons.YesNo);
+            if (confirmResult == DialogResult.Yes)
+            {
+                var Fornecedor = new Fornecedor();
+                string id_patfor = Fornecedor.id_patfor;
+
+                var novo_json = json_funcs.DeleteValueJson("PatrimonioFornecedor", "CNPJ", id_patfor);
+
+                json_funcs.Update_Convert_to_json(novo_json);
+                this.Close();
+            }
+        }
     }
 }
