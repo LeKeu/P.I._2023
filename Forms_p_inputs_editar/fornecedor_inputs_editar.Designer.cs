@@ -40,6 +40,7 @@
             // 
             // checkBox_editar_fornecedor_ativo_p
             // 
+            this.checkBox_editar_fornecedor_ativo_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBox_editar_fornecedor_ativo_p.AutoSize = true;
             this.checkBox_editar_fornecedor_ativo_p.Location = new System.Drawing.Point(367, 232);
             this.checkBox_editar_fornecedor_ativo_p.Name = "checkBox_editar_fornecedor_ativo_p";
@@ -52,7 +53,7 @@
             // 
             this.btn_editar_fornecedor_enviar_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_editar_fornecedor_enviar_p.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_editar_fornecedor_enviar_p.Location = new System.Drawing.Point(260, 281);
+            this.btn_editar_fornecedor_enviar_p.Location = new System.Drawing.Point(279, 281);
             this.btn_editar_fornecedor_enviar_p.Name = "btn_editar_fornecedor_enviar_p";
             this.btn_editar_fornecedor_enviar_p.Size = new System.Drawing.Size(109, 33);
             this.btn_editar_fornecedor_enviar_p.TabIndex = 107;
@@ -113,7 +114,7 @@
             // 
             this.btn_fornecedor_deletar_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_fornecedor_deletar_p.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_fornecedor_deletar_p.Location = new System.Drawing.Point(435, 281);
+            this.btn_fornecedor_deletar_p.Location = new System.Drawing.Point(410, 281);
             this.btn_fornecedor_deletar_p.Name = "btn_fornecedor_deletar_p";
             this.btn_fornecedor_deletar_p.Size = new System.Drawing.Size(109, 33);
             this.btn_fornecedor_deletar_p.TabIndex = 109;

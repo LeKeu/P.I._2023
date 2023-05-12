@@ -41,7 +41,7 @@
             // 
             this.btn_grupobens_enviar_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_grupobens_enviar_p.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_grupobens_enviar_p.Location = new System.Drawing.Point(346, 285);
+            this.btn_grupobens_enviar_p.Location = new System.Drawing.Point(345, 283);
             this.btn_grupobens_enviar_p.Name = "btn_grupobens_enviar_p";
             this.btn_grupobens_enviar_p.Size = new System.Drawing.Size(109, 33);
             this.btn_grupobens_enviar_p.TabIndex = 100;
@@ -53,7 +53,7 @@
             // 
             this.input_grupobens_identificador_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.input_grupobens_identificador_p.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.input_grupobens_identificador_p.Location = new System.Drawing.Point(260, 170);
+            this.input_grupobens_identificador_p.Location = new System.Drawing.Point(260, 175);
             this.input_grupobens_identificador_p.Name = "input_grupobens_identificador_p";
             this.input_grupobens_identificador_p.Size = new System.Drawing.Size(284, 22);
             this.input_grupobens_identificador_p.TabIndex = 81;
@@ -62,7 +62,7 @@
             // 
             this.lbl_grupobens_identificador_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_grupobens_identificador_p.AutoSize = true;
-            this.lbl_grupobens_identificador_p.Location = new System.Drawing.Point(257, 151);
+            this.lbl_grupobens_identificador_p.Location = new System.Drawing.Point(257, 156);
             this.lbl_grupobens_identificador_p.Name = "lbl_grupobens_identificador_p";
             this.lbl_grupobens_identificador_p.Size = new System.Drawing.Size(80, 16);
             this.lbl_grupobens_identificador_p.TabIndex = 80;
@@ -72,7 +72,7 @@
             // 
             this.input_grupobens_nome_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.input_grupobens_nome_p.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.input_grupobens_nome_p.Location = new System.Drawing.Point(260, 104);
+            this.input_grupobens_nome_p.Location = new System.Drawing.Point(260, 109);
             this.input_grupobens_nome_p.Name = "input_grupobens_nome_p";
             this.input_grupobens_nome_p.Size = new System.Drawing.Size(284, 22);
             this.input_grupobens_nome_p.TabIndex = 79;
@@ -81,7 +81,7 @@
             // 
             this.lbl_grupobens_nome_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_grupobens_nome_p.AutoSize = true;
-            this.lbl_grupobens_nome_p.Location = new System.Drawing.Point(257, 85);
+            this.lbl_grupobens_nome_p.Location = new System.Drawing.Point(257, 90);
             this.lbl_grupobens_nome_p.Name = "lbl_grupobens_nome_p";
             this.lbl_grupobens_nome_p.Size = new System.Drawing.Size(153, 16);
             this.lbl_grupobens_nome_p.TabIndex = 78;
@@ -92,7 +92,7 @@
             this.lbl_grupobens_titulo_inputs_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_grupobens_titulo_inputs_p.AutoSize = true;
             this.lbl_grupobens_titulo_inputs_p.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_grupobens_titulo_inputs_p.Location = new System.Drawing.Point(313, 27);
+            this.lbl_grupobens_titulo_inputs_p.Location = new System.Drawing.Point(313, 32);
             this.lbl_grupobens_titulo_inputs_p.Name = "lbl_grupobens_titulo_inputs_p";
             this.lbl_grupobens_titulo_inputs_p.Size = new System.Drawing.Size(179, 29);
             this.lbl_grupobens_titulo_inputs_p.TabIndex = 77;
@@ -100,8 +100,9 @@
             // 
             // checkBox_grupobens_ativo_p
             // 
+            this.checkBox_grupobens_ativo_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBox_grupobens_ativo_p.AutoSize = true;
-            this.checkBox_grupobens_ativo_p.Location = new System.Drawing.Point(365, 232);
+            this.checkBox_grupobens_ativo_p.Location = new System.Drawing.Point(365, 230);
             this.checkBox_grupobens_ativo_p.Name = "checkBox_grupobens_ativo_p";
             this.checkBox_grupobens_ativo_p.Size = new System.Drawing.Size(66, 20);
             this.checkBox_grupobens_ativo_p.TabIndex = 101;

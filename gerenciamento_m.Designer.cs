@@ -253,7 +253,7 @@
             // 
             // panel_gerenciarpatrimonio_m
             // 
-            this.panel_gerenciarpatrimonio_m.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel_gerenciarpatrimonio_m.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.panel_gerenciarpatrimonio_m.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
             this.panel_gerenciarpatrimonio_m.Controls.Add(this.btn_gerenciarpatrimonio_m);
             this.panel_gerenciarpatrimonio_m.Controls.Add(this.label_gerenciarpatrimonio_m);
@@ -265,6 +265,7 @@
             // 
             // btn_gerenciarpatrimonio_m
             // 
+            this.btn_gerenciarpatrimonio_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_gerenciarpatrimonio_m.BackColor = System.Drawing.Color.White;
             this.btn_gerenciarpatrimonio_m.FlatAppearance.BorderSize = 0;
             this.btn_gerenciarpatrimonio_m.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -278,7 +279,7 @@
             // 
             // label_gerenciarpatrimonio_m
             // 
-            this.label_gerenciarpatrimonio_m.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label_gerenciarpatrimonio_m.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label_gerenciarpatrimonio_m.AutoSize = true;
             this.label_gerenciarpatrimonio_m.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label_gerenciarpatrimonio_m.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -291,6 +292,7 @@
             // 
             // pictureBox_gerenciarpatrimonio_m
             // 
+            this.pictureBox_gerenciarpatrimonio_m.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox_gerenciarpatrimonio_m.Image = global::projeto_integrado.Properties.Resources.monumento;
             this.pictureBox_gerenciarpatrimonio_m.Location = new System.Drawing.Point(92, 32);
             this.pictureBox_gerenciarpatrimonio_m.Name = "pictureBox_gerenciarpatrimonio_m";
@@ -301,7 +303,7 @@
             // 
             // painel_gerenciarmembros_m
             // 
-            this.painel_gerenciarmembros_m.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.painel_gerenciarmembros_m.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.painel_gerenciarmembros_m.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
             this.painel_gerenciarmembros_m.Controls.Add(this.btn_gerenciarmembros_m);
             this.painel_gerenciarmembros_m.Controls.Add(this.label_titulo_gerenciarmembros_m);
@@ -313,6 +315,7 @@
             // 
             // btn_gerenciarmembros_m
             // 
+            this.btn_gerenciarmembros_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_gerenciarmembros_m.BackColor = System.Drawing.Color.White;
             this.btn_gerenciarmembros_m.Enabled = false;
             this.btn_gerenciarmembros_m.FlatAppearance.BorderSize = 0;
@@ -326,7 +329,7 @@
             // 
             // label_titulo_gerenciarmembros_m
             // 
-            this.label_titulo_gerenciarmembros_m.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label_titulo_gerenciarmembros_m.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label_titulo_gerenciarmembros_m.AutoSize = true;
             this.label_titulo_gerenciarmembros_m.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label_titulo_gerenciarmembros_m.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -339,6 +342,7 @@
             // 
             // pictureBox_gerenciarmembros_m
             // 
+            this.pictureBox_gerenciarmembros_m.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox_gerenciarmembros_m.Image = global::projeto_integrado.Properties.Resources.trabalho_em_equipe;
             this.pictureBox_gerenciarmembros_m.Location = new System.Drawing.Point(92, 32);
             this.pictureBox_gerenciarmembros_m.Name = "pictureBox_gerenciarmembros_m";

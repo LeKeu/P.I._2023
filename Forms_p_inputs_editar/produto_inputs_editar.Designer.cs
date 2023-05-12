@@ -50,6 +50,7 @@
             // 
             // checkBox_editar_produto_ativo_p
             // 
+            this.checkBox_editar_produto_ativo_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBox_editar_produto_ativo_p.AutoSize = true;
             this.checkBox_editar_produto_ativo_p.Location = new System.Drawing.Point(369, 292);
             this.checkBox_editar_produto_ativo_p.Name = "checkBox_editar_produto_ativo_p";
@@ -60,6 +61,7 @@
             // 
             // dateTimePicker_editar_produto_datafimgarantia_p
             // 
+            this.dateTimePicker_editar_produto_datafimgarantia_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dateTimePicker_editar_produto_datafimgarantia_p.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker_editar_produto_datafimgarantia_p.Location = new System.Drawing.Point(96, 228);
             this.dateTimePicker_editar_produto_datafimgarantia_p.Name = "dateTimePicker_editar_produto_datafimgarantia_p";
@@ -70,7 +72,7 @@
             // 
             this.btn_editar_produto_enviar_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_editar_produto_enviar_p.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_editar_produto_enviar_p.Location = new System.Drawing.Point(96, 567);
+            this.btn_editar_produto_enviar_p.Location = new System.Drawing.Point(281, 567);
             this.btn_editar_produto_enviar_p.Name = "btn_editar_produto_enviar_p";
             this.btn_editar_produto_enviar_p.Size = new System.Drawing.Size(109, 33);
             this.btn_editar_produto_enviar_p.TabIndex = 117;
@@ -218,7 +220,7 @@
             // 
             this.btn_produto_deletar_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_produto_deletar_p.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_produto_deletar_p.Location = new System.Drawing.Point(599, 567);
+            this.btn_produto_deletar_p.Location = new System.Drawing.Point(414, 567);
             this.btn_produto_deletar_p.Name = "btn_produto_deletar_p";
             this.btn_produto_deletar_p.Size = new System.Drawing.Size(109, 33);
             this.btn_produto_deletar_p.TabIndex = 120;

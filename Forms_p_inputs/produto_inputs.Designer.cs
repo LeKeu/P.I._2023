@@ -51,7 +51,7 @@
             // 
             this.btn_produto_enviar_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_produto_enviar_p.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_produto_enviar_p.Location = new System.Drawing.Point(345, 545);
+            this.btn_produto_enviar_p.Location = new System.Drawing.Point(348, 567);
             this.btn_produto_enviar_p.Name = "btn_produto_enviar_p";
             this.btn_produto_enviar_p.Size = new System.Drawing.Size(109, 33);
             this.btn_produto_enviar_p.TabIndex = 100;
@@ -63,7 +63,7 @@
             // 
             this.input_produto_descricaodetalhada_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.input_produto_descricaodetalhada_p.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.input_produto_descricaodetalhada_p.Location = new System.Drawing.Point(92, 325);
+            this.input_produto_descricaodetalhada_p.Location = new System.Drawing.Point(96, 339);
             this.input_produto_descricaodetalhada_p.Multiline = true;
             this.input_produto_descricaodetalhada_p.Name = "input_produto_descricaodetalhada_p";
             this.input_produto_descricaodetalhada_p.Size = new System.Drawing.Size(612, 200);
@@ -73,7 +73,7 @@
             // 
             this.lbl_produto_descricaodetalhada_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_produto_descricaodetalhada_p.AutoSize = true;
-            this.lbl_produto_descricaodetalhada_p.Location = new System.Drawing.Point(89, 306);
+            this.lbl_produto_descricaodetalhada_p.Location = new System.Drawing.Point(93, 320);
             this.lbl_produto_descricaodetalhada_p.Name = "lbl_produto_descricaodetalhada_p";
             this.lbl_produto_descricaodetalhada_p.Size = new System.Drawing.Size(133, 16);
             this.lbl_produto_descricaodetalhada_p.TabIndex = 94;
@@ -83,7 +83,7 @@
             // 
             this.input_produto_descricaoresumida_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.input_produto_descricaoresumida_p.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.input_produto_descricaoresumida_p.Location = new System.Drawing.Point(420, 214);
+            this.input_produto_descricaoresumida_p.Location = new System.Drawing.Point(424, 228);
             this.input_produto_descricaoresumida_p.Name = "input_produto_descricaoresumida_p";
             this.input_produto_descricaoresumida_p.Size = new System.Drawing.Size(284, 22);
             this.input_produto_descricaoresumida_p.TabIndex = 89;
@@ -92,7 +92,7 @@
             // 
             this.lbl_produto_descricaoresumida_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_produto_descricaoresumida_p.AutoSize = true;
-            this.lbl_produto_descricaoresumida_p.Location = new System.Drawing.Point(417, 195);
+            this.lbl_produto_descricaoresumida_p.Location = new System.Drawing.Point(421, 209);
             this.lbl_produto_descricaoresumida_p.Name = "lbl_produto_descricaoresumida_p";
             this.lbl_produto_descricaoresumida_p.Size = new System.Drawing.Size(128, 16);
             this.lbl_produto_descricaoresumida_p.TabIndex = 88;
@@ -102,7 +102,7 @@
             // 
             this.lbl_produto_ativo_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_produto_ativo_p.AutoSize = true;
-            this.lbl_produto_ativo_p.Location = new System.Drawing.Point(89, 195);
+            this.lbl_produto_ativo_p.Location = new System.Drawing.Point(93, 209);
             this.lbl_produto_ativo_p.Name = "lbl_produto_ativo_p";
             this.lbl_produto_ativo_p.Size = new System.Drawing.Size(127, 16);
             this.lbl_produto_ativo_p.TabIndex = 86;
@@ -112,7 +112,7 @@
             // 
             this.input_produto_vidautilanos_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.input_produto_vidautilanos_p.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.input_produto_vidautilanos_p.Location = new System.Drawing.Point(420, 152);
+            this.input_produto_vidautilanos_p.Location = new System.Drawing.Point(424, 166);
             this.input_produto_vidautilanos_p.Name = "input_produto_vidautilanos_p";
             this.input_produto_vidautilanos_p.Size = new System.Drawing.Size(284, 22);
             this.input_produto_vidautilanos_p.TabIndex = 85;
@@ -121,7 +121,7 @@
             // 
             this.lbl_produto_vidautilanos_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_produto_vidautilanos_p.AutoSize = true;
-            this.lbl_produto_vidautilanos_p.Location = new System.Drawing.Point(417, 133);
+            this.lbl_produto_vidautilanos_p.Location = new System.Drawing.Point(421, 147);
             this.lbl_produto_vidautilanos_p.Name = "lbl_produto_vidautilanos_p";
             this.lbl_produto_vidautilanos_p.Size = new System.Drawing.Size(117, 16);
             this.lbl_produto_vidautilanos_p.TabIndex = 84;
@@ -131,7 +131,7 @@
             // 
             this.input_produto_modelo_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.input_produto_modelo_p.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.input_produto_modelo_p.Location = new System.Drawing.Point(92, 152);
+            this.input_produto_modelo_p.Location = new System.Drawing.Point(96, 166);
             this.input_produto_modelo_p.Name = "input_produto_modelo_p";
             this.input_produto_modelo_p.Size = new System.Drawing.Size(284, 22);
             this.input_produto_modelo_p.TabIndex = 83;
@@ -140,7 +140,7 @@
             // 
             this.lbl_produto_modelo_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_produto_modelo_p.AutoSize = true;
-            this.lbl_produto_modelo_p.Location = new System.Drawing.Point(89, 133);
+            this.lbl_produto_modelo_p.Location = new System.Drawing.Point(93, 147);
             this.lbl_produto_modelo_p.Name = "lbl_produto_modelo_p";
             this.lbl_produto_modelo_p.Size = new System.Drawing.Size(53, 16);
             this.lbl_produto_modelo_p.TabIndex = 82;
@@ -150,7 +150,7 @@
             // 
             this.input_produto_codproduto_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.input_produto_codproduto_p.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.input_produto_codproduto_p.Location = new System.Drawing.Point(420, 92);
+            this.input_produto_codproduto_p.Location = new System.Drawing.Point(424, 106);
             this.input_produto_codproduto_p.Name = "input_produto_codproduto_p";
             this.input_produto_codproduto_p.Size = new System.Drawing.Size(284, 22);
             this.input_produto_codproduto_p.TabIndex = 81;
@@ -159,7 +159,7 @@
             // 
             this.lbl_produto_codigoproduto_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_produto_codigoproduto_p.AutoSize = true;
-            this.lbl_produto_codigoproduto_p.Location = new System.Drawing.Point(417, 73);
+            this.lbl_produto_codigoproduto_p.Location = new System.Drawing.Point(421, 87);
             this.lbl_produto_codigoproduto_p.Name = "lbl_produto_codigoproduto_p";
             this.lbl_produto_codigoproduto_p.Size = new System.Drawing.Size(119, 16);
             this.lbl_produto_codigoproduto_p.TabIndex = 80;
@@ -169,7 +169,7 @@
             // 
             this.input_produto_depreciacaoanual_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.input_produto_depreciacaoanual_p.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.input_produto_depreciacaoanual_p.Location = new System.Drawing.Point(92, 92);
+            this.input_produto_depreciacaoanual_p.Location = new System.Drawing.Point(96, 106);
             this.input_produto_depreciacaoanual_p.Name = "input_produto_depreciacaoanual_p";
             this.input_produto_depreciacaoanual_p.Size = new System.Drawing.Size(284, 22);
             this.input_produto_depreciacaoanual_p.TabIndex = 79;
@@ -178,7 +178,7 @@
             // 
             this.lbl_produto_depreciacaoanual_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_produto_depreciacaoanual_p.AutoSize = true;
-            this.lbl_produto_depreciacaoanual_p.Location = new System.Drawing.Point(89, 73);
+            this.lbl_produto_depreciacaoanual_p.Location = new System.Drawing.Point(93, 87);
             this.lbl_produto_depreciacaoanual_p.Name = "lbl_produto_depreciacaoanual_p";
             this.lbl_produto_depreciacaoanual_p.Size = new System.Drawing.Size(122, 16);
             this.lbl_produto_depreciacaoanual_p.TabIndex = 78;
@@ -189,7 +189,7 @@
             this.lbl_produto_titulo_inputs_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_produto_titulo_inputs_p.AutoSize = true;
             this.lbl_produto_titulo_inputs_p.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_produto_titulo_inputs_p.Location = new System.Drawing.Point(349, 31);
+            this.lbl_produto_titulo_inputs_p.Location = new System.Drawing.Point(353, 45);
             this.lbl_produto_titulo_inputs_p.Name = "lbl_produto_titulo_inputs_p";
             this.lbl_produto_titulo_inputs_p.Size = new System.Drawing.Size(101, 29);
             this.lbl_produto_titulo_inputs_p.TabIndex = 77;
@@ -197,16 +197,18 @@
             // 
             // dateTimePicker_produto_ativo_p
             // 
+            this.dateTimePicker_produto_ativo_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dateTimePicker_produto_ativo_p.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker_produto_ativo_p.Location = new System.Drawing.Point(92, 214);
+            this.dateTimePicker_produto_ativo_p.Location = new System.Drawing.Point(96, 228);
             this.dateTimePicker_produto_ativo_p.Name = "dateTimePicker_produto_ativo_p";
             this.dateTimePicker_produto_ativo_p.Size = new System.Drawing.Size(284, 22);
             this.dateTimePicker_produto_ativo_p.TabIndex = 101;
             // 
             // checkBox_produto_ativo_p
             // 
+            this.checkBox_produto_ativo_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBox_produto_ativo_p.AutoSize = true;
-            this.checkBox_produto_ativo_p.Location = new System.Drawing.Point(365, 278);
+            this.checkBox_produto_ativo_p.Location = new System.Drawing.Point(369, 292);
             this.checkBox_produto_ativo_p.Name = "checkBox_produto_ativo_p";
             this.checkBox_produto_ativo_p.Size = new System.Drawing.Size(66, 20);
             this.checkBox_produto_ativo_p.TabIndex = 102;

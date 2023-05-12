@@ -57,6 +57,7 @@
             // 
             // dateTimePicker_editar_patrimonio_fimgarantia_p
             // 
+            this.dateTimePicker_editar_patrimonio_fimgarantia_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dateTimePicker_editar_patrimonio_fimgarantia_p.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker_editar_patrimonio_fimgarantia_p.Location = new System.Drawing.Point(96, 233);
             this.dateTimePicker_editar_patrimonio_fimgarantia_p.Name = "dateTimePicker_editar_patrimonio_fimgarantia_p";
@@ -65,6 +66,7 @@
             // 
             // dateTimePicker_editar_patrimonio_datacompra_p
             // 
+            this.dateTimePicker_editar_patrimonio_datacompra_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dateTimePicker_editar_patrimonio_datacompra_p.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker_editar_patrimonio_datacompra_p.Location = new System.Drawing.Point(424, 171);
             this.dateTimePicker_editar_patrimonio_datacompra_p.Name = "dateTimePicker_editar_patrimonio_datacompra_p";
@@ -75,7 +77,7 @@
             // 
             this.btn_editar_patrimonio_enviar_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_editar_patrimonio_enviar_p.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_editar_patrimonio_enviar_p.Location = new System.Drawing.Point(271, 657);
+            this.btn_editar_patrimonio_enviar_p.Location = new System.Drawing.Point(283, 657);
             this.btn_editar_patrimonio_enviar_p.Name = "btn_editar_patrimonio_enviar_p";
             this.btn_editar_patrimonio_enviar_p.Size = new System.Drawing.Size(109, 33);
             this.btn_editar_patrimonio_enviar_p.TabIndex = 100;
@@ -290,7 +292,7 @@
             // 
             this.btn_patrimonio_deletar_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_patrimonio_deletar_p.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_patrimonio_deletar_p.Location = new System.Drawing.Point(424, 657);
+            this.btn_patrimonio_deletar_p.Location = new System.Drawing.Point(414, 657);
             this.btn_patrimonio_deletar_p.Name = "btn_patrimonio_deletar_p";
             this.btn_patrimonio_deletar_p.Size = new System.Drawing.Size(109, 33);
             this.btn_patrimonio_deletar_p.TabIndex = 103;

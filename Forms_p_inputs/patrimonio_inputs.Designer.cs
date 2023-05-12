@@ -58,7 +58,7 @@
             // 
             this.btn_patrimonio_enviar_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_patrimonio_enviar_p.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_patrimonio_enviar_p.Location = new System.Drawing.Point(352, 641);
+            this.btn_patrimonio_enviar_p.Location = new System.Drawing.Point(344, 657);
             this.btn_patrimonio_enviar_p.Name = "btn_patrimonio_enviar_p";
             this.btn_patrimonio_enviar_p.Size = new System.Drawing.Size(109, 33);
             this.btn_patrimonio_enviar_p.TabIndex = 76;
@@ -70,7 +70,7 @@
             // 
             this.input_patrimonio_ordemcompra_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.input_patrimonio_ordemcompra_p.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.input_patrimonio_ordemcompra_p.Location = new System.Drawing.Point(429, 353);
+            this.input_patrimonio_ordemcompra_p.Location = new System.Drawing.Point(424, 364);
             this.input_patrimonio_ordemcompra_p.Name = "input_patrimonio_ordemcompra_p";
             this.input_patrimonio_ordemcompra_p.Size = new System.Drawing.Size(284, 22);
             this.input_patrimonio_ordemcompra_p.TabIndex = 63;
@@ -79,7 +79,7 @@
             // 
             this.lbl_patrimonio_ordemcompra_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_patrimonio_ordemcompra_p.AutoSize = true;
-            this.lbl_patrimonio_ordemcompra_p.Location = new System.Drawing.Point(426, 334);
+            this.lbl_patrimonio_ordemcompra_p.Location = new System.Drawing.Point(421, 345);
             this.lbl_patrimonio_ordemcompra_p.Name = "lbl_patrimonio_ordemcompra_p";
             this.lbl_patrimonio_ordemcompra_p.Size = new System.Drawing.Size(116, 16);
             this.lbl_patrimonio_ordemcompra_p.TabIndex = 62;
@@ -89,7 +89,7 @@
             // 
             this.input_patrimonio_status_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.input_patrimonio_status_p.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.input_patrimonio_status_p.Location = new System.Drawing.Point(101, 353);
+            this.input_patrimonio_status_p.Location = new System.Drawing.Point(96, 364);
             this.input_patrimonio_status_p.Name = "input_patrimonio_status_p";
             this.input_patrimonio_status_p.Size = new System.Drawing.Size(284, 22);
             this.input_patrimonio_status_p.TabIndex = 61;
@@ -98,7 +98,7 @@
             // 
             this.lbl_patrimonio_status_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_patrimonio_status_p.AutoSize = true;
-            this.lbl_patrimonio_status_p.Location = new System.Drawing.Point(98, 334);
+            this.lbl_patrimonio_status_p.Location = new System.Drawing.Point(93, 345);
             this.lbl_patrimonio_status_p.Name = "lbl_patrimonio_status_p";
             this.lbl_patrimonio_status_p.Size = new System.Drawing.Size(135, 16);
             this.lbl_patrimonio_status_p.TabIndex = 60;
@@ -108,7 +108,7 @@
             // 
             this.input_patrimonio_observacao_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.input_patrimonio_observacao_p.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.input_patrimonio_observacao_p.Location = new System.Drawing.Point(101, 419);
+            this.input_patrimonio_observacao_p.Location = new System.Drawing.Point(96, 430);
             this.input_patrimonio_observacao_p.Multiline = true;
             this.input_patrimonio_observacao_p.Name = "input_patrimonio_observacao_p";
             this.input_patrimonio_observacao_p.Size = new System.Drawing.Size(612, 200);
@@ -118,7 +118,7 @@
             // 
             this.lbl_patrimonio_observacao_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_patrimonio_observacao_p.AutoSize = true;
-            this.lbl_patrimonio_observacao_p.Location = new System.Drawing.Point(98, 400);
+            this.lbl_patrimonio_observacao_p.Location = new System.Drawing.Point(93, 411);
             this.lbl_patrimonio_observacao_p.Name = "lbl_patrimonio_observacao_p";
             this.lbl_patrimonio_observacao_p.Size = new System.Drawing.Size(89, 16);
             this.lbl_patrimonio_observacao_p.TabIndex = 56;
@@ -128,7 +128,7 @@
             // 
             this.input_patrimonio_valoratual_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.input_patrimonio_valoratual_p.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.input_patrimonio_valoratual_p.Location = new System.Drawing.Point(429, 287);
+            this.input_patrimonio_valoratual_p.Location = new System.Drawing.Point(424, 298);
             this.input_patrimonio_valoratual_p.Name = "input_patrimonio_valoratual_p";
             this.input_patrimonio_valoratual_p.Size = new System.Drawing.Size(284, 22);
             this.input_patrimonio_valoratual_p.TabIndex = 55;
@@ -137,7 +137,7 @@
             // 
             this.lbl_patrimonio_valoratual_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_patrimonio_valoratual_p.AutoSize = true;
-            this.lbl_patrimonio_valoratual_p.Location = new System.Drawing.Point(426, 268);
+            this.lbl_patrimonio_valoratual_p.Location = new System.Drawing.Point(421, 279);
             this.lbl_patrimonio_valoratual_p.Name = "lbl_patrimonio_valoratual_p";
             this.lbl_patrimonio_valoratual_p.Size = new System.Drawing.Size(120, 16);
             this.lbl_patrimonio_valoratual_p.TabIndex = 54;
@@ -147,7 +147,7 @@
             // 
             this.input_patrimonio_estadoconservacao_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.input_patrimonio_estadoconservacao_p.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.input_patrimonio_estadoconservacao_p.Location = new System.Drawing.Point(101, 287);
+            this.input_patrimonio_estadoconservacao_p.Location = new System.Drawing.Point(96, 298);
             this.input_patrimonio_estadoconservacao_p.Name = "input_patrimonio_estadoconservacao_p";
             this.input_patrimonio_estadoconservacao_p.Size = new System.Drawing.Size(284, 22);
             this.input_patrimonio_estadoconservacao_p.TabIndex = 53;
@@ -156,7 +156,7 @@
             // 
             this.lbl_patrimonio_estadoconservacao_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_patrimonio_estadoconservacao_p.AutoSize = true;
-            this.lbl_patrimonio_estadoconservacao_p.Location = new System.Drawing.Point(98, 268);
+            this.lbl_patrimonio_estadoconservacao_p.Location = new System.Drawing.Point(93, 279);
             this.lbl_patrimonio_estadoconservacao_p.Name = "lbl_patrimonio_estadoconservacao_p";
             this.lbl_patrimonio_estadoconservacao_p.Size = new System.Drawing.Size(151, 16);
             this.lbl_patrimonio_estadoconservacao_p.TabIndex = 52;
@@ -166,7 +166,7 @@
             // 
             this.input_patrimonio_valorbem_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.input_patrimonio_valorbem_p.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.input_patrimonio_valorbem_p.Location = new System.Drawing.Point(429, 222);
+            this.input_patrimonio_valorbem_p.Location = new System.Drawing.Point(424, 233);
             this.input_patrimonio_valorbem_p.Name = "input_patrimonio_valorbem_p";
             this.input_patrimonio_valorbem_p.Size = new System.Drawing.Size(284, 22);
             this.input_patrimonio_valorbem_p.TabIndex = 51;
@@ -175,7 +175,7 @@
             // 
             this.lbl_patrimonio_valorbem_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_patrimonio_valorbem_p.AutoSize = true;
-            this.lbl_patrimonio_valorbem_p.Location = new System.Drawing.Point(426, 203);
+            this.lbl_patrimonio_valorbem_p.Location = new System.Drawing.Point(421, 214);
             this.lbl_patrimonio_valorbem_p.Name = "lbl_patrimonio_valorbem_p";
             this.lbl_patrimonio_valorbem_p.Size = new System.Drawing.Size(156, 16);
             this.lbl_patrimonio_valorbem_p.TabIndex = 50;
@@ -185,7 +185,7 @@
             // 
             this.lbl_patrimonio_fimgarantia_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_patrimonio_fimgarantia_p.AutoSize = true;
-            this.lbl_patrimonio_fimgarantia_p.Location = new System.Drawing.Point(98, 203);
+            this.lbl_patrimonio_fimgarantia_p.Location = new System.Drawing.Point(93, 214);
             this.lbl_patrimonio_fimgarantia_p.Name = "lbl_patrimonio_fimgarantia_p";
             this.lbl_patrimonio_fimgarantia_p.Size = new System.Drawing.Size(127, 16);
             this.lbl_patrimonio_fimgarantia_p.TabIndex = 48;
@@ -195,7 +195,7 @@
             // 
             this.lbl_patrimonio_datacompra_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_patrimonio_datacompra_p.AutoSize = true;
-            this.lbl_patrimonio_datacompra_p.Location = new System.Drawing.Point(426, 141);
+            this.lbl_patrimonio_datacompra_p.Location = new System.Drawing.Point(421, 152);
             this.lbl_patrimonio_datacompra_p.Name = "lbl_patrimonio_datacompra_p";
             this.lbl_patrimonio_datacompra_p.Size = new System.Drawing.Size(104, 16);
             this.lbl_patrimonio_datacompra_p.TabIndex = 46;
@@ -205,7 +205,7 @@
             // 
             this.input_patrimonio_notafiscal_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.input_patrimonio_notafiscal_p.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.input_patrimonio_notafiscal_p.Location = new System.Drawing.Point(101, 160);
+            this.input_patrimonio_notafiscal_p.Location = new System.Drawing.Point(96, 171);
             this.input_patrimonio_notafiscal_p.Name = "input_patrimonio_notafiscal_p";
             this.input_patrimonio_notafiscal_p.Size = new System.Drawing.Size(284, 22);
             this.input_patrimonio_notafiscal_p.TabIndex = 45;
@@ -214,7 +214,7 @@
             // 
             this.lbl_patrimonio_notafiscal_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_patrimonio_notafiscal_p.AutoSize = true;
-            this.lbl_patrimonio_notafiscal_p.Location = new System.Drawing.Point(98, 141);
+            this.lbl_patrimonio_notafiscal_p.Location = new System.Drawing.Point(93, 152);
             this.lbl_patrimonio_notafiscal_p.Name = "lbl_patrimonio_notafiscal_p";
             this.lbl_patrimonio_notafiscal_p.Size = new System.Drawing.Size(70, 16);
             this.lbl_patrimonio_notafiscal_p.TabIndex = 44;
@@ -224,7 +224,7 @@
             // 
             this.input_patrimonio_numserie_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.input_patrimonio_numserie_p.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.input_patrimonio_numserie_p.Location = new System.Drawing.Point(429, 100);
+            this.input_patrimonio_numserie_p.Location = new System.Drawing.Point(424, 111);
             this.input_patrimonio_numserie_p.Name = "input_patrimonio_numserie_p";
             this.input_patrimonio_numserie_p.Size = new System.Drawing.Size(284, 22);
             this.input_patrimonio_numserie_p.TabIndex = 43;
@@ -233,7 +233,7 @@
             // 
             this.lbl_patrimonio_numserie_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_patrimonio_numserie_p.AutoSize = true;
-            this.lbl_patrimonio_numserie_p.Location = new System.Drawing.Point(426, 81);
+            this.lbl_patrimonio_numserie_p.Location = new System.Drawing.Point(421, 92);
             this.lbl_patrimonio_numserie_p.Name = "lbl_patrimonio_numserie_p";
             this.lbl_patrimonio_numserie_p.Size = new System.Drawing.Size(73, 16);
             this.lbl_patrimonio_numserie_p.TabIndex = 42;
@@ -243,7 +243,7 @@
             // 
             this.input_patrimonio_numpat_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.input_patrimonio_numpat_p.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.input_patrimonio_numpat_p.Location = new System.Drawing.Point(101, 100);
+            this.input_patrimonio_numpat_p.Location = new System.Drawing.Point(96, 111);
             this.input_patrimonio_numpat_p.Name = "input_patrimonio_numpat_p";
             this.input_patrimonio_numpat_p.Size = new System.Drawing.Size(284, 22);
             this.input_patrimonio_numpat_p.TabIndex = 41;
@@ -252,7 +252,7 @@
             // 
             this.lbl_patrimonio_numpat_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_patrimonio_numpat_p.AutoSize = true;
-            this.lbl_patrimonio_numpat_p.Location = new System.Drawing.Point(98, 81);
+            this.lbl_patrimonio_numpat_p.Location = new System.Drawing.Point(93, 92);
             this.lbl_patrimonio_numpat_p.Name = "lbl_patrimonio_numpat_p";
             this.lbl_patrimonio_numpat_p.Size = new System.Drawing.Size(106, 16);
             this.lbl_patrimonio_numpat_p.TabIndex = 40;
@@ -263,7 +263,7 @@
             this.lbl_patrimonio_titulo_inputs_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_patrimonio_titulo_inputs_p.AutoSize = true;
             this.lbl_patrimonio_titulo_inputs_p.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_patrimonio_titulo_inputs_p.Location = new System.Drawing.Point(345, 29);
+            this.lbl_patrimonio_titulo_inputs_p.Location = new System.Drawing.Point(340, 40);
             this.lbl_patrimonio_titulo_inputs_p.Name = "lbl_patrimonio_titulo_inputs_p";
             this.lbl_patrimonio_titulo_inputs_p.Size = new System.Drawing.Size(135, 29);
             this.lbl_patrimonio_titulo_inputs_p.TabIndex = 39;
@@ -271,16 +271,18 @@
             // 
             // dateTimePicker_patrimonio_datacompra_p
             // 
+            this.dateTimePicker_patrimonio_datacompra_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dateTimePicker_patrimonio_datacompra_p.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker_patrimonio_datacompra_p.Location = new System.Drawing.Point(429, 160);
+            this.dateTimePicker_patrimonio_datacompra_p.Location = new System.Drawing.Point(424, 171);
             this.dateTimePicker_patrimonio_datacompra_p.Name = "dateTimePicker_patrimonio_datacompra_p";
             this.dateTimePicker_patrimonio_datacompra_p.Size = new System.Drawing.Size(284, 22);
             this.dateTimePicker_patrimonio_datacompra_p.TabIndex = 77;
             // 
             // dateTimePicker_patrimonio_fimgarantia_p
             // 
+            this.dateTimePicker_patrimonio_fimgarantia_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dateTimePicker_patrimonio_fimgarantia_p.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker_patrimonio_fimgarantia_p.Location = new System.Drawing.Point(101, 222);
+            this.dateTimePicker_patrimonio_fimgarantia_p.Location = new System.Drawing.Point(96, 233);
             this.dateTimePicker_patrimonio_fimgarantia_p.Name = "dateTimePicker_patrimonio_fimgarantia_p";
             this.dateTimePicker_patrimonio_fimgarantia_p.Size = new System.Drawing.Size(284, 22);
             this.dateTimePicker_patrimonio_fimgarantia_p.TabIndex = 78;
