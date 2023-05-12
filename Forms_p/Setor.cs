@@ -15,6 +15,7 @@ namespace projeto_integrado.Forms_p
 {
     public partial class Setor : Form
     {
+        public static string id_patset;
         public Setor()
         {
             InitializeComponent();
@@ -73,6 +74,8 @@ namespace projeto_integrado.Forms_p
         {
             int indexRow = e.RowIndex;
             DataGridViewRow row = datagridview_setor_p.Rows[indexRow];
+
+            id_patset = row.Cells[70].Value.ToString();
 
             var forminputeditarsetor = new setor_inputs_editar();
 

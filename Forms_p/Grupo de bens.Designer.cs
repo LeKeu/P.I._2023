@@ -99,6 +99,7 @@
             // timer_patriGrpBens_p
             // 
             this.timer_patriGrpBens_p.Interval = 5000;
+            this.timer_patriGrpBens_p.Tick += new System.EventHandler(this.timer_patriGrpBens_p_Tick);
             // 
             // Grupo_de_bens
             // 
