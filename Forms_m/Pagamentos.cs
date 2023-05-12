@@ -86,18 +86,18 @@ namespace projeto_integrado.Forms
             id_pag = row.Cells[3].Value.ToString();
 
             forminputeditarpagamentos.input_editar_pagamento_nome_m.Text = row.Cells[3].Value.ToString();
-            forminputeditarpagamentos.checkBox_editar_pagamento_janeiro_m.Checked = Convert.ToBoolean(row.Cells[31].Value.ToString());
-            forminputeditarpagamentos.checkBox_editar_pagamento_fevereiro_m.Checked = Convert.ToBoolean(row.Cells[32].Value.ToString());
-            forminputeditarpagamentos.checkBox_editar_pagamento_marco_m.Checked = Convert.ToBoolean(row.Cells[33].Value.ToString());
-            forminputeditarpagamentos.checkBox_editar_pagamento_abril_m.Checked = Convert.ToBoolean(row.Cells[34].Value.ToString());
-            forminputeditarpagamentos.checkBox_editar_pagamento_maio_m.Checked = Convert.ToBoolean(row.Cells[35].Value.ToString());
-            forminputeditarpagamentos.checkBox_editar_pagamento_junho_m.Checked = Convert.ToBoolean(row.Cells[36].Value.ToString());
-            forminputeditarpagamentos.checkBox_editar_pagamento_julho_m.Checked = Convert.ToBoolean(row.Cells[37].Value.ToString());
-            forminputeditarpagamentos.checkBox_editar_pagamento_agosto_m.Checked = Convert.ToBoolean(row.Cells[38].Value.ToString());
-            forminputeditarpagamentos.checkBox_editar_pagamento_setembro_m.Checked = Convert.ToBoolean(row.Cells[39].Value.ToString());
-            forminputeditarpagamentos.checkBox_editar_pagamento_outubro_m.Checked = Convert.ToBoolean(row.Cells[40].Value.ToString());
-            forminputeditarpagamentos.checkBox_editar_pagamento_novembro_m.Checked = Convert.ToBoolean(row.Cells[41].Value.ToString());
-            forminputeditarpagamentos.checkBox_editar_pagamento_dezembro_m.Checked = Convert.ToBoolean(row.Cells[42].Value.ToString());
+            forminputeditarpagamentos.checkBox_editar_pagamento_janeiro_m.Checked = Convert.ToBoolean(row.Cells[30].Value.ToString());
+            forminputeditarpagamentos.checkBox_editar_pagamento_fevereiro_m.Checked = Convert.ToBoolean(row.Cells[31].Value.ToString());
+            forminputeditarpagamentos.checkBox_editar_pagamento_marco_m.Checked = Convert.ToBoolean(row.Cells[32].Value.ToString());
+            forminputeditarpagamentos.checkBox_editar_pagamento_abril_m.Checked = Convert.ToBoolean(row.Cells[33].Value.ToString());
+            forminputeditarpagamentos.checkBox_editar_pagamento_maio_m.Checked = Convert.ToBoolean(row.Cells[34].Value.ToString());
+            forminputeditarpagamentos.checkBox_editar_pagamento_junho_m.Checked = Convert.ToBoolean(row.Cells[35].Value.ToString());
+            forminputeditarpagamentos.checkBox_editar_pagamento_julho_m.Checked = Convert.ToBoolean(row.Cells[36].Value.ToString());
+            forminputeditarpagamentos.checkBox_editar_pagamento_agosto_m.Checked = Convert.ToBoolean(row.Cells[37].Value.ToString());
+            forminputeditarpagamentos.checkBox_editar_pagamento_setembro_m.Checked = Convert.ToBoolean(row.Cells[38].Value.ToString());
+            forminputeditarpagamentos.checkBox_editar_pagamento_outubro_m.Checked = Convert.ToBoolean(row.Cells[39].Value.ToString());
+            forminputeditarpagamentos.checkBox_editar_pagamento_novembro_m.Checked = Convert.ToBoolean(row.Cells[40].Value.ToString());
+            forminputeditarpagamentos.checkBox_editar_pagamento_dezembro_m.Checked = Convert.ToBoolean(row.Cells[41].Value.ToString());
             
             forminputeditarpagamentos.Show();
         }

@@ -74,10 +74,9 @@ namespace projeto_integrado.Forms_p
                 Console.WriteLine(i + "lolo --> " + row.Cells[i].Value);
             }
 
-            forminputeditargrupodebens.input_editar_grupobens_nome_p.Text = row.Cells[62].Value.ToString();
-            forminputeditargrupodebens.input_editar_grupobens_identificador_p.Text = row.Cells[63].Value.ToString();
-            forminputeditargrupodebens.checkBox_editar_grupobens_ativo_p.Text = row.Cells[60].Value.ToString();
-            //Console.WriteLine("25--> "+row.Cells[25].Value.ToString());
+            forminputeditargrupodebens.input_editar_grupobens_nome_p.Text = row.Cells[61].Value.ToString();
+            forminputeditargrupodebens.input_editar_grupobens_identificador_p.Text = row.Cells[62].Value.ToString();
+            forminputeditargrupodebens.checkBox_editar_grupobens_ativo_p.Checked = Convert.ToBoolean(row.Cells[59].Value.ToString());
             forminputeditargrupodebens.Show();
         }
     }
