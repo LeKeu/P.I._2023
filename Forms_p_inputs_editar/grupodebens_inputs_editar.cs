@@ -45,5 +45,22 @@ namespace projeto_integrado.Forms_p_inputs_editar
 
             }
         }
+
+        private void btn_grupobens_deletar_p_Click(object sender, EventArgs e)
+        {
+            var confirmResult = MessageBox.Show("Tem certeza que deseja DELETAR essas informações?",
+                                     "Confirmar",
+                                     MessageBoxButtons.YesNo);
+            if (confirmResult == DialogResult.Yes)
+            {
+                var Grupo_De_Bens = new Grupo_de_bens();
+                string id_patgb = Grupo_de_bens.id_patgb;
+
+                var novo_json = json_funcs.DeleteValueJson("PatrimonioGrupoBens", "IdentificadorGrupoBens", id_patgb);
+
+                json_funcs.Update_Convert_to_json(novo_json);
+                this.Close();
+            }
+        }
     }
 }

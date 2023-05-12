@@ -45,6 +45,7 @@
             this.input_editar_produto_depreciacaoanual_p = new System.Windows.Forms.TextBox();
             this.lbl_editar_produto_depreciacaoanual_p = new System.Windows.Forms.Label();
             this.lbl_editar_produto_titulo_inputs_p = new System.Windows.Forms.Label();
+            this.btn_produto_deletar_p = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // checkBox_editar_produto_ativo_p
@@ -69,7 +70,7 @@
             // 
             this.btn_editar_produto_enviar_p.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_editar_produto_enviar_p.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_editar_produto_enviar_p.Location = new System.Drawing.Point(349, 559);
+            this.btn_editar_produto_enviar_p.Location = new System.Drawing.Point(96, 567);
             this.btn_editar_produto_enviar_p.Name = "btn_editar_produto_enviar_p";
             this.btn_editar_produto_enviar_p.Size = new System.Drawing.Size(109, 33);
             this.btn_editar_produto_enviar_p.TabIndex = 117;
@@ -213,11 +214,24 @@
             this.lbl_editar_produto_titulo_inputs_p.TabIndex = 103;
             this.lbl_editar_produto_titulo_inputs_p.Text = "Produto";
             // 
+            // btn_produto_deletar_p
+            // 
+            this.btn_produto_deletar_p.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_produto_deletar_p.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_produto_deletar_p.Location = new System.Drawing.Point(599, 567);
+            this.btn_produto_deletar_p.Name = "btn_produto_deletar_p";
+            this.btn_produto_deletar_p.Size = new System.Drawing.Size(109, 33);
+            this.btn_produto_deletar_p.TabIndex = 120;
+            this.btn_produto_deletar_p.Text = "Deletar";
+            this.btn_produto_deletar_p.UseVisualStyleBackColor = true;
+            this.btn_produto_deletar_p.Click += new System.EventHandler(this.btn_produto_deletar_p_Click);
+            // 
             // produto_inputs_editar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 636);
+            this.Controls.Add(this.btn_produto_deletar_p);
             this.Controls.Add(this.checkBox_editar_produto_ativo_p);
             this.Controls.Add(this.dateTimePicker_editar_produto_datafimgarantia_p);
             this.Controls.Add(this.btn_editar_produto_enviar_p);
@@ -261,5 +275,6 @@
         public System.Windows.Forms.TextBox input_editar_produto_depreciacaoanual_p;
         private System.Windows.Forms.Label lbl_editar_produto_depreciacaoanual_p;
         private System.Windows.Forms.Label lbl_editar_produto_titulo_inputs_p;
+        private System.Windows.Forms.Button btn_produto_deletar_p;
     }
 }
