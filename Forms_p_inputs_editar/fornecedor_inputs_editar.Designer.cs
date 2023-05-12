@@ -57,6 +57,7 @@
             this.btn_editar_fornecedor_enviar_p.TabIndex = 107;
             this.btn_editar_fornecedor_enviar_p.Text = "Editar";
             this.btn_editar_fornecedor_enviar_p.UseVisualStyleBackColor = true;
+            this.btn_editar_fornecedor_enviar_p.Click += new System.EventHandler(this.btn_editar_fornecedor_enviar_p_Click);
             // 
             // input_editar_fornecedor_cnpj_p
             // 

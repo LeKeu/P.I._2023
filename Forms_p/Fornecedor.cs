@@ -15,6 +15,7 @@ namespace projeto_integrado.Forms_p
 {
     public partial class Fornecedor : Form
     {
+        public static string id_patfor;
         public Fornecedor()
         {
             InitializeComponent();
@@ -73,6 +74,8 @@ namespace projeto_integrado.Forms_p
         {
             int indexRow = e.RowIndex;
             DataGridViewRow row = datagridview_fornecedor_p.Rows[indexRow];
+
+            id_patfor = row.Cells[72].Value.ToString();
 
             var forminputeditarfornecedor = new fornecedor_inputs_editar();
 

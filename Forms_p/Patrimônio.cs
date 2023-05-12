@@ -75,7 +75,7 @@ namespace projeto_integrado.Forms_p
             int indexRow = e.RowIndex;
             DataGridViewRow row = datagridview_patrimonio_p.Rows[indexRow];
 
-            id_pat = row.Cells[44].Value.ToString();
+            id_pat = row.Cells[43].Value.ToString();
 
             for (int i = 0; i < row.Cells.Count; i++)
             {

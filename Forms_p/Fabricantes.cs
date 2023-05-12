@@ -78,7 +78,7 @@ namespace projeto_integrado.Forms_p
 
             var forminputeditarfabricantes = new fabricante_inputs_editar();
 
-            id_fabr = row.Cells[59].Value.ToString();
+            id_fabr = row.Cells[58].Value.ToString();
 
             for (int i = 0; i < row.Cells.Count; i++)
             {

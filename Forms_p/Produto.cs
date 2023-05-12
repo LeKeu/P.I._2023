@@ -16,6 +16,7 @@ namespace projeto_integrado.Forms_p
 {
     public partial class Produto : Form
     {
+        public static string id_patpr;
         public Produto()
         {
             InitializeComponent();
@@ -74,6 +75,8 @@ namespace projeto_integrado.Forms_p
         {
             int indexRow = e.RowIndex;
             DataGridViewRow row = datagridview_produto_p.Rows[indexRow];
+
+            id_patpr = row.Cells[67].Value.ToString();
 
             var forminputeditarproduto = new produto_inputs_editar();
 

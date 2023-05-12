@@ -55,6 +55,7 @@
             this.btn_editar_setor_enviar_p.TabIndex = 111;
             this.btn_editar_setor_enviar_p.Text = "Editar";
             this.btn_editar_setor_enviar_p.UseVisualStyleBackColor = true;
+            this.btn_editar_setor_enviar_p.Click += new System.EventHandler(this.btn_editar_setor_enviar_p_Click);
             // 
             // input_editar_setor_nome_p
             // 
