@@ -81,9 +81,8 @@ namespace projeto_integrado.Forms_p
                 Console.WriteLine(i + "lolo --> " + row.Cells[i].Value);
             }
 
-            forminputeditarsetor.input_editar_setor_nome_p.Text = row.Cells[71].Value.ToString();
-            forminputeditarsetor.checkBox_editar_setor_ativo_p.Text = row.Cells[60].Value.ToString();
-            //Console.WriteLine("25--> "+row.Cells[25].Value.ToString());
+            forminputeditarsetor.input_editar_setor_nome_p.Text = row.Cells[70].Value.ToString();
+            forminputeditarsetor.checkBox_editar_setor_ativo_p.Checked = Convert.ToBoolean(row.Cells[59].Value.ToString());
             forminputeditarsetor.Show();
         }
     }

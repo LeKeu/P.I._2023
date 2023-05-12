@@ -81,9 +81,9 @@ namespace projeto_integrado.Forms_p
                 Console.WriteLine(i + "lolo --> " + row.Cells[i].Value);
             }
 
-            forminputeditarfornecedor.input_editar_fornecedor_nome_p.Text = row.Cells[72].Value.ToString();
-            forminputeditarfornecedor.input_editar_fornecedor_cnpj_p.Text = row.Cells[73].Value.ToString();
-            //forminputeditarfornecedor.checkBox_editar_fornecedor_ativo_p.Checked = row.Cells[60].Value;
+            forminputeditarfornecedor.input_editar_fornecedor_nome_p.Text = row.Cells[71].Value.ToString();
+            forminputeditarfornecedor.input_editar_fornecedor_cnpj_p.Text = row.Cells[72].Value.ToString();
+            forminputeditarfornecedor.checkBox_editar_fornecedor_ativo_p.Checked = Convert.ToBoolean(row.Cells[59].Value.ToString());
             //Console.WriteLine("25--> "+row.Cells[25].Value.ToString());
             forminputeditarfornecedor.Show();
         }
