@@ -149,7 +149,7 @@
             // 
             this.btn_membro_enviar_m.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_membro_enviar_m.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_membro_enviar_m.Location = new System.Drawing.Point(284, 720);
+            this.btn_membro_enviar_m.Location = new System.Drawing.Point(360, 719);
             this.btn_membro_enviar_m.Name = "btn_membro_enviar_m";
             this.btn_membro_enviar_m.Size = new System.Drawing.Size(109, 33);
             this.btn_membro_enviar_m.TabIndex = 126;
@@ -491,6 +491,13 @@
             this.lbl_membro_titulo_inputs_m.Size = new System.Drawing.Size(119, 29);
             this.lbl_membro_titulo_inputs_m.TabIndex = 91;
             this.lbl_membro_titulo_inputs_m.Text = "Membros";
+            // 
+            // btn_membro_deletar_m
+            // 
+            this.btn_membro_deletar_m.Location = new System.Drawing.Point(0, 0);
+            this.btn_membro_deletar_m.Name = "btn_membro_deletar_m";
+            this.btn_membro_deletar_m.Size = new System.Drawing.Size(75, 23);
+            this.btn_membro_deletar_m.TabIndex = 0;
             // 
             // membros_inputs
             // 

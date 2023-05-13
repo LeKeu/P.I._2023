@@ -17,7 +17,8 @@ namespace projeto_integrado
         static void Main()
         {
             conexao_api.Init(); // criar conexão com api google
-            conexao_internet.Run000(); // fazer a checagem de internet
+            //conexao_internet.Run000(); // fazer a checagem de internet
+            json_funcs.Read_table("Membro", "IdMembro");
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

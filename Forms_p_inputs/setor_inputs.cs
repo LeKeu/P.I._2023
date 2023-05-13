@@ -25,9 +25,9 @@ namespace projeto_integrado.Forms_p_inputs
                                      MessageBoxButtons.YesNo);
             if (confirmResult == DialogResult.Yes)
             {
-                List<string> dados = new List<string>() { "ID - Patrimonio setor", input_setor_nome_p.Text, checkBox_setor_ativo_p.Checked.ToString() };
                 string nome_tabela = "PatrimonioSetor";
-
+                List<string> dados = new List<string>() { (json_funcs.Read_table(nome_tabela, "IdPatrimonioSetor")).ToString(), input_setor_nome_p.Text, checkBox_setor_ativo_p.Checked.ToString() };
+                
                 //func p gravar os dados no json
                 json_funcs.Convert_to_json(dados, nome_tabela, "C");
 

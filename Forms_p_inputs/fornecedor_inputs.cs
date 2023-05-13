@@ -25,9 +25,9 @@ namespace projeto_integrado.Forms_p_inputs
                                      MessageBoxButtons.YesNo);
             if (confirmResult == DialogResult.Yes)
             {
-                List<string> dados = new List<string>() { "ID - Patrimonio fornecedor", input_fornecedor_nome_p.Text, input_fornecedor_cnpj_p.Text, checkBox_fornecedor_ativo_p.Checked.ToString() };
                 string nome_tabela = "PatrimonioFornecedor";
-
+                List<string> dados = new List<string>() { (json_funcs.Read_table(nome_tabela, "IdPatrimonioFornecedor")).ToString(), input_fornecedor_nome_p.Text, input_fornecedor_cnpj_p.Text, checkBox_fornecedor_ativo_p.Checked.ToString() };
+                
                 //func p gravar os dados no json
                 json_funcs.Convert_to_json(dados, nome_tabela, "D");
 
