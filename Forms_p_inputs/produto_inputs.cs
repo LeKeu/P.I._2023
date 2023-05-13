@@ -25,9 +25,10 @@ namespace projeto_integrado.Forms_p_inputs
                                      MessageBoxButtons.YesNo);
             if (confirmResult == DialogResult.Yes)
             {
-                List<string> dados = new List<string>() { "ID - patrimonio produto", input_produto_descricaodetalhada_p.Text, input_produto_depreciacaoanual_p.Text, "ID - patrimonio grupo", input_produto_descricaoresumida_p.Text, input_produto_codproduto_p.Text, "ID - patrimonio fabricante", input_produto_modelo_p.Text, input_produto_vidautilanos_p.Text, checkBox_produto_ativo_p.Checked.ToString(), dateTimePicker_produto_ativo_p.Text };
                 string nome_tabela = "PatrimonioProduto";
 
+                List<string> dados = new List<string>() { (json_funcs.Read_table(nome_tabela, "IdPatrimonioProduto")).ToString(), input_produto_descricaodetalhada_p.Text, input_produto_depreciacaoanual_p.Text, "ID - patrimonio grupo", input_produto_descricaoresumida_p.Text, input_produto_codproduto_p.Text, "ID - patrimonio fabricante", input_produto_modelo_p.Text, input_produto_vidautilanos_p.Text, checkBox_produto_ativo_p.Checked.ToString(), dateTimePicker_produto_ativo_p.Text };
+                
                 //func p gravar os dados no json
                 json_funcs.Convert_to_json(dados, nome_tabela, "J");
 

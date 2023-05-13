@@ -25,9 +25,9 @@ namespace projeto_integrado.Forms_p_inputs
                                      MessageBoxButtons.YesNo);
             if (confirmResult == DialogResult.Yes)
             {
-                List<string> dados = new List<string>() { "ID - Patrimonio grupo bens", input_grupobens_nome_p.Text, input_grupobens_identificador_p.Text, checkBox_grupobens_ativo_p.Checked.ToString() };
                 string nome_tabela = "PatrimonioGrupoBens";
-
+                List<string> dados = new List<string>() { (json_funcs.Read_table(nome_tabela, "IdPatrimonioGrupoBens")).ToString(), input_grupobens_nome_p.Text, input_grupobens_identificador_p.Text, checkBox_grupobens_ativo_p.Checked.ToString() };
+                
                 //func p gravar os dados no json
                 json_funcs.Convert_to_json(dados, nome_tabela, "D");
 

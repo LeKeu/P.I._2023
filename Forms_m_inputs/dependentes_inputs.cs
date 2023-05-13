@@ -33,8 +33,10 @@ namespace projeto_integrado.Forms_m_inputs
                 ms.Position = 0;
                 ms.Read(photoData, 0, photoData.Length);
                 //IMPORTANTE --> não adicionei o "celular" aqui!!!
-                List<string> dados = new List<string>() { "ID-?", input_dependente_nomemembrovinculado_m.Text, "ID-?DEP", input_dependente_nome_m.Text, Convert.ToBase64String(photoData), input_dependente_sexo_m.Text, dateTimePicker_dependente_datanasc_m.Text, input_dependente_parentesco_m.Text };
+
                 string nome_tabela = "Dependente";
+                List<string> dados = new List<string>() { (json_funcs.Read_table(nome_tabela, "IdDependente")).ToString(), input_dependente_nomemembrovinculado_m.Text, "ID-?DEP", input_dependente_nome_m.Text, Convert.ToBase64String(photoData), input_dependente_sexo_m.Text, dateTimePicker_dependente_datanasc_m.Text, input_dependente_parentesco_m.Text };
+                
 
                 //func p gravar os dados no json
                 json_funcs.Convert_to_json(dados, nome_tabela, "G");

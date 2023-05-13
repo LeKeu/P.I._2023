@@ -266,5 +266,43 @@ namespace projeto_integrado.Classes
                     return null;
             }
         }
+
+        public static int Read_table( string table_name, string id_)
+        {
+            /*
+             Função que retorna o arq json lido, procurando ele por seu path e des-serializando o mesmo, o retornando em
+            dynamic para melhor acesso como objeto json
+             */
+            string arq_path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\JSONTESTE02.json";  // pegar caminho automatico!
+            List<string> dict_dados_leitura = new List<string>();
+
+            dynamic jsonArq = JsonConvert.DeserializeObject(File.ReadAllText(arq_path));
+            List<string> teste = new List<string>();
+
+            //JObject jsonObj = JObject.Parse(jsonArq.ToString());
+            //Dictionary<string, string> dictObj = jsonObj.ToObject<Dictionary<string, string>>();
+
+            foreach (var coisa in jsonArq)
+            {
+                
+                if (coisa["Tabela"] == table_name)
+                {
+                    Console.WriteLine(coisa["Tabela"]);
+                    Console.WriteLine("--------");
+                    teste.Add(coisa.ToString());
+                }
+            }
+            //Console.WriteLine("dict teste = " + dictObj);
+            Console.WriteLine("string teste = " + teste.Count);
+
+            JObject jsonObj = JObject.Parse(teste[teste.Count-1]);
+            Dictionary<string, string> dictObj = jsonObj.ToObject<Dictionary<string, string>>();
+            Console.WriteLine(dictObj[id_]);
+
+
+            return int.Parse(dictObj[id_])+1;
+
+
+        }
     }
 }
