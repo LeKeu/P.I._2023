@@ -25,12 +25,11 @@ namespace projeto_integrado.Forms_m_inputs
                                      MessageBoxButtons.YesNo);
             if (confirmResult == DialogResult.Yes)
             {
-                List<string> dados = new List<string>() { "ID-?", input_pagamento_nome_m.Text, checkBox_pagamento_janeiro_m.Checked.ToString(), 
+                string nome_tabela = "ListaPagamento";
+                List<string> dados = new List<string>() { (json_funcs.Read_table(nome_tabela, "IdMembro")).ToString(), input_pagamento_nome_m.Text, checkBox_pagamento_janeiro_m.Checked.ToString(), 
                     checkBox_pagamento_fevereiro_m.Checked.ToString(), checkBox_pagamento_marco_m.Checked.ToString(), checkBox_pagamento_abril_m.Checked.ToString(), checkBox_pagamento_maio_m.Checked.ToString(), checkBox_pagamento_junho_m.Checked.ToString(), 
                     checkBox_pagamento_julho_m.Checked.ToString(), checkBox_pagamento_agosto_m.Checked.ToString(), checkBox_pagamento_setembro_m.Checked.ToString(), 
                     checkBox_pagamento_outubro_m.Checked.ToString(), checkBox_pagamento_novembro_m.Checked.ToString(), checkBox_pagamento_dezembro_m.Checked.ToString() };
-
-                string nome_tabela = "ListaPagamento";
 
                 //func p gravar os dados no json
                 json_funcs.Convert_to_json(dados, nome_tabela, "O");
