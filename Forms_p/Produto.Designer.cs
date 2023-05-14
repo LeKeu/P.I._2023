@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.btn_deletar_produto_p = new System.Windows.Forms.Button();
-            this.btn_editar_produto_p = new System.Windows.Forms.Button();
             this.btn_adicionar_produto_p = new System.Windows.Forms.Button();
             this.datagridview_produto_p = new System.Windows.Forms.DataGridView();
             this.btn_invisivel_produto_p = new System.Windows.Forms.Button();
@@ -38,33 +36,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.datagridview_produto_p)).BeginInit();
             this.SuspendLayout();
             // 
-            // btn_deletar_produto_p
-            // 
-            this.btn_deletar_produto_p.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btn_deletar_produto_p.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_deletar_produto_p.Location = new System.Drawing.Point(720, 298);
-            this.btn_deletar_produto_p.Name = "btn_deletar_produto_p";
-            this.btn_deletar_produto_p.Size = new System.Drawing.Size(97, 42);
-            this.btn_deletar_produto_p.TabIndex = 22;
-            this.btn_deletar_produto_p.Text = "Deletar";
-            this.btn_deletar_produto_p.UseVisualStyleBackColor = true;
-            // 
-            // btn_editar_produto_p
-            // 
-            this.btn_editar_produto_p.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btn_editar_produto_p.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_editar_produto_p.Location = new System.Drawing.Point(720, 222);
-            this.btn_editar_produto_p.Name = "btn_editar_produto_p";
-            this.btn_editar_produto_p.Size = new System.Drawing.Size(97, 42);
-            this.btn_editar_produto_p.TabIndex = 21;
-            this.btn_editar_produto_p.Text = "Editar";
-            this.btn_editar_produto_p.UseVisualStyleBackColor = true;
-            // 
             // btn_adicionar_produto_p
             // 
             this.btn_adicionar_produto_p.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.btn_adicionar_produto_p.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_adicionar_produto_p.Location = new System.Drawing.Point(720, 148);
+            this.btn_adicionar_produto_p.Location = new System.Drawing.Point(720, 383);
             this.btn_adicionar_produto_p.Name = "btn_adicionar_produto_p";
             this.btn_adicionar_produto_p.Size = new System.Drawing.Size(97, 42);
             this.btn_adicionar_produto_p.TabIndex = 20;
@@ -88,7 +64,8 @@
             // 
             // btn_invisivel_produto_p
             // 
-            this.btn_invisivel_produto_p.Location = new System.Drawing.Point(218, 447);
+            this.btn_invisivel_produto_p.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btn_invisivel_produto_p.Location = new System.Drawing.Point(52, 402);
             this.btn_invisivel_produto_p.Name = "btn_invisivel_produto_p";
             this.btn_invisivel_produto_p.Size = new System.Drawing.Size(75, 23);
             this.btn_invisivel_produto_p.TabIndex = 23;
@@ -106,11 +83,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(855, 498);
-            this.Controls.Add(this.btn_invisivel_produto_p);
-            this.Controls.Add(this.btn_deletar_produto_p);
-            this.Controls.Add(this.btn_editar_produto_p);
             this.Controls.Add(this.btn_adicionar_produto_p);
             this.Controls.Add(this.datagridview_produto_p);
+            this.Controls.Add(this.btn_invisivel_produto_p);
             this.Name = "Produto";
             this.Text = "Produto";
             this.Load += new System.EventHandler(this.Produto_Load);
@@ -120,9 +95,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btn_deletar_produto_p;
-        private System.Windows.Forms.Button btn_editar_produto_p;
         private System.Windows.Forms.Button btn_adicionar_produto_p;
         private System.Windows.Forms.DataGridView datagridview_produto_p;
         private System.Windows.Forms.Button btn_invisivel_produto_p;

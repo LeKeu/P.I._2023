@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.btn_deletar_dependentes_m = new System.Windows.Forms.Button();
-            this.btn_editar_dependentes_m = new System.Windows.Forms.Button();
             this.btn_adicionar_dependentes_m = new System.Windows.Forms.Button();
             this.datagridview_dependentes_m = new System.Windows.Forms.DataGridView();
             this.btn_invisivel_dependentes_m = new System.Windows.Forms.Button();
@@ -38,33 +36,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.datagridview_dependentes_m)).BeginInit();
             this.SuspendLayout();
             // 
-            // btn_deletar_dependentes_m
-            // 
-            this.btn_deletar_dependentes_m.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btn_deletar_dependentes_m.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_deletar_dependentes_m.Location = new System.Drawing.Point(725, 288);
-            this.btn_deletar_dependentes_m.Name = "btn_deletar_dependentes_m";
-            this.btn_deletar_dependentes_m.Size = new System.Drawing.Size(97, 42);
-            this.btn_deletar_dependentes_m.TabIndex = 14;
-            this.btn_deletar_dependentes_m.Text = "Deletar";
-            this.btn_deletar_dependentes_m.UseVisualStyleBackColor = true;
-            // 
-            // btn_editar_dependentes_m
-            // 
-            this.btn_editar_dependentes_m.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btn_editar_dependentes_m.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_editar_dependentes_m.Location = new System.Drawing.Point(725, 212);
-            this.btn_editar_dependentes_m.Name = "btn_editar_dependentes_m";
-            this.btn_editar_dependentes_m.Size = new System.Drawing.Size(97, 42);
-            this.btn_editar_dependentes_m.TabIndex = 13;
-            this.btn_editar_dependentes_m.Text = "Editar";
-            this.btn_editar_dependentes_m.UseVisualStyleBackColor = true;
-            // 
             // btn_adicionar_dependentes_m
             // 
             this.btn_adicionar_dependentes_m.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.btn_adicionar_dependentes_m.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_adicionar_dependentes_m.Location = new System.Drawing.Point(725, 138);
+            this.btn_adicionar_dependentes_m.Location = new System.Drawing.Point(727, 373);
             this.btn_adicionar_dependentes_m.Name = "btn_adicionar_dependentes_m";
             this.btn_adicionar_dependentes_m.Size = new System.Drawing.Size(97, 42);
             this.btn_adicionar_dependentes_m.TabIndex = 12;
@@ -89,7 +65,8 @@
             // 
             // btn_invisivel_dependentes_m
             // 
-            this.btn_invisivel_dependentes_m.Location = new System.Drawing.Point(364, 437);
+            this.btn_invisivel_dependentes_m.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btn_invisivel_dependentes_m.Location = new System.Drawing.Point(57, 392);
             this.btn_invisivel_dependentes_m.Name = "btn_invisivel_dependentes_m";
             this.btn_invisivel_dependentes_m.Size = new System.Drawing.Size(75, 23);
             this.btn_invisivel_dependentes_m.TabIndex = 15;
@@ -107,11 +84,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(855, 498);
-            this.Controls.Add(this.btn_invisivel_dependentes_m);
-            this.Controls.Add(this.btn_deletar_dependentes_m);
-            this.Controls.Add(this.btn_editar_dependentes_m);
             this.Controls.Add(this.btn_adicionar_dependentes_m);
             this.Controls.Add(this.datagridview_dependentes_m);
+            this.Controls.Add(this.btn_invisivel_dependentes_m);
             this.Name = "Dependentes";
             this.Text = "Dependentes";
             this.Load += new System.EventHandler(this.Dependentes_Load);
@@ -121,9 +96,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btn_deletar_dependentes_m;
-        private System.Windows.Forms.Button btn_editar_dependentes_m;
         private System.Windows.Forms.Button btn_adicionar_dependentes_m;
         private System.Windows.Forms.DataGridView datagridview_dependentes_m;
         private System.Windows.Forms.Button btn_invisivel_dependentes_m;
