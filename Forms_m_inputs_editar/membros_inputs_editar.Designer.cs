@@ -60,8 +60,6 @@
             this.lbl_editar_membro_localinclusao_m = new System.Windows.Forms.Label();
             this.input_editar_membro_localinclusao_m = new System.Windows.Forms.TextBox();
             this.lbl_editar_membro_datainclusao_m = new System.Windows.Forms.Label();
-            this.lbl_editar_membro_status_m = new System.Windows.Forms.Label();
-            this.input_editar_membro_status_m = new System.Windows.Forms.TextBox();
             this.lbl_editar_membro_coordenadora_m = new System.Windows.Forms.Label();
             this.input_editar_membro_coordenadora_m = new System.Windows.Forms.TextBox();
             this.btn_editar_membro_enviar_m = new System.Windows.Forms.Button();
@@ -73,6 +71,7 @@
             this.upload_editar_img_membro = new System.Windows.Forms.Button();
             this.lbl_editar_membro_foto_m = new System.Windows.Forms.Label();
             this.btn_deletar_membro_m = new System.Windows.Forms.Button();
+            this.checkbox_editar_membro_status_m = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.img_editar_membro)).BeginInit();
             this.SuspendLayout();
             // 
@@ -373,25 +372,6 @@
             this.lbl_editar_membro_datainclusao_m.TabIndex = 78;
             this.lbl_editar_membro_datainclusao_m.Text = "Data de inclusão";
             // 
-            // lbl_editar_membro_status_m
-            // 
-            this.lbl_editar_membro_status_m.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl_editar_membro_status_m.AutoSize = true;
-            this.lbl_editar_membro_status_m.Location = new System.Drawing.Point(123, 597);
-            this.lbl_editar_membro_status_m.Name = "lbl_editar_membro_status_m";
-            this.lbl_editar_membro_status_m.Size = new System.Drawing.Size(44, 16);
-            this.lbl_editar_membro_status_m.TabIndex = 79;
-            this.lbl_editar_membro_status_m.Text = "Status";
-            // 
-            // input_editar_membro_status_m
-            // 
-            this.input_editar_membro_status_m.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.input_editar_membro_status_m.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.input_editar_membro_status_m.Location = new System.Drawing.Point(126, 616);
-            this.input_editar_membro_status_m.Name = "input_editar_membro_status_m";
-            this.input_editar_membro_status_m.Size = new System.Drawing.Size(284, 22);
-            this.input_editar_membro_status_m.TabIndex = 80;
-            // 
             // lbl_editar_membro_coordenadora_m
             // 
             this.lbl_editar_membro_coordenadora_m.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -504,12 +484,23 @@
             this.btn_deletar_membro_m.UseVisualStyleBackColor = true;
             this.btn_deletar_membro_m.Click += new System.EventHandler(this.btn_deletar_membro_m_Click);
             // 
+            // checkbox_editar_membro_status_m
+            // 
+            this.checkbox_editar_membro_status_m.AutoSize = true;
+            this.checkbox_editar_membro_status_m.Location = new System.Drawing.Point(126, 618);
+            this.checkbox_editar_membro_status_m.Name = "checkbox_editar_membro_status_m";
+            this.checkbox_editar_membro_status_m.Size = new System.Drawing.Size(66, 20);
+            this.checkbox_editar_membro_status_m.TabIndex = 92;
+            this.checkbox_editar_membro_status_m.Text = "Ativo?";
+            this.checkbox_editar_membro_status_m.UseVisualStyleBackColor = true;
+            // 
             // membros_inputs_editar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1336, 775);
+            this.Controls.Add(this.checkbox_editar_membro_status_m);
             this.Controls.Add(this.btn_deletar_membro_m);
             this.Controls.Add(this.lbl_editar_membro_foto_m);
             this.Controls.Add(this.upload_editar_img_membro);
@@ -521,8 +512,6 @@
             this.Controls.Add(this.btn_editar_membro_enviar_m);
             this.Controls.Add(this.input_editar_membro_coordenadora_m);
             this.Controls.Add(this.lbl_editar_membro_coordenadora_m);
-            this.Controls.Add(this.input_editar_membro_status_m);
-            this.Controls.Add(this.lbl_editar_membro_status_m);
             this.Controls.Add(this.lbl_editar_membro_datainclusao_m);
             this.Controls.Add(this.input_editar_membro_localinclusao_m);
             this.Controls.Add(this.lbl_editar_membro_localinclusao_m);
@@ -595,8 +584,6 @@
         private System.Windows.Forms.Label lbl_editar_membro_localinclusao_m;
         public System.Windows.Forms.TextBox input_editar_membro_localinclusao_m;
         private System.Windows.Forms.Label lbl_editar_membro_datainclusao_m;
-        private System.Windows.Forms.Label lbl_editar_membro_status_m;
-        public System.Windows.Forms.TextBox input_editar_membro_status_m;
         private System.Windows.Forms.Label lbl_editar_membro_coordenadora_m;
         public System.Windows.Forms.TextBox input_editar_membro_coordenadora_m;
         private System.Windows.Forms.Button btn_editar_membro_enviar_m;
@@ -608,5 +595,6 @@
         private System.Windows.Forms.Button upload_editar_img_membro;
         private System.Windows.Forms.Label lbl_editar_membro_foto_m;
         private System.Windows.Forms.Button btn_deletar_membro_m;
+        public System.Windows.Forms.CheckBox checkbox_editar_membro_status_m;
     }
 }
