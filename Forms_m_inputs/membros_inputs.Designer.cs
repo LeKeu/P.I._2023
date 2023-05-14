@@ -39,8 +39,6 @@
             this.btn_membro_enviar_m = new System.Windows.Forms.Button();
             this.input_membro_coordenadora_m = new System.Windows.Forms.TextBox();
             this.lbl_membro_coordenadora_m = new System.Windows.Forms.Label();
-            this.input_membro_status_m = new System.Windows.Forms.TextBox();
-            this.lbl_membro_status_m = new System.Windows.Forms.Label();
             this.lbl_membro_datainclusao_m = new System.Windows.Forms.Label();
             this.input_membro_localinclusao_m = new System.Windows.Forms.TextBox();
             this.lbl_membro_localinclusao_m = new System.Windows.Forms.Label();
@@ -72,7 +70,7 @@
             this.input_membro_nome_m = new System.Windows.Forms.TextBox();
             this.lbl_membro_nome_m = new System.Windows.Forms.Label();
             this.lbl_membro_titulo_inputs_m = new System.Windows.Forms.Label();
-            this.btn_membro_deletar_m = new System.Windows.Forms.Button();
+            this.checkbox_membro_status_m = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.img_membro)).BeginInit();
             this.SuspendLayout();
             // 
@@ -175,25 +173,6 @@
             this.lbl_membro_coordenadora_m.Size = new System.Drawing.Size(95, 16);
             this.lbl_membro_coordenadora_m.TabIndex = 124;
             this.lbl_membro_coordenadora_m.Text = "Coordenadora";
-            // 
-            // input_membro_status_m
-            // 
-            this.input_membro_status_m.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.input_membro_status_m.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.input_membro_status_m.Location = new System.Drawing.Point(111, 606);
-            this.input_membro_status_m.Name = "input_membro_status_m";
-            this.input_membro_status_m.Size = new System.Drawing.Size(284, 22);
-            this.input_membro_status_m.TabIndex = 123;
-            // 
-            // lbl_membro_status_m
-            // 
-            this.lbl_membro_status_m.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl_membro_status_m.AutoSize = true;
-            this.lbl_membro_status_m.Location = new System.Drawing.Point(108, 587);
-            this.lbl_membro_status_m.Name = "lbl_membro_status_m";
-            this.lbl_membro_status_m.Size = new System.Drawing.Size(44, 16);
-            this.lbl_membro_status_m.TabIndex = 122;
-            this.lbl_membro_status_m.Text = "Status";
             // 
             // lbl_membro_datainclusao_m
             // 
@@ -492,19 +471,22 @@
             this.lbl_membro_titulo_inputs_m.TabIndex = 91;
             this.lbl_membro_titulo_inputs_m.Text = "Membros";
             // 
-            // btn_membro_deletar_m
+            // checkbox_membro_status_m
             // 
-            this.btn_membro_deletar_m.Location = new System.Drawing.Point(0, 0);
-            this.btn_membro_deletar_m.Name = "btn_membro_deletar_m";
-            this.btn_membro_deletar_m.Size = new System.Drawing.Size(75, 23);
-            this.btn_membro_deletar_m.TabIndex = 0;
+            this.checkbox_membro_status_m.AutoSize = true;
+            this.checkbox_membro_status_m.Location = new System.Drawing.Point(111, 606);
+            this.checkbox_membro_status_m.Name = "checkbox_membro_status_m";
+            this.checkbox_membro_status_m.Size = new System.Drawing.Size(66, 20);
+            this.checkbox_membro_status_m.TabIndex = 134;
+            this.checkbox_membro_status_m.Text = "Ativo?";
+            this.checkbox_membro_status_m.UseVisualStyleBackColor = true;
             // 
             // membros_inputs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1336, 775);
-            this.Controls.Add(this.btn_membro_deletar_m);
+            this.Controls.Add(this.checkbox_membro_status_m);
             this.Controls.Add(this.lbl_membro_foto_m);
             this.Controls.Add(this.upload_img_membro);
             this.Controls.Add(this.img_membro);
@@ -515,8 +497,6 @@
             this.Controls.Add(this.btn_membro_enviar_m);
             this.Controls.Add(this.input_membro_coordenadora_m);
             this.Controls.Add(this.lbl_membro_coordenadora_m);
-            this.Controls.Add(this.input_membro_status_m);
-            this.Controls.Add(this.lbl_membro_status_m);
             this.Controls.Add(this.lbl_membro_datainclusao_m);
             this.Controls.Add(this.input_membro_localinclusao_m);
             this.Controls.Add(this.lbl_membro_localinclusao_m);
@@ -568,8 +548,6 @@
         private System.Windows.Forms.Button btn_membro_enviar_m;
         public System.Windows.Forms.TextBox input_membro_coordenadora_m;
         private System.Windows.Forms.Label lbl_membro_coordenadora_m;
-        public System.Windows.Forms.TextBox input_membro_status_m;
-        private System.Windows.Forms.Label lbl_membro_status_m;
         private System.Windows.Forms.Label lbl_membro_datainclusao_m;
         public System.Windows.Forms.TextBox input_membro_localinclusao_m;
         private System.Windows.Forms.Label lbl_membro_localinclusao_m;
@@ -601,6 +579,6 @@
         public System.Windows.Forms.TextBox input_membro_nome_m;
         private System.Windows.Forms.Label lbl_membro_nome_m;
         private System.Windows.Forms.Label lbl_membro_titulo_inputs_m;
-        private System.Windows.Forms.Button btn_membro_deletar_m;
+        private System.Windows.Forms.CheckBox checkbox_membro_status_m;
     }
 }

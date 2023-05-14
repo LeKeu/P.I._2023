@@ -80,7 +80,7 @@ namespace projeto_integrado.Forms
 
             for (int i = 0; i < row.Cells.Count; i++)
             {
-                //Console.WriteLine(i + "lolo --> " + row.Cells[i].Value);
+                Console.WriteLine(i + "lolo --> " + row.Cells[i].Value);
             }
 
             var forminputeditarmembros = new membros_inputs_editar();
@@ -100,7 +100,7 @@ namespace projeto_integrado.Forms
             forminputeditarmembros.input_editar_membro_conjuge_m.Text = row.Cells[14].Value.ToString();
             forminputeditarmembros.input_editar_membro_localinclusao_m.Text = row.Cells[15].Value.ToString();
             forminputeditarmembros.dateTimePicker_editar_membro_datainclusao_m.Text = row.Cells[16].Value.ToString();
-            //forminputeditarmembros.input_editar_membro_status_m.Text = row.Cells[18].Value.ToString();
+            forminputeditarmembros.checkbox_editar_membro_status_m.Checked = Convert.ToBoolean(row.Cells[18].Value.ToString());
             forminputeditarmembros.input_editar_membro_coordenadora_m.Text = row.Cells[19].Value.ToString();
             forminputeditarmembros.input_editar_membro_datadesaida_m.Text = row.Cells[20].Value.ToString();
             forminputeditarmembros.img_editar_membro.Image = System.Drawing.Image.FromStream(new MemoryStream(Convert.FromBase64String(row.Cells[25].Value.ToString())));
