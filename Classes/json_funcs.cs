@@ -125,12 +125,10 @@ namespace projeto_integrado.Classes
                     {
                         chaves.Add(chave);
                     }
-                    
                     for (int i = 1; i < dictObj.Count; i++)
                     {
                         coisa[chaves[i]] = dados[i];
                     }
-                    
                 }
                 valores.Add(coisa.ToString());
             }
@@ -148,7 +146,8 @@ namespace projeto_integrado.Classes
 
             foreach (var coisa in arq_json)
             {
-                if (coisa.GetValue("Tabela").ToString() == nome_tabela && coisa.GetValue(nome_chave).ToString() == valor)
+                if (coisa.GetValue("Tabela").ToString() == nome_tabela 
+                    && coisa.GetValue(nome_chave).ToString() == valor)
                 {
                     Console.WriteLine("olha auqi essa linha na func json_func");
                 }

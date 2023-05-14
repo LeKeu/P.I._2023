@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.btn_deletar_fabricantes_p = new System.Windows.Forms.Button();
-            this.btn_editar_fabricantes_p = new System.Windows.Forms.Button();
             this.btn_adicionar_fabricantes_p = new System.Windows.Forms.Button();
             this.datagridview_fabricantes_p = new System.Windows.Forms.DataGridView();
             this.btn_invisivel_patrFabr_p = new System.Windows.Forms.Button();
@@ -38,33 +36,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.datagridview_fabricantes_p)).BeginInit();
             this.SuspendLayout();
             // 
-            // btn_deletar_fabricantes_p
-            // 
-            this.btn_deletar_fabricantes_p.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btn_deletar_fabricantes_p.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_deletar_fabricantes_p.Location = new System.Drawing.Point(721, 295);
-            this.btn_deletar_fabricantes_p.Name = "btn_deletar_fabricantes_p";
-            this.btn_deletar_fabricantes_p.Size = new System.Drawing.Size(97, 42);
-            this.btn_deletar_fabricantes_p.TabIndex = 22;
-            this.btn_deletar_fabricantes_p.Text = "Deletar";
-            this.btn_deletar_fabricantes_p.UseVisualStyleBackColor = true;
-            // 
-            // btn_editar_fabricantes_p
-            // 
-            this.btn_editar_fabricantes_p.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btn_editar_fabricantes_p.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_editar_fabricantes_p.Location = new System.Drawing.Point(721, 219);
-            this.btn_editar_fabricantes_p.Name = "btn_editar_fabricantes_p";
-            this.btn_editar_fabricantes_p.Size = new System.Drawing.Size(97, 42);
-            this.btn_editar_fabricantes_p.TabIndex = 21;
-            this.btn_editar_fabricantes_p.Text = "Editar";
-            this.btn_editar_fabricantes_p.UseVisualStyleBackColor = true;
-            // 
             // btn_adicionar_fabricantes_p
             // 
             this.btn_adicionar_fabricantes_p.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.btn_adicionar_fabricantes_p.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_adicionar_fabricantes_p.Location = new System.Drawing.Point(721, 145);
+            this.btn_adicionar_fabricantes_p.Location = new System.Drawing.Point(719, 380);
             this.btn_adicionar_fabricantes_p.Name = "btn_adicionar_fabricantes_p";
             this.btn_adicionar_fabricantes_p.Size = new System.Drawing.Size(97, 42);
             this.btn_adicionar_fabricantes_p.TabIndex = 20;
@@ -88,7 +64,8 @@
             // 
             // btn_invisivel_patrFabr_p
             // 
-            this.btn_invisivel_patrFabr_p.Location = new System.Drawing.Point(169, 429);
+            this.btn_invisivel_patrFabr_p.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btn_invisivel_patrFabr_p.Location = new System.Drawing.Point(53, 399);
             this.btn_invisivel_patrFabr_p.Name = "btn_invisivel_patrFabr_p";
             this.btn_invisivel_patrFabr_p.Size = new System.Drawing.Size(75, 23);
             this.btn_invisivel_patrFabr_p.TabIndex = 23;
@@ -106,11 +83,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(855, 498);
-            this.Controls.Add(this.btn_invisivel_patrFabr_p);
-            this.Controls.Add(this.btn_deletar_fabricantes_p);
-            this.Controls.Add(this.btn_editar_fabricantes_p);
             this.Controls.Add(this.btn_adicionar_fabricantes_p);
             this.Controls.Add(this.datagridview_fabricantes_p);
+            this.Controls.Add(this.btn_invisivel_patrFabr_p);
             this.Name = "Fabricantes";
             this.Text = "Fabricantes";
             this.Load += new System.EventHandler(this.Fabricantes_Load);
@@ -120,9 +95,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btn_deletar_fabricantes_p;
-        private System.Windows.Forms.Button btn_editar_fabricantes_p;
         private System.Windows.Forms.Button btn_adicionar_fabricantes_p;
         private System.Windows.Forms.DataGridView datagridview_fabricantes_p;
         private System.Windows.Forms.Button btn_invisivel_patrFabr_p;
